@@ -25,7 +25,7 @@ The live site is server-rendered HTML, so the client parses the form and result 
 
 ## GitHub Actions
 
-The workflow runs at 5:00 AM IST (`30 23 * * *` UTC) and can also be started manually from **Actions -> CESTAT keyword monitor -> Run workflow**. Manual inputs are an optional `DD-MM-YYYY` start date and optional multiline keywords. No search input creates a commit.
+The workflow runs automatically at **9:00 AM and 9:00 PM IST** (`30 3 * * *` and `30 15 * * *` UTC) and can also be started manually from **Actions -> CESTAT keyword monitor -> Run workflow**. Manual inputs are an optional `DD-MM-YYYY` start date and optional multiline keywords. No search input uses today in IST.
 
 Because reports are published to GitHub Pages, the repository is **public**. Anyone can view the causelist keyword report at the Pages URL below. Do not put secrets in the repo.
 

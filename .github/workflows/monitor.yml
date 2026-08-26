@@ -2,7 +2,10 @@ name: CESTAT keyword monitor
 
 on:
   schedule:
-    - cron: "30 23 * * *"
+  # 9:00 AM IST = 03:30 UTC
+    - cron: "30 3 * * *"
+  # 9:00 PM IST = 15:30 UTC
+    - cron: "30 15 * * *"
   workflow_dispatch:
     inputs:
       start_date:
