@@ -27,25 +27,38 @@ The live site is server-rendered HTML, so the client parses the form and result 
 
 The workflow runs at 5:00 AM IST (`30 23 * * *` UTC) and can also be started manually from **Actions -> CESTAT keyword monitor -> Run workflow**. Manual inputs are an optional `DD-MM-YYYY` start date and optional multiline keywords. No search input creates a commit.
 
-Because this repository is private, the generated report is uploaded as a private workflow artifact. GitHub Pages is not used as a privacy boundary.
+Because this repository is private, the generated report is uploaded as a private workflow artifact. For day-to-day use you do not need to download artifacts.
 
-### Viewing workflow runs and reports
+### Viewing reports (no download)
 
-1. Open the repository in GitHub (you must be signed in and have access to the private repo):
-   - **https://github.com/psocbitm/cestat-monitor**
-2. Click the **Actions** tab at the top.
-3. Click **CESTAT keyword monitor** in the left sidebar to see all runs.
-4. Open a run to see step status. Green means the monitor finished with no failed searches.
-5. Scroll to **Artifacts** at the bottom of a completed run and download `cestat-report-<run-id>`.
-6. Unzip the artifact. Open `output/index.html` in your browser for the report, or read `output/results.json`.
+**Option A — bookmark the live report (recommended)**
 
-From the terminal (after `gh auth login`):
+After the first successful workflow run, enable GitHub Pages once:
+
+1. Repo **Settings → Pages**
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**
+3. Set **Branch** to `gh-pages` / `/ (root)`, then **Save**
+
+Each workflow run publishes the latest report. Bookmark:
+
+**https://psocbitm.github.io/cestat-monitor/**
+
+On a private repo, only people with repo access can open that URL.
+
+**Option B — read the summary on the workflow run**
+
+Open **Actions →** pick a run. The **Summary** tab at the top shows matches, failures, and stats without downloading anything.
+
+### Workflow runs and artifacts
+
+1. Open **https://github.com/psocbitm/cestat-monitor/actions**
+2. Click **CESTAT keyword monitor** in the left sidebar.
+3. Open a run for logs and the job summary.
+
+Artifacts (`cestat-report-<run-id>`) are optional backups. Download only if you need an archived copy:
 
 ```sh
-gh run list --repo psocbitm/cestat-monitor
-gh run view <run-id> --repo psocbitm/cestat-monitor
 gh run download <run-id> --repo psocbitm/cestat-monitor
-open cestat-report-*/output/index.html
 ```
 
 The workflow uses sequential requests (no parallelism), longer timeouts, and a second sequential pass for transient search and PDF failures. A successful empty result means no causelist or no matching PDF; request, CAPTCHA, malformed-response, download, and extraction failures are reported separately.

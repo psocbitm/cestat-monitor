@@ -275,7 +275,59 @@ def generate_report(payload: dict[str, Any], output_dir: Path) -> None:
     page = """<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>CESTAT keyword report</title><style>
     :root{font:16px system-ui,sans-serif;color:#17202a;background:#eef3f7}body{max-width:1100px;margin:0 auto;padding:1rem}header{background:#123047;color:#fff;padding:1.5rem;border-radius:10px;margin-bottom:1rem}h1{margin:.1rem 0 .6rem;font-size:1.7rem}h2{margin:0;font-size:1.15rem}h2 span{font-weight:400;color:#536675}section,article{background:#fff;padding:1rem;margin:1rem 0;border:1px solid #d5e0e8;border-radius:8px}section{border-left:5px solid #9aabb7}section.has-matches{border-left-color:#16805c}section.has-failures,article.has-failures{border-left-color:#c2410c;border-color:#f0b58f}article{margin:.7rem 0;background:#f9fbfc}article.has-matches{border-color:#8bd2b6}.toolbar{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;background:#fff;padding:1rem;border:1px solid #d5e0e8;border-radius:8px}.toolbar label{font-weight:650;cursor:pointer}.stats{display:flex;gap:1rem;flex-wrap:wrap;color:#d8edf4}.stat b{color:#fff;font-size:1.25rem}.error{color:#a33;background:#fff0f0;padding:.5rem;border-radius:5px}a{color:#075985;font-weight:650}small{color:#536675}.hidden{display:none!important}</style></head><body><header><h1>CESTAT keyword report</h1><p>""" + html.escape(payload["start_date"]) + " to " + html.escape(payload["end_date"]) + " · Generated " + html.escape(payload["generated_at"]) + "</p><div class=stats><span class=stat><b>""" + str(matched_pdfs) + "</b> matching PDFs</span><span class=stat><b>""" + str(total_pdfs) + "</b> PDFs checked</span><span class=stat><b>""" + str(failed_pdfs) + "</b> failures</span><span class=stat><b>""" + str(warning_count) + "</b> warnings</span></div></header><div class=toolbar><label><input id=matches-only type=checkbox> Show only PDFs with matches (failures stay visible)</label><small id=filter-summary></small></div><p><strong>Keywords:</strong> """ + html.escape(", ".join(payload["keywords"])) + "</p>" + "".join(rows) + "<script>const toggle=document.querySelector('#matches-only');const sections=[...document.querySelectorAll('section.result')];const summary=document.querySelector('#filter-summary');function applyFilter(){const only=toggle.checked;let shown=0;sections.forEach(section=>{const matches=section.classList.contains('has-matches');const failures=section.classList.contains('has-failures');section.classList.toggle('hidden',only&&!matches&&!failures);if(matches||failures)shown+=1;section.querySelectorAll('article.pdf').forEach(pdf=>pdf.classList.toggle('hidden',only&&!pdf.classList.contains('has-matches')&&!pdf.classList.contains('has-failures')))});summary.textContent=only?shown+' result(s) with matches or failures shown':'All date/bench results shown'}toggle.addEventListener('change',applyFilter);applyFilter()</script></body></html>"
     (output_dir / "index.html").write_text(page, encoding="utf-8")
+    (output_dir / "summary.md").write_text(generate_summary_markdown(payload), encoding="utf-8")
 
+
+def generate_summary_markdown(payload: dict[str, Any], pages_url: str = "") -> str:
+    lines = [
+        "# CESTAT keyword report",
+        "",
+        f"**Range:** {payload['start_date']} to {payload['end_date']}",
+        f"**Generated:** {payload['generated_at']}",
+        "",
+    ]
+    if pages_url:
+        lines.extend([f"**Full report:** [{pages_url}]({pages_url})", ""])
+    total_pdfs = 0
+    matched_pdfs = 0
+    failed_searches = 0
+    failed_pdfs = 0
+    match_rows: list[str] = []
+    failure_rows: list[str] = []
+    for result in payload["results"]:
+        if result.get("status") == "failed":
+            failed_searches += 1
+            failure_rows.append(f"- **{result['requested_date']} {result['bench']['name']}** (search): {result.get('error', '')}")
+        for pdf in result.get("pdfs", []):
+            total_pdfs += 1
+            if pdf.get("status") == "failed":
+                failed_pdfs += 1
+                failure_rows.append(f"- **{result['requested_date']} {result['bench']['name']}** PDF {pdf['pdf_id']}: {pdf.get('error', '')}")
+            if pdf.get("matches"):
+                matched_pdfs += 1
+                keywords = ", ".join(sorted({match["keyword"] for match in pdf["matches"]}))
+                first = pdf["matches"][0]
+                snippet = first.get("snippet", "").replace("\n", " ")[:160]
+                match_rows.append(
+                    f"- **{result['requested_date']} {result['bench']['name']}** · PDF [{pdf['pdf_id']}]({pdf['url']}) · {keywords}\n  page {first['page']}: {snippet}"
+                )
+    lines.extend([
+        "## Summary",
+        "",
+        f"- Matching PDFs: **{matched_pdfs}**",
+        f"- PDFs checked: **{total_pdfs}**",
+        f"- Failed searches: **{failed_searches}**",
+        f"- Failed PDFs: **{failed_pdfs}**",
+        "",
+    ])
+    if match_rows:
+        lines.extend(["## Matches", "", *match_rows, ""])
+    else:
+        lines.extend(["## Matches", "", "No keyword matches in this run.", ""])
+    if failure_rows:
+        lines.extend(["## Failures", "", *failure_rows, ""])
+    lines.append(f"Keywords: {', '.join(payload['keywords'])}")
+    return "\n".join(lines)
 
 def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: int | None = None, days: int = 7, output_dir: Path = Path("output")) -> dict[str, Any]:
     client = CestatClient()
