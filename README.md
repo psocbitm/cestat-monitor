@@ -27,7 +27,7 @@ The live site is server-rendered HTML, so the client parses the form and result 
 
 The workflow runs at 5:00 AM IST (`30 23 * * *` UTC) and can also be started manually from **Actions -> CESTAT keyword monitor -> Run workflow**. Manual inputs are an optional `DD-MM-YYYY` start date and optional multiline keywords. No search input creates a commit.
 
-Because this repository is private, the generated report is uploaded as a private workflow artifact. For day-to-day use you do not need to download artifacts.
+Because reports are published to GitHub Pages, the repository is **public**. Anyone can view the causelist keyword report at the Pages URL below. Do not put secrets in the repo.
 
 ### Viewing reports (no download)
 
@@ -43,7 +43,7 @@ Each workflow run publishes the latest report. Bookmark:
 
 **https://psocbitm.github.io/cestat-monitor/**
 
-On a private repo, only people with repo access can open that URL.
+On a **public** repo, the report URL is visible to anyone on the internet.
 
 **Option B — read the summary on the workflow run**
 
