@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+output/
+smoke-output/
+*.egg-info/
+.DS_Store

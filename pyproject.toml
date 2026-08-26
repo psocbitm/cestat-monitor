@@ -1,0 +1,16 @@
+[project]
+name = "cestat-monitor"
+version = "0.1.0"
+description = "Search CESTAT causelist PDFs for configured keywords"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "pypdf>=5,<7",
+  "requests>=2.32,<3",
+]
+
+[project.scripts]
+cestat-monitor = "cestat_monitor.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
