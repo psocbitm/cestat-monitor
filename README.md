@@ -29,4 +29,4 @@ The workflow runs at 5:00 AM IST (`30 23 * * *` UTC) and can also be started man
 
 Because this repository is private, the generated report is uploaded as a private workflow artifact. GitHub Pages is not used as a privacy boundary. Download an artifact from the workflow run, or use `gh run download` after authentication.
 
-The workflow uses bounded retries and conservative parallelism. A successful empty result means no causelist or no matching PDF; request, CAPTCHA, malformed-response, download, and extraction failures are reported separately.
+The workflow uses two parallel PDF workers, followed by a sequential second pass for transient PDF failures only. A successful empty result means no causelist or no matching PDF; request, CAPTCHA, malformed-response, download, and extraction failures are reported separately.
