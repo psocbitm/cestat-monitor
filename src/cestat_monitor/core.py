@@ -244,37 +244,401 @@ def reset_pdf_for_retry(record: PdfRecord) -> None:
     record.matches.clear()
 
 
+def reset_pdf_for_retry(record: PdfRecord) -> None:
+    record.status = "found"
+    record.error = ""
+    record.pages = 0
+    record.text_status = "not_processed"
+    record.matches.clear()
+
+
+def _badge(label: str, kind: str) -> str:
+    return f'<span class="badge badge-{kind}">{html.escape(label)}</span>'
+
+
+def _search_status_kind(status: str) -> str:
+    if status == "failed":
+        return "fail"
+    if status == "success_empty":
+        return "muted"
+    return "ok"
+
+
+def _pdf_status_kind(status: str) -> str:
+    if status == "failed":
+        return "fail"
+    if status == "matched":
+        return "match"
+    return "ok"
+
+
+def _collect_report_stats(payload: dict[str, Any]) -> dict[str, int]:
+    stats = {"total_pdfs": 0, "matched_pdfs": 0, "warning_count": 0, "failed_pdfs": 0, "failed_searches": 0}
+    for result in payload["results"]:
+        if result.get("status") == "failed":
+            stats["failed_searches"] += 1
+        for pdf in result.get("pdfs", []):
+            stats["total_pdfs"] += 1
+            if pdf.get("matches"):
+                stats["matched_pdfs"] += 1
+            if pdf.get("status") == "failed":
+                stats["failed_pdfs"] += 1
+            if pdf.get("error") or pdf.get("text_status") != "text_extracted":
+                stats["warning_count"] += 1
+    return stats
+
+
+def _render_pdf_detail_rows(result: dict[str, Any]) -> str:
+    rows: list[str] = []
+    for pdf in result.get("pdfs", []):
+        has_matches = bool(pdf.get("matches"))
+        has_failures = pdf.get("status") == "failed"
+        row_class = "pdf-row"
+        if has_matches:
+            row_class += " has-matches"
+        if has_failures:
+            row_class += " has-failures"
+        match_count = len(pdf.get("matches", []))
+        keywords = ", ".join(sorted({m["keyword"] for m in pdf.get("matches", [])}))
+        rows.append(
+            f'<tr class="{row_class}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}">'
+            f'<td class="col-expand"><button type="button" class="expand-btn child-expand" aria-expanded="false" aria-label="Show match details" {"disabled" if not has_matches else ""}><span class="chev"></span></button></td>'
+            f'<td data-label="PDF"><a class="pdf-link" href="{html.escape(pdf["url"])}" target="_blank" rel="noopener">{html.escape(pdf["pdf_id"])}</a></td>'
+            f'<td data-label="Type">{html.escape(pdf.get("result_type", ""))}</td>'
+            f'<td data-label="Status">{_badge(pdf.get("status", ""), _pdf_status_kind(pdf.get("status", "")))}</td>'
+            f'<td data-label="Text">{_badge(pdf.get("text_status", ""), "muted")}</td>'
+            f'<td data-label="Pages">{pdf.get("pages", 0)}</td>'
+            f'<td data-label="Matches">{match_count if match_count else "—"}</td>'
+            f'<td data-label="Keywords" class="kw-cell">{html.escape(keywords) if keywords else "—"}</td>'
+            "</tr>"
+        )
+        if has_matches:
+            match_items = "".join(
+                f'<li><strong>{html.escape(m["keyword"])}</strong> · page {m["page"]}<p class="snippet">{html.escape(m.get("snippet", ""))}</p></li>'
+                for m in pdf.get("matches", [])
+            )
+            rows.append(
+                f'<tr class="detail-row child-detail" hidden>'
+                f'<td colspan="8"><div class="detail-panel"><h4>Matches in PDF {html.escape(pdf["pdf_id"])}</h4><ul class="match-list">{match_items}</ul></div></td>'
+                "</tr>"
+            )
+        if pdf.get("error"):
+            rows.append(
+                f'<tr class="detail-row error-detail" data-has-failures="1">'
+                f'<td colspan="8"><div class="detail-panel error-panel">{html.escape(pdf["error"])}</div></td>'
+                "</tr>"
+            )
+    return "".join(rows)
+
+
+def _render_search_group_rows(payload: dict[str, Any]) -> str:
+    rows: list[str] = []
+    for index, result in enumerate(payload["results"]):
+        pdfs = result.get("pdfs", [])
+        result_matches = sum(bool(p.get("matches")) for p in pdfs)
+        pdf_failures = sum(p.get("status") == "failed" for p in pdfs)
+        search_failed = result.get("status") == "failed"
+        result_failures = pdf_failures + (1 if search_failed else 0)
+        has_matches = result_matches > 0
+        has_failures = result_failures > 0
+        row_class = "group-row"
+        if has_matches:
+            row_class += " has-matches"
+        if has_failures:
+            row_class += " has-failures"
+        group_id = f"group-{index}"
+        rows.append(
+            f'<tr class="{row_class}" data-group="{group_id}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}" data-date="{html.escape(result["requested_date"])}" data-bench="{html.escape(result["bench"]["name"])}">'
+            f'<td class="col-expand"><button type="button" class="expand-btn group-expand" aria-expanded="false" aria-controls="{group_id}" aria-label="Expand {html.escape(result["requested_date"])} {html.escape(result["bench"]["name"])}"><span class="chev"></span></button></td>'
+            f'<td data-label="Date"><span class="date-pill">{html.escape(result["requested_date"])}</span></td>'
+            f'<td data-label="Bench"><strong>{html.escape(result["bench"]["name"])}</strong></td>'
+            f'<td data-label="Search">{_badge(result.get("status", ""), _search_status_kind(result.get("status", "")))}</td>'
+            f'<td data-label="PDFs">{len(pdfs)}</td>'
+            f'<td data-label="Matches">{result_matches}</td>'
+            f'<td data-label="Failures">{result_failures}</td>'
+            "</tr>"
+        )
+        detail_class = "group-detail"
+        if has_matches:
+            detail_class += " auto-open"
+        rows.append(
+            f'<tr id="{group_id}" class="{detail_class}" data-parent-group="{group_id}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}" hidden>'
+            f'<td colspan="7"><div class="nested-wrap">'
+            + (f'<div class="detail-panel error-panel">{html.escape(result["error"])}</div>' if result.get("error") else "")
+            + (
+                '<table class="nested-table responsive-table"><thead><tr>'
+                '<th class="col-expand"></th><th>PDF</th><th>Type</th><th>Status</th><th>Text</th><th>Pages</th><th>Matches</th><th>Keywords</th>'
+                "</tr></thead><tbody>"
+                + _render_pdf_detail_rows(result)
+                + "</tbody></table>"
+                if pdfs
+                else '<p class="empty-note">No PDFs returned for this date and bench.</p>'
+            )
+            + "</div></td></tr>"
+        )
+    return "".join(rows)
+
+
+def build_html_report(payload: dict[str, Any], stats: dict[str, int]) -> str:
+    keywords = html.escape(", ".join(payload["keywords"]))
+    table_body = _render_search_group_rows(payload)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CESTAT keyword report</title>
+<style>
+:root {{
+  --bg: #eef3f7; --surface: #fff; --ink: #17202a; --muted: #536675;
+  --brand: #123047; --brand-soft: #d8edf4; --line: #d5e0e8;
+  --ok: #16805c; --ok-bg: #e8f6ef; --match: #0b6e99; --match-bg: #e7f4fb;
+  --fail: #c2410c; --fail-bg: #fff1e8; --shadow: 0 10px 30px rgba(18,48,71,.08);
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: var(--ink); background: var(--bg);
+}}
+* {{ box-sizing: border-box }}
+body {{ margin: 0; padding: 1rem; }}
+.shell {{ max-width: 1200px; margin: 0 auto; }}
+.hero {{
+  background: linear-gradient(135deg, #123047 0%, #1a4a68 100%); color: #fff;
+  border-radius: 16px; padding: 1.4rem 1.5rem; box-shadow: var(--shadow); margin-bottom: 1rem;
+}}
+.hero h1 {{ margin: 0 0 .35rem; font-size: 1.65rem }}
+.hero p {{ margin: 0; color: var(--brand-soft) }}
+.stats {{ display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem }}
+.stat {{
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18);
+  border-radius: 12px; padding: .55rem .85rem; min-width: 110px;
+}}
+.stat b {{ display: block; font-size: 1.35rem }}
+.controls {{
+  display: flex; flex-wrap: wrap; gap: .75rem; align-items: center;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: .85rem 1rem; margin-bottom: 1rem; box-shadow: var(--shadow);
+}}
+.controls label {{ display: flex; align-items: center; gap: .45rem; font-weight: 600 }}
+.controls input[type=search] {{
+  flex: 1 1 220px; min-width: 180px; padding: .55rem .7rem; border: 1px solid var(--line);
+  border-radius: 8px; font: inherit;
+}}
+.btn {{
+  border: 1px solid var(--line); background: #f7fafc; color: var(--ink);
+  border-radius: 8px; padding: .5rem .75rem; font: inherit; font-weight: 600; cursor: pointer;
+}}
+.btn:hover {{ background: #edf3f8 }}
+.meta {{ margin: .25rem 0 1rem; color: var(--muted); font-size: .95rem }}
+.table-card {{
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  overflow: hidden; box-shadow: var(--shadow);
+}}
+.responsive-table {{ width: 100%; border-collapse: collapse; font-size: .95rem }}
+.responsive-table thead th {{
+  text-align: left; background: #f4f8fb; color: #314556; font-size: .78rem;
+  letter-spacing: .04em; text-transform: uppercase; padding: .7rem .65rem; border-bottom: 1px solid var(--line);
+}}
+.responsive-table td {{ padding: .72rem .65rem; border-bottom: 1px solid #edf2f6; vertical-align: top }}
+.responsive-table tbody tr:last-child td {{ border-bottom: none }}
+.group-row.has-matches td {{ background: linear-gradient(90deg, var(--match-bg), transparent 55%) }}
+.group-row.has-failures td {{ background: linear-gradient(90deg, var(--fail-bg), transparent 55%) }}
+.pdf-row.has-matches td {{ background: #f3fbff }}
+.pdf-row.has-failures td {{ background: #fff8f3 }}
+.col-expand {{ width: 42px; text-align: center }}
+.expand-btn {{
+  width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 8px;
+  background: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+}}
+.expand-btn:disabled {{ opacity: .35; cursor: default }}
+.expand-btn[aria-expanded="true"] .chev {{ transform: rotate(90deg) }}
+.chev {{
+  width: 8px; height: 8px; border-right: 2px solid #314556; border-bottom: 2px solid #314556;
+  transform: rotate(-45deg); transition: transform .18s ease;
+}}
+.badge {{
+  display: inline-block; padding: .18rem .5rem; border-radius: 999px; font-size: .76rem;
+  font-weight: 700; letter-spacing: .02em; white-space: nowrap;
+}}
+.badge-ok {{ background: var(--ok-bg); color: var(--ok) }}
+.badge-match {{ background: var(--match-bg); color: var(--match) }}
+.badge-fail {{ background: var(--fail-bg); color: var(--fail) }}
+.badge-muted {{ background: #f1f5f9; color: var(--muted) }}
+.date-pill {{ font-weight: 700 }}
+.pdf-link {{ color: #075985; font-weight: 700; text-decoration: none }}
+.pdf-link:hover {{ text-decoration: underline }}
+.nested-wrap {{ padding: .35rem .35rem .8rem .35rem }}
+.nested-table {{ border: 1px solid var(--line); border-radius: 10px; overflow: hidden }}
+.detail-panel {{ padding: .75rem .9rem; margin: .5rem .35rem }}
+.error-panel {{
+  background: var(--fail-bg); color: #8a2f0d; border: 1px solid #f0b58f; border-radius: 10px;
+  font-size: .9rem; line-height: 1.45;
+}}
+.match-list {{ margin: 0; padding-left: 1.1rem }}
+.match-list li {{ margin: .45rem 0 }}
+.snippet {{
+  margin: .25rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.45;
+  word-break: break-word;
+}}
+.kw-cell {{ max-width: 220px; word-break: break-word }}
+.empty-note {{ color: var(--muted); padding: .5rem .75rem }}
+.filter-hidden {{ display: none !important }}
+#filter-summary {{ color: var(--muted); font-size: .9rem }}
+@media (max-width: 900px) {{
+  .responsive-table thead {{ display: none }}
+  .responsive-table tr.group-row, .responsive-table tr.pdf-row {{
+    display: block; border-bottom: 1px solid var(--line); padding: .35rem 0;
+  }}
+  .responsive-table tr.group-row td, .responsive-table tr.pdf-row td {{
+    display: grid; grid-template-columns: minmax(90px, 34%) 1fr; gap: .35rem .65rem;
+    border: none; padding: .35rem .75rem;
+  }}
+  .responsive-table td::before {{
+    content: attr(data-label); font-size: .72rem; text-transform: uppercase;
+    letter-spacing: .04em; color: var(--muted); font-weight: 700;
+  }}
+  .responsive-table td.col-expand {{ display: flex; align-items: center }}
+  .responsive-table td.col-expand::before {{ content: none }}
+  .group-detail td, .detail-row td {{ display: block; padding: 0 }}
+  .group-detail td::before, .detail-row td::before {{ content: none }}
+  .nested-table tr.pdf-row {{ border-left: 3px solid #dbe7f0; margin-left: .5rem }}
+}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="hero">
+    <h1>CESTAT keyword report</h1>
+    <p>{html.escape(payload["start_date"])} to {html.escape(payload["end_date"])} · Generated {html.escape(payload["generated_at"])}</p>
+    <div class="stats">
+      <div class="stat"><b>{stats["matched_pdfs"]}</b> matching PDFs</div>
+      <div class="stat"><b>{stats["total_pdfs"]}</b> PDFs checked</div>
+      <div class="stat"><b>{stats["failed_pdfs"] + stats["failed_searches"]}</b> failures</div>
+      <div class="stat"><b>{stats["warning_count"]}</b> warnings</div>
+    </div>
+  </header>
+  <div class="controls">
+    <label><input type="checkbox" id="matches-only"> Matches & failures only</label>
+    <input type="search" id="table-search" placeholder="Filter by date, bench, PDF, keyword…" autocomplete="off">
+    <button type="button" class="btn" id="expand-matches">Expand matches</button>
+    <button type="button" class="btn" id="collapse-all">Collapse all</button>
+    <span id="filter-summary"></span>
+  </div>
+  <p class="meta"><strong>Keywords:</strong> {keywords}</p>
+  <div class="table-card">
+    <table class="responsive-table" id="report-table">
+      <thead>
+        <tr>
+          <th class="col-expand"></th>
+          <th>Date</th>
+          <th>Bench</th>
+          <th>Search</th>
+          <th>PDFs</th>
+          <th>Matches</th>
+          <th>Failures</th>
+        </tr>
+      </thead>
+      <tbody>{table_body}</tbody>
+    </table>
+  </div>
+</div>
+<script>
+const table = document.getElementById('report-table');
+const matchesOnly = document.getElementById('matches-only');
+const searchInput = document.getElementById('table-search');
+const summary = document.getElementById('filter-summary');
+const groupRows = [...table.querySelectorAll('tr.group-row')];
+
+function setExpanded(btn, open) {{
+  if (!btn || btn.disabled) return;
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}}
+function toggleGroup(btn) {{
+  const row = btn.closest('tr.group-row');
+  const detail = document.getElementById(row.dataset.group);
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  setExpanded(btn, open);
+  if (detail) detail.hidden = !open;
+}}
+function togglePdf(btn) {{
+  const row = btn.closest('tr.pdf-row');
+  const detail = row.nextElementSibling;
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  setExpanded(btn, open);
+  if (detail && detail.classList.contains('child-detail')) detail.hidden = !open;
+}}
+table.addEventListener('click', (e) => {{
+  const btn = e.target.closest('.expand-btn');
+  if (!btn) return;
+  if (btn.classList.contains('group-expand')) toggleGroup(btn);
+  if (btn.classList.contains('child-expand')) togglePdf(btn);
+}});
+function applyFilters() {{
+  const only = matchesOnly.checked;
+  const q = searchInput.value.trim().toLowerCase();
+  let shown = 0;
+  groupRows.forEach((row) => {{
+    const detail = document.getElementById(row.dataset.group);
+    const hasMatches = row.dataset.hasMatches === '1';
+    const hasFailures = row.dataset.hasFailures === '1';
+    const text = (row.dataset.date + ' ' + row.dataset.bench + ' ' + row.textContent).toLowerCase();
+    const matchFilter = !only || hasMatches || hasFailures;
+    const searchFilter = !q || text.includes(q);
+    const visible = matchFilter && searchFilter;
+    row.classList.toggle('filter-hidden', !visible);
+    if (detail) detail.classList.toggle('filter-hidden', !visible);
+    if (visible) shown += 1;
+    if (detail && !visible) {{
+      detail.hidden = true;
+      const btn = row.querySelector('.group-expand');
+      if (btn) setExpanded(btn, false);
+    }}
+    detail?.querySelectorAll('tr.pdf-row').forEach((pdfRow) => {{
+      const pdfText = pdfRow.textContent.toLowerCase();
+      const pdfVisible = visible && (!q || pdfText.includes(q) || text.includes(q));
+      pdfRow.classList.toggle('filter-hidden', !pdfVisible);
+      const childDetail = pdfRow.nextElementSibling;
+      if (childDetail) childDetail.classList.toggle('filter-hidden', !pdfVisible);
+    }});
+  }});
+  summary.textContent = `${{shown}} date/bench group(s) shown`;
+}}
+matchesOnly.addEventListener('change', applyFilters);
+searchInput.addEventListener('input', applyFilters);
+document.getElementById('expand-matches').addEventListener('click', () => {{
+  groupRows.forEach((row) => {{
+    if (row.dataset.hasMatches !== '1') return;
+    const btn = row.querySelector('.group-expand');
+    const detail = document.getElementById(row.dataset.group);
+    setExpanded(btn, true);
+    if (detail) detail.hidden = false;
+    detail?.querySelectorAll('tr.pdf-row.has-matches').forEach((pdfRow) => {{
+      const childBtn = pdfRow.querySelector('.child-expand');
+      const childDetail = pdfRow.nextElementSibling;
+      setExpanded(childBtn, true);
+      if (childDetail) childDetail.hidden = false;
+    }});
+  }});
+}});
+document.getElementById('collapse-all').addEventListener('click', () => {{
+  table.querySelectorAll('.expand-btn').forEach((btn) => setExpanded(btn, false));
+  table.querySelectorAll('.group-detail, .child-detail').forEach((row) => row.hidden = true);
+}});
+groupRows.forEach((row) => {{
+  if (row.dataset.hasMatches !== '1') return;
+  const btn = row.querySelector('.group-expand');
+  const detail = document.getElementById(row.dataset.group);
+  setExpanded(btn, true);
+  if (detail) detail.hidden = false;
+}});
+applyFilters();
+</script>
+</body>
+</html>"""
+
+
 def generate_report(payload: dict[str, Any], output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "results.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    rows: list[str] = []
-    total_pdfs = 0
-    matched_pdfs = 0
-    warning_count = 0
-    failed_pdfs = 0
-    for result in payload["results"]:
-        result_pdfs = result.get("pdfs", [])
-        result_matches = sum(bool(pdf.get("matches")) for pdf in result_pdfs)
-        result_failures = sum(pdf.get("status") == "failed" for pdf in result_pdfs) + (1 if result.get("error") else 0)
-        total_pdfs += len(result_pdfs)
-        matched_pdfs += result_matches
-        failed_pdfs += result_failures
-        warning_count += sum(bool(pdf.get("error") or pdf.get("text_status") != "text_extracted") for pdf in result_pdfs)
-        section_class = (" has-matches" if result_matches else " no-matches") + (" has-failures" if result_failures else "")
-        rows.append(f"<section class=\"result{section_class}\"><h2>{html.escape(result['requested_date'])} <span>{html.escape(result['bench']['name'])}</span></h2><p>Status: <b>{html.escape(result['status'])}</b> · {result_matches} matching PDF(s) · {len(result_pdfs)} PDF(s) checked · {result_failures} failure(s)</p>")
-        if result.get("error"):
-            rows.append(f"<p class=error>{html.escape(result['error'])}</p>")
-        for pdf in result.get("pdfs", []):
-            pdf_class = (" has-matches" if pdf.get("matches") else " no-matches") + (" has-failures" if pdf.get("status") == "failed" else "")
-            rows.append(f"<article class=\"pdf{pdf_class}\"><h3><a href=\"{html.escape(pdf['url'])}\">PDF {html.escape(pdf['pdf_id'])}</a></h3><p>{html.escape(pdf['status'])} · {html.escape(pdf['text_status'])}</p>")
-            for match in pdf.get("matches", []):
-                rows.append(f"<p><strong>{html.escape(match['keyword'])}</strong>, page {match['page']}: {html.escape(match['snippet'])}</p>")
-            if pdf.get("error"): rows.append(f"<p class=error>{html.escape(pdf['error'])}</p>")
-            rows.append("</article>")
-        rows.append("</section>")
-    page = """<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>CESTAT keyword report</title><style>
-    :root{font:16px system-ui,sans-serif;color:#17202a;background:#eef3f7}body{max-width:1100px;margin:0 auto;padding:1rem}header{background:#123047;color:#fff;padding:1.5rem;border-radius:10px;margin-bottom:1rem}h1{margin:.1rem 0 .6rem;font-size:1.7rem}h2{margin:0;font-size:1.15rem}h2 span{font-weight:400;color:#536675}section,article{background:#fff;padding:1rem;margin:1rem 0;border:1px solid #d5e0e8;border-radius:8px}section{border-left:5px solid #9aabb7}section.has-matches{border-left-color:#16805c}section.has-failures,article.has-failures{border-left-color:#c2410c;border-color:#f0b58f}article{margin:.7rem 0;background:#f9fbfc}article.has-matches{border-color:#8bd2b6}.toolbar{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;background:#fff;padding:1rem;border:1px solid #d5e0e8;border-radius:8px}.toolbar label{font-weight:650;cursor:pointer}.stats{display:flex;gap:1rem;flex-wrap:wrap;color:#d8edf4}.stat b{color:#fff;font-size:1.25rem}.error{color:#a33;background:#fff0f0;padding:.5rem;border-radius:5px}a{color:#075985;font-weight:650}small{color:#536675}.hidden{display:none!important}</style></head><body><header><h1>CESTAT keyword report</h1><p>""" + html.escape(payload["start_date"]) + " to " + html.escape(payload["end_date"]) + " · Generated " + html.escape(payload["generated_at"]) + "</p><div class=stats><span class=stat><b>""" + str(matched_pdfs) + "</b> matching PDFs</span><span class=stat><b>""" + str(total_pdfs) + "</b> PDFs checked</span><span class=stat><b>""" + str(failed_pdfs) + "</b> failures</span><span class=stat><b>""" + str(warning_count) + "</b> warnings</span></div></header><div class=toolbar><label><input id=matches-only type=checkbox> Show only PDFs with matches (failures stay visible)</label><small id=filter-summary></small></div><p><strong>Keywords:</strong> """ + html.escape(", ".join(payload["keywords"])) + "</p>" + "".join(rows) + "<script>const toggle=document.querySelector('#matches-only');const sections=[...document.querySelectorAll('section.result')];const summary=document.querySelector('#filter-summary');function applyFilter(){const only=toggle.checked;let shown=0;sections.forEach(section=>{const matches=section.classList.contains('has-matches');const failures=section.classList.contains('has-failures');section.classList.toggle('hidden',only&&!matches&&!failures);if(matches||failures)shown+=1;section.querySelectorAll('article.pdf').forEach(pdf=>pdf.classList.toggle('hidden',only&&!pdf.classList.contains('has-matches')&&!pdf.classList.contains('has-failures')))});summary.textContent=only?shown+' result(s) with matches or failures shown':'All date/bench results shown'}toggle.addEventListener('change',applyFilter);applyFilter()</script></body></html>"
-    (output_dir / "index.html").write_text(page, encoding="utf-8")
+    stats = _collect_report_stats(payload)
+    (output_dir / "index.html").write_text(build_html_report(payload, stats), encoding="utf-8")
     (output_dir / "summary.md").write_text(generate_summary_markdown(payload), encoding="utf-8")
 
 
