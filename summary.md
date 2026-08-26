@@ -3,8 +3,6 @@
 **Range:** 27-08-2026 to 28-08-2026
 **Generated:** 2026-08-26T10:37:54+05:30
 
-**Full report:** [https://psocbitm.github.io/cestat-monitor/](https://psocbitm.github.io/cestat-monitor/)
-
 ## Summary
 
 - Matching PDFs: **0**
