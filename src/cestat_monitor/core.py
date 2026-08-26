@@ -11,6 +11,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
@@ -19,6 +20,8 @@ from pypdf import PdfReader
 BASE_URL = "https://cestat.gov.in/viewcauselist"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/139 Safari/537.36 cestat-monitor/0.1"
 DATE_FORMAT = "%d-%m-%Y"
+IST = ZoneInfo("Asia/Kolkata")
+IST_DATETIME_FORMAT = "%d-%m-%Y %H:%M:%S IST"
 REQUEST_PAUSE_SECONDS = 1.0
 TRANSIENT_ERROR_MARKERS = ("timed out", "connection", "429", "500", "502", "503", "504")
 
@@ -60,12 +63,72 @@ class SearchResult:
 
 def parse_start_date(value: str | None) -> date:
     if not value:
-        from zoneinfo import ZoneInfo
-        return datetime.now(ZoneInfo("Asia/Kolkata")).date()
+        return datetime.now(IST).date()
     try:
         return datetime.strptime(value.strip(), DATE_FORMAT).date()
     except ValueError as exc:
         raise MonitorError(f"Invalid start date '{value}'. Use DD-MM-YYYY, for example 01-09-2026.") from exc
+
+
+def parse_report_date(value: str) -> date:
+    return datetime.strptime(value.strip(), DATE_FORMAT).date()
+
+
+def now_ist() -> datetime:
+    return datetime.now(IST)
+
+
+def format_ist_datetime(value: str | datetime | None, assume_ist_if_naive: bool = True) -> str:
+    if not value:
+        return "—"
+    if isinstance(value, datetime):
+        dt = value
+    else:
+        text = value.strip()
+        try:
+            dt = datetime.fromisoformat(text)
+        except ValueError:
+            for fmt in ("%Y-%m-%d %H:%M:%S", "%d-%m-%Y %H:%M:%S"):
+                try:
+                    dt = datetime.strptime(text, fmt)
+                    break
+                except ValueError:
+                    dt = None
+            if dt is None:
+                return text
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=IST if assume_ist_if_naive else None)
+    else:
+        dt = dt.astimezone(IST)
+    return dt.strftime(IST_DATETIME_FORMAT)
+
+
+def sort_report_results(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    ordered = sorted(
+        results,
+        key=lambda result: (parse_report_date(result["requested_date"]), result["bench"]["name"].casefold()),
+    )
+    for result in ordered:
+        result["pdfs"] = sorted(
+            result.get("pdfs", []),
+            key=lambda pdf: (pdf.get("uploaded_at") or "", pdf.get("pdf_id", "")),
+        )
+    return ordered
+
+
+def _friendly_label(value: str) -> str:
+    return {
+        "success_with_links": "Links found",
+        "success_empty": "No PDFs",
+        "checked_no_match": "No match",
+        "matched": "Matched",
+        "failed": "Failed",
+        "text_extracted": "Text OK",
+        "empty_text_possible_scan": "Scan / empty",
+        "not_processed": "Not processed",
+        "regular": "Regular",
+        "supplementary": "Supplementary",
+    }.get(value, value.replace("_", " "))
 
 
 def date_range(start: date, days: int = 7) -> list[date]:
@@ -300,32 +363,39 @@ def _render_pdf_detail_rows(result: dict[str, Any]) -> str:
             row_class += " has-failures"
         match_count = len(pdf.get("matches", []))
         keywords = ", ".join(sorted({m["keyword"] for m in pdf.get("matches", [])}))
+        uploaded = format_ist_datetime(pdf.get("uploaded_at"))
+        status_label = _friendly_label(pdf.get("status", ""))
+        text_label = _friendly_label(pdf.get("text_status", ""))
+        type_label = _friendly_label(pdf.get("result_type", ""))
+        match_cell = f'<span class="count-badge match">{match_count}</span>' if match_count else "—"
         rows.append(
             f'<tr class="{row_class}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}">'
-            f'<td class="col-expand"><button type="button" class="expand-btn child-expand" aria-expanded="false" aria-label="Show match details" {"disabled" if not has_matches else ""}><span class="chev"></span></button></td>'
-            f'<td data-label="PDF"><a class="pdf-link" href="{html.escape(pdf["url"])}" target="_blank" rel="noopener">{html.escape(pdf["pdf_id"])}</a></td>'
-            f'<td data-label="Type">{html.escape(pdf.get("result_type", ""))}</td>'
-            f'<td data-label="Status">{_badge(pdf.get("status", ""), _pdf_status_kind(pdf.get("status", "")))}</td>'
-            f'<td data-label="Text">{_badge(pdf.get("text_status", ""), "muted")}</td>'
-            f'<td data-label="Pages">{pdf.get("pages", 0)}</td>'
-            f'<td data-label="Matches">{match_count if match_count else "—"}</td>'
+            f'<td class="col-expand"><button type="button" class="expand-btn child-expand" aria-expanded="false" aria-label="Show match details" {"disabled" if not has_matches else ""}><span class="chev" aria-hidden="true"></span></button></td>'
+            f'<td data-label="PDF"><a class="pdf-link" href="{html.escape(pdf["url"])}" target="_blank" rel="noopener noreferrer">{html.escape(pdf["pdf_id"])}</a></td>'
+            f'<td data-label="Type"><span class="type-pill">{html.escape(type_label)}</span></td>'
+            f'<td data-label="Uploaded (IST)" class="mono">{html.escape(uploaded)}</td>'
+            f'<td data-label="Status">{_badge(status_label, _pdf_status_kind(pdf.get("status", "")))}</td>'
+            f'<td data-label="Text">{_badge(text_label, "muted")}</td>'
+            f'<td data-label="Pages" class="num">{pdf.get("pages", 0)}</td>'
+            f'<td data-label="Matches" class="num">{match_cell}</td>'
             f'<td data-label="Keywords" class="kw-cell">{html.escape(keywords) if keywords else "—"}</td>'
             "</tr>"
         )
         if has_matches:
             match_items = "".join(
-                f'<li><strong>{html.escape(m["keyword"])}</strong> · page {m["page"]}<p class="snippet">{html.escape(m.get("snippet", ""))}</p></li>'
+                f'<li><span class="match-kw">{html.escape(m["keyword"])}</span><span class="match-page">page {m["page"]}</span>'
+                f'<p class="snippet">{html.escape(m.get("snippet", ""))}</p></li>'
                 for m in pdf.get("matches", [])
             )
             rows.append(
                 f'<tr class="detail-row child-detail" hidden>'
-                f'<td colspan="8"><div class="detail-panel"><h4>Matches in PDF {html.escape(pdf["pdf_id"])}</h4><ul class="match-list">{match_items}</ul></div></td>'
+                f'<td colspan="9"><div class="detail-panel match-panel"><h4>Matches · PDF {html.escape(pdf["pdf_id"])}</h4><ul class="match-list">{match_items}</ul></div></td>'
                 "</tr>"
             )
         if pdf.get("error"):
             rows.append(
                 f'<tr class="detail-row error-detail" data-has-failures="1">'
-                f'<td colspan="8"><div class="detail-panel error-panel">{html.escape(pdf["error"])}</div></td>'
+                f'<td colspan="9"><div class="detail-panel error-panel">{html.escape(pdf["error"])}</div></td>'
                 "</tr>"
             )
     return "".join(rows)
@@ -347,15 +417,19 @@ def _render_search_group_rows(payload: dict[str, Any]) -> str:
         if has_failures:
             row_class += " has-failures"
         group_id = f"group-{index}"
+        sort_date = parse_report_date(result["requested_date"]).isoformat()
+        search_label = _friendly_label(result.get("status", ""))
+        match_cell = f'<span class="count-badge match">{result_matches}</span>' if result_matches else '<span class="count-zero">0</span>'
+        fail_cell = f'<span class="count-badge fail">{result_failures}</span>' if result_failures else '<span class="count-zero">0</span>'
         rows.append(
-            f'<tr class="{row_class}" data-group="{group_id}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}" data-date="{html.escape(result["requested_date"])}" data-bench="{html.escape(result["bench"]["name"])}">'
-            f'<td class="col-expand"><button type="button" class="expand-btn group-expand" aria-expanded="false" aria-controls="{group_id}" aria-label="Expand {html.escape(result["requested_date"])} {html.escape(result["bench"]["name"])}"><span class="chev"></span></button></td>'
-            f'<td data-label="Date"><span class="date-pill">{html.escape(result["requested_date"])}</span></td>'
-            f'<td data-label="Bench"><strong>{html.escape(result["bench"]["name"])}</strong></td>'
-            f'<td data-label="Search">{_badge(result.get("status", ""), _search_status_kind(result.get("status", "")))}</td>'
-            f'<td data-label="PDFs">{len(pdfs)}</td>'
-            f'<td data-label="Matches">{result_matches}</td>'
-            f'<td data-label="Failures">{result_failures}</td>'
+            f'<tr class="{row_class}" data-group="{group_id}" data-sort-date="{sort_date}" data-has-matches="{1 if has_matches else 0}" data-has-failures="{1 if has_failures else 0}" data-date="{html.escape(result["requested_date"])}" data-bench="{html.escape(result["bench"]["name"])}">'
+            f'<td class="col-expand"><button type="button" class="expand-btn group-expand" aria-expanded="false" aria-controls="{group_id}" aria-label="Expand {html.escape(result["requested_date"])} {html.escape(result["bench"]["name"])}"><span class="chev" aria-hidden="true"></span></button></td>'
+            f'<td data-label="Date (IST)" class="date-cell"><time datetime="{sort_date}">{html.escape(result["requested_date"])}</time></td>'
+            f'<td data-label="Bench"><span class="bench-name">{html.escape(result["bench"]["name"])}</span></td>'
+            f'<td data-label="Search">{_badge(search_label, _search_status_kind(result.get("status", "")))}</td>'
+            f'<td data-label="PDFs" class="num">{len(pdfs)}</td>'
+            f'<td data-label="Matches" class="num">{match_cell}</td>'
+            f'<td data-label="Failures" class="num">{fail_cell}</td>'
             "</tr>"
         )
         detail_class = "group-detail"
@@ -366,11 +440,11 @@ def _render_search_group_rows(payload: dict[str, Any]) -> str:
             f'<td colspan="7"><div class="nested-wrap">'
             + (f'<div class="detail-panel error-panel">{html.escape(result["error"])}</div>' if result.get("error") else "")
             + (
-                '<table class="nested-table responsive-table"><thead><tr>'
-                '<th class="col-expand"></th><th>PDF</th><th>Type</th><th>Status</th><th>Text</th><th>Pages</th><th>Matches</th><th>Keywords</th>'
+                '<div class="nested-scroll"><table class="nested-table responsive-table"><thead><tr>'
+                '<th class="col-expand" aria-hidden="true"></th><th>PDF</th><th>Type</th><th>Uploaded (IST)</th><th>Status</th><th>Text</th><th>Pages</th><th>Matches</th><th>Keywords</th>'
                 "</tr></thead><tbody>"
                 + _render_pdf_detail_rows(result)
-                + "</tbody></table>"
+                + "</tbody></table></div>"
                 if pdfs
                 else '<p class="empty-note">No PDFs returned for this date and bench.</p>'
             )
@@ -380,262 +454,17 @@ def _render_search_group_rows(payload: dict[str, Any]) -> str:
 
 
 def build_html_report(payload: dict[str, Any], stats: dict[str, int]) -> str:
-    keywords = html.escape(", ".join(payload["keywords"]))
-    table_body = _render_search_group_rows(payload)
-    return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CESTAT keyword report</title>
-<style>
-:root {{
-  --bg: #eef3f7; --surface: #fff; --ink: #17202a; --muted: #536675;
-  --brand: #123047; --brand-soft: #d8edf4; --line: #d5e0e8;
-  --ok: #16805c; --ok-bg: #e8f6ef; --match: #0b6e99; --match-bg: #e7f4fb;
-  --fail: #c2410c; --fail-bg: #fff1e8; --shadow: 0 10px 30px rgba(18,48,71,.08);
-  font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: var(--ink); background: var(--bg);
-}}
-* {{ box-sizing: border-box }}
-body {{ margin: 0; padding: 1rem; }}
-.shell {{ max-width: 1200px; margin: 0 auto; }}
-.hero {{
-  background: linear-gradient(135deg, #123047 0%, #1a4a68 100%); color: #fff;
-  border-radius: 16px; padding: 1.4rem 1.5rem; box-shadow: var(--shadow); margin-bottom: 1rem;
-}}
-.hero h1 {{ margin: 0 0 .35rem; font-size: 1.65rem }}
-.hero p {{ margin: 0; color: var(--brand-soft) }}
-.stats {{ display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem }}
-.stat {{
-  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18);
-  border-radius: 12px; padding: .55rem .85rem; min-width: 110px;
-}}
-.stat b {{ display: block; font-size: 1.35rem }}
-.controls {{
-  display: flex; flex-wrap: wrap; gap: .75rem; align-items: center;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-  padding: .85rem 1rem; margin-bottom: 1rem; box-shadow: var(--shadow);
-}}
-.controls label {{ display: flex; align-items: center; gap: .45rem; font-weight: 600 }}
-.controls input[type=search] {{
-  flex: 1 1 220px; min-width: 180px; padding: .55rem .7rem; border: 1px solid var(--line);
-  border-radius: 8px; font: inherit;
-}}
-.btn {{
-  border: 1px solid var(--line); background: #f7fafc; color: var(--ink);
-  border-radius: 8px; padding: .5rem .75rem; font: inherit; font-weight: 600; cursor: pointer;
-}}
-.btn:hover {{ background: #edf3f8 }}
-.meta {{ margin: .25rem 0 1rem; color: var(--muted); font-size: .95rem }}
-.table-card {{
-  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-  overflow: hidden; box-shadow: var(--shadow);
-}}
-.responsive-table {{ width: 100%; border-collapse: collapse; font-size: .95rem }}
-.responsive-table thead th {{
-  text-align: left; background: #f4f8fb; color: #314556; font-size: .78rem;
-  letter-spacing: .04em; text-transform: uppercase; padding: .7rem .65rem; border-bottom: 1px solid var(--line);
-}}
-.responsive-table td {{ padding: .72rem .65rem; border-bottom: 1px solid #edf2f6; vertical-align: top }}
-.responsive-table tbody tr:last-child td {{ border-bottom: none }}
-.group-row.has-matches td {{ background: linear-gradient(90deg, var(--match-bg), transparent 55%) }}
-.group-row.has-failures td {{ background: linear-gradient(90deg, var(--fail-bg), transparent 55%) }}
-.pdf-row.has-matches td {{ background: #f3fbff }}
-.pdf-row.has-failures td {{ background: #fff8f3 }}
-.col-expand {{ width: 42px; text-align: center }}
-.expand-btn {{
-  width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 8px;
-  background: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
-}}
-.expand-btn:disabled {{ opacity: .35; cursor: default }}
-.expand-btn[aria-expanded="true"] .chev {{ transform: rotate(90deg) }}
-.chev {{
-  width: 8px; height: 8px; border-right: 2px solid #314556; border-bottom: 2px solid #314556;
-  transform: rotate(-45deg); transition: transform .18s ease;
-}}
-.badge {{
-  display: inline-block; padding: .18rem .5rem; border-radius: 999px; font-size: .76rem;
-  font-weight: 700; letter-spacing: .02em; white-space: nowrap;
-}}
-.badge-ok {{ background: var(--ok-bg); color: var(--ok) }}
-.badge-match {{ background: var(--match-bg); color: var(--match) }}
-.badge-fail {{ background: var(--fail-bg); color: var(--fail) }}
-.badge-muted {{ background: #f1f5f9; color: var(--muted) }}
-.date-pill {{ font-weight: 700 }}
-.pdf-link {{ color: #075985; font-weight: 700; text-decoration: none }}
-.pdf-link:hover {{ text-decoration: underline }}
-.nested-wrap {{ padding: .35rem .35rem .8rem .35rem }}
-.nested-table {{ border: 1px solid var(--line); border-radius: 10px; overflow: hidden }}
-.detail-panel {{ padding: .75rem .9rem; margin: .5rem .35rem }}
-.error-panel {{
-  background: var(--fail-bg); color: #8a2f0d; border: 1px solid #f0b58f; border-radius: 10px;
-  font-size: .9rem; line-height: 1.45;
-}}
-.match-list {{ margin: 0; padding-left: 1.1rem }}
-.match-list li {{ margin: .45rem 0 }}
-.snippet {{
-  margin: .25rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.45;
-  word-break: break-word;
-}}
-.kw-cell {{ max-width: 220px; word-break: break-word }}
-.empty-note {{ color: var(--muted); padding: .5rem .75rem }}
-.filter-hidden {{ display: none !important }}
-#filter-summary {{ color: var(--muted); font-size: .9rem }}
-@media (max-width: 900px) {{
-  .responsive-table thead {{ display: none }}
-  .responsive-table tr.group-row, .responsive-table tr.pdf-row {{
-    display: block; border-bottom: 1px solid var(--line); padding: .35rem 0;
-  }}
-  .responsive-table tr.group-row td, .responsive-table tr.pdf-row td {{
-    display: grid; grid-template-columns: minmax(90px, 34%) 1fr; gap: .35rem .65rem;
-    border: none; padding: .35rem .75rem;
-  }}
-  .responsive-table td::before {{
-    content: attr(data-label); font-size: .72rem; text-transform: uppercase;
-    letter-spacing: .04em; color: var(--muted); font-weight: 700;
-  }}
-  .responsive-table td.col-expand {{ display: flex; align-items: center }}
-  .responsive-table td.col-expand::before {{ content: none }}
-  .group-detail td, .detail-row td {{ display: block; padding: 0 }}
-  .group-detail td::before, .detail-row td::before {{ content: none }}
-  .nested-table tr.pdf-row {{ border-left: 3px solid #dbe7f0; margin-left: .5rem }}
-}}
-</style>
-</head>
-<body>
-<div class="shell">
-  <header class="hero">
-    <h1>CESTAT keyword report</h1>
-    <p>{html.escape(payload["start_date"])} to {html.escape(payload["end_date"])} · Generated {html.escape(payload["generated_at"])}</p>
-    <div class="stats">
-      <div class="stat"><b>{stats["matched_pdfs"]}</b> matching PDFs</div>
-      <div class="stat"><b>{stats["total_pdfs"]}</b> PDFs checked</div>
-      <div class="stat"><b>{stats["failed_pdfs"] + stats["failed_searches"]}</b> failures</div>
-      <div class="stat"><b>{stats["warning_count"]}</b> warnings</div>
-    </div>
-  </header>
-  <div class="controls">
-    <label><input type="checkbox" id="matches-only"> Matches & failures only</label>
-    <input type="search" id="table-search" placeholder="Filter by date, bench, PDF, keyword…" autocomplete="off">
-    <button type="button" class="btn" id="expand-matches">Expand matches</button>
-    <button type="button" class="btn" id="collapse-all">Collapse all</button>
-    <span id="filter-summary"></span>
-  </div>
-  <p class="meta"><strong>Keywords:</strong> {keywords}</p>
-  <div class="table-card">
-    <table class="responsive-table" id="report-table">
-      <thead>
-        <tr>
-          <th class="col-expand"></th>
-          <th>Date</th>
-          <th>Bench</th>
-          <th>Search</th>
-          <th>PDFs</th>
-          <th>Matches</th>
-          <th>Failures</th>
-        </tr>
-      </thead>
-      <tbody>{table_body}</tbody>
-    </table>
-  </div>
-</div>
-<script>
-const table = document.getElementById('report-table');
-const matchesOnly = document.getElementById('matches-only');
-const searchInput = document.getElementById('table-search');
-const summary = document.getElementById('filter-summary');
-const groupRows = [...table.querySelectorAll('tr.group-row')];
+    from .report_page import assemble_html_report
 
-function setExpanded(btn, open) {{
-  if (!btn || btn.disabled) return;
-  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-}}
-function toggleGroup(btn) {{
-  const row = btn.closest('tr.group-row');
-  const detail = document.getElementById(row.dataset.group);
-  const open = btn.getAttribute('aria-expanded') !== 'true';
-  setExpanded(btn, open);
-  if (detail) detail.hidden = !open;
-}}
-function togglePdf(btn) {{
-  const row = btn.closest('tr.pdf-row');
-  const detail = row.nextElementSibling;
-  const open = btn.getAttribute('aria-expanded') !== 'true';
-  setExpanded(btn, open);
-  if (detail && detail.classList.contains('child-detail')) detail.hidden = !open;
-}}
-table.addEventListener('click', (e) => {{
-  const btn = e.target.closest('.expand-btn');
-  if (!btn) return;
-  if (btn.classList.contains('group-expand')) toggleGroup(btn);
-  if (btn.classList.contains('child-expand')) togglePdf(btn);
-}});
-function applyFilters() {{
-  const only = matchesOnly.checked;
-  const q = searchInput.value.trim().toLowerCase();
-  let shown = 0;
-  groupRows.forEach((row) => {{
-    const detail = document.getElementById(row.dataset.group);
-    const hasMatches = row.dataset.hasMatches === '1';
-    const hasFailures = row.dataset.hasFailures === '1';
-    const text = (row.dataset.date + ' ' + row.dataset.bench + ' ' + row.textContent).toLowerCase();
-    const matchFilter = !only || hasMatches || hasFailures;
-    const searchFilter = !q || text.includes(q);
-    const visible = matchFilter && searchFilter;
-    row.classList.toggle('filter-hidden', !visible);
-    if (detail) detail.classList.toggle('filter-hidden', !visible);
-    if (visible) shown += 1;
-    if (detail && !visible) {{
-      detail.hidden = true;
-      const btn = row.querySelector('.group-expand');
-      if (btn) setExpanded(btn, false);
-    }}
-    detail?.querySelectorAll('tr.pdf-row').forEach((pdfRow) => {{
-      const pdfText = pdfRow.textContent.toLowerCase();
-      const pdfVisible = visible && (!q || pdfText.includes(q) || text.includes(q));
-      pdfRow.classList.toggle('filter-hidden', !pdfVisible);
-      const childDetail = pdfRow.nextElementSibling;
-      if (childDetail) childDetail.classList.toggle('filter-hidden', !pdfVisible);
-    }});
-  }});
-  summary.textContent = `${{shown}} date/bench group(s) shown`;
-}}
-matchesOnly.addEventListener('change', applyFilters);
-searchInput.addEventListener('input', applyFilters);
-document.getElementById('expand-matches').addEventListener('click', () => {{
-  groupRows.forEach((row) => {{
-    if (row.dataset.hasMatches !== '1') return;
-    const btn = row.querySelector('.group-expand');
-    const detail = document.getElementById(row.dataset.group);
-    setExpanded(btn, true);
-    if (detail) detail.hidden = false;
-    detail?.querySelectorAll('tr.pdf-row.has-matches').forEach((pdfRow) => {{
-      const childBtn = pdfRow.querySelector('.child-expand');
-      const childDetail = pdfRow.nextElementSibling;
-      setExpanded(childBtn, true);
-      if (childDetail) childDetail.hidden = false;
-    }});
-  }});
-}});
-document.getElementById('collapse-all').addEventListener('click', () => {{
-  table.querySelectorAll('.expand-btn').forEach((btn) => setExpanded(btn, false));
-  table.querySelectorAll('.group-detail, .child-detail').forEach((row) => row.hidden = true);
-}});
-groupRows.forEach((row) => {{
-  if (row.dataset.hasMatches !== '1') return;
-  const btn = row.querySelector('.group-expand');
-  const detail = document.getElementById(row.dataset.group);
-  setExpanded(btn, true);
-  if (detail) detail.hidden = false;
-}});
-applyFilters();
-</script>
-</body>
-</html>"""
+    generated_at_ist = format_ist_datetime(payload.get("generated_at"))
+    return assemble_html_report(payload, stats, _render_search_group_rows(payload), generated_at_ist)
+
 
 
 def generate_report(payload: dict[str, Any], output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    payload = dict(payload)
+    payload["results"] = sort_report_results(list(payload["results"]))
     (output_dir / "results.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
     stats = _collect_report_stats(payload)
     (output_dir / "index.html").write_text(build_html_report(payload, stats), encoding="utf-8")
@@ -647,7 +476,7 @@ def generate_summary_markdown(payload: dict[str, Any], pages_url: str = "") -> s
         "# CESTAT keyword report",
         "",
         f"**Range:** {payload['start_date']} to {payload['end_date']}",
-        f"**Generated:** {payload['generated_at']}",
+        f"**Generated:** {format_ist_datetime(payload['generated_at'])}",
         "",
     ]
     if pages_url:
@@ -723,7 +552,7 @@ def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: in
         reset_pdf_for_retry(pdf)
         extract_and_match(pdf, keywords, exclusions, client)
         time.sleep(REQUEST_PAUSE_SECONDS)
-    results.sort(key=lambda item: (item.requested_date, item.bench.name))
-    payload = {"generated_at": datetime.now().astimezone().isoformat(timespec="seconds"), "start_date": start.strftime(DATE_FORMAT), "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT), "days": days, "keywords": keywords, "excluded_phrases": exclusions, "benches": [asdict(bench) for bench in benches], "results": [asdict(result) for result in results]}
+    results.sort(key=lambda item: (parse_report_date(item.requested_date), item.bench.name.casefold()))
+    payload = {"generated_at": now_ist().isoformat(timespec="seconds"), "start_date": start.strftime(DATE_FORMAT), "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT), "days": days, "keywords": keywords, "excluded_phrases": exclusions, "benches": [asdict(bench) for bench in benches], "results": [asdict(result) for result in results]}
     generate_report(payload, output_dir)
     return payload
