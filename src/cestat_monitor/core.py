@@ -6,7 +6,6 @@ import logging
 import random
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -20,6 +19,8 @@ from pypdf import PdfReader
 BASE_URL = "https://cestat.gov.in/viewcauselist"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/139 Safari/537.36 cestat-monitor/0.1"
 DATE_FORMAT = "%d-%m-%Y"
+REQUEST_PAUSE_SECONDS = 1.0
+TRANSIENT_ERROR_MARKERS = ("timed out", "connection", "429", "500", "502", "503", "504")
 
 
 class MonitorError(RuntimeError):
@@ -108,7 +109,7 @@ def load_config(path: Path, override: str = "") -> tuple[list[str], list[str]]:
 
 
 class CestatClient:
-    def __init__(self, timeout: tuple[float, float] = (15, 45), attempts: int = 3, backoff: float = 1.5):
+    def __init__(self, timeout: tuple[float, float] = (20, 60), attempts: int = 4, backoff: float = 1.5):
         self.timeout = timeout
         self.attempts = attempts
         self.backoff = backoff
@@ -222,12 +223,25 @@ def extract_and_match(record: PdfRecord, keywords: list[str], exclusions: list[s
     return record
 
 
+def is_transient_error(message: str) -> bool:
+    error = normalize(message)
+    return any(marker in error for marker in TRANSIENT_ERROR_MARKERS)
+
+
 def should_retry_pdf(record: PdfRecord) -> bool:
-    error = normalize(record.error)
-    return record.status == "failed" and any(
-        marker in error
-        for marker in ("timed out", "connection", "429", "500", "502", "503", "504")
-    )
+    return record.status == "failed" and is_transient_error(record.error)
+
+
+def should_retry_search(result: SearchResult) -> bool:
+    return result.status == "failed" and is_transient_error(result.error)
+
+
+def reset_pdf_for_retry(record: PdfRecord) -> None:
+    record.status = "found"
+    record.error = ""
+    record.pages = 0
+    record.text_status = "not_processed"
+    record.matches.clear()
 
 
 def generate_report(payload: dict[str, Any], output_dir: Path) -> None:
@@ -270,25 +284,29 @@ def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: in
         benches = benches[:bench_limit]
     tasks = [(day, bench) for day in date_range(start, days) for bench in benches]
     results: list[SearchResult] = []
-    with ThreadPoolExecutor(max_workers=min(3, max(1, len(tasks)))) as pool:
-        futures = {pool.submit(client.search, day, bench): (day, bench) for day, bench in tasks}
-        for future in as_completed(futures):
-            results.append(future.result())
+    for day, bench in tasks:
+        logging.info("Searching %s %s", day.strftime(DATE_FORMAT), bench.name)
+        results.append(client.search(day, bench))
+        time.sleep(REQUEST_PAUSE_SECONDS)
+    retryable_searches = [(index, day, bench) for index, (day, bench) in enumerate(tasks) if should_retry_search(results[index])]
+    if retryable_searches:
+        logging.info("Retrying %d transiently failed search(es) sequentially", len(retryable_searches))
+    for index, day, bench in retryable_searches:
+        time.sleep(REQUEST_PAUSE_SECONDS * 2)
+        results[index] = client.search(day, bench)
+        time.sleep(REQUEST_PAUSE_SECONDS)
     all_pdfs = [pdf for result in results for pdf in result.pdfs]
-    with ThreadPoolExecutor(max_workers=min(2, max(1, len(all_pdfs)))) as pool:
-        futures = [pool.submit(extract_and_match, pdf, keywords, exclusions, client) for pdf in all_pdfs]
-        for future in as_completed(futures):
-            future.result()
-    retryable = [pdf for pdf in all_pdfs if should_retry_pdf(pdf)]
-    if retryable:
-        logging.info("Retrying %d transiently failed PDF(s) sequentially", len(retryable))
-    for pdf in retryable:
-        pdf.status = "found"
-        pdf.error = ""
-        pdf.pages = 0
-        pdf.text_status = "not_processed"
-        pdf.matches.clear()
+    for pdf in all_pdfs:
         extract_and_match(pdf, keywords, exclusions, client)
+        time.sleep(REQUEST_PAUSE_SECONDS)
+    retryable_pdfs = [pdf for pdf in all_pdfs if should_retry_pdf(pdf)]
+    if retryable_pdfs:
+        logging.info("Retrying %d transiently failed PDF(s) sequentially", len(retryable_pdfs))
+    for pdf in retryable_pdfs:
+        time.sleep(REQUEST_PAUSE_SECONDS * 2)
+        reset_pdf_for_retry(pdf)
+        extract_and_match(pdf, keywords, exclusions, client)
+        time.sleep(REQUEST_PAUSE_SECONDS)
     results.sort(key=lambda item: (item.requested_date, item.bench.name))
     payload = {"generated_at": datetime.now().astimezone().isoformat(timespec="seconds"), "start_date": start.strftime(DATE_FORMAT), "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT), "days": days, "keywords": keywords, "excluded_phrases": exclusions, "benches": [asdict(bench) for bench in benches], "results": [asdict(result) for result in results]}
     generate_report(payload, output_dir)

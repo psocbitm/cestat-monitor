@@ -1,4 +1,4 @@
-"""Controlled live smoke run: exactly seven dates, with two benches selected."""
+"""Controlled live smoke run: two dates and the first two discovered benches."""
 
 from __future__ import annotations
 

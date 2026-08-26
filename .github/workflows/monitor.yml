@@ -24,7 +24,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 120
     steps:
       - name: Check out code
         uses: actions/checkout@v4

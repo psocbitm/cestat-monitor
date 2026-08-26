@@ -27,6 +27,25 @@ The live site is server-rendered HTML, so the client parses the form and result 
 
 The workflow runs at 5:00 AM IST (`30 23 * * *` UTC) and can also be started manually from **Actions -> CESTAT keyword monitor -> Run workflow**. Manual inputs are an optional `DD-MM-YYYY` start date and optional multiline keywords. No search input creates a commit.
 
-Because this repository is private, the generated report is uploaded as a private workflow artifact. GitHub Pages is not used as a privacy boundary. Download an artifact from the workflow run, or use `gh run download` after authentication.
+Because this repository is private, the generated report is uploaded as a private workflow artifact. GitHub Pages is not used as a privacy boundary.
 
-The workflow uses two parallel PDF workers, followed by a sequential second pass for transient PDF failures only. A successful empty result means no causelist or no matching PDF; request, CAPTCHA, malformed-response, download, and extraction failures are reported separately.
+### Viewing workflow runs and reports
+
+1. Open the repository in GitHub (you must be signed in and have access to the private repo):
+   - **https://github.com/psocbitm/cestat-monitor**
+2. Click the **Actions** tab at the top.
+3. Click **CESTAT keyword monitor** in the left sidebar to see all runs.
+4. Open a run to see step status. Green means the monitor finished with no failed searches.
+5. Scroll to **Artifacts** at the bottom of a completed run and download `cestat-report-<run-id>`.
+6. Unzip the artifact. Open `output/index.html` in your browser for the report, or read `output/results.json`.
+
+From the terminal (after `gh auth login`):
+
+```sh
+gh run list --repo psocbitm/cestat-monitor
+gh run view <run-id> --repo psocbitm/cestat-monitor
+gh run download <run-id> --repo psocbitm/cestat-monitor
+open cestat-report-*/output/index.html
+```
+
+The workflow uses sequential requests (no parallelism), longer timeouts, and a second sequential pass for transient search and PDF failures. A successful empty result means no causelist or no matching PDF; request, CAPTCHA, malformed-response, download, and extraction failures are reported separately.
