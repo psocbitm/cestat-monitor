@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 28-08-2026 to 03-09-2026
-**Generated:** 28-08-2026 06:16:15 IST
+**Generated:** 28-08-2026 19:50:00 IST
 
 ## Summary
 
-- Matching PDFs: **18**
-- PDFs checked: **106**
+- Matching PDFs: **19**
+- PDFs checked: **133**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -26,6 +26,8 @@
   page 3: lied chemicals dr/vinay s sejpal vinaysejpal@gmail.com 32 st/12270/2019 cgst & central excise surat shree gurjari industries ltd dr/ip 33 e/10309/2020 commissio
 - **01-09-2026 BANGALORE** · PDF [109552](https://cestat.gov.in/openfilec/129525/109552) · Shree
   page 1: angalore service tax- i hiregange & associates (hyd)/dr venkataprasad@hiregange.com 4 st/20471/2014 shree minerals commissioner of central excise and service ta
+- **01-09-2026 MUMBAI** · PDF [109681](https://cestat.gov.in/openfilec/127482/109681) · Shree
+  page 1: v.in bhavake and associates team.bhavakeandassociates@gmail.co m pd 5 appeal diary no: 915672024 st shree sairam construction abhijitberde@rediffmail.co m commi
 - **02-09-2026 BANGALORE** · PDF [109553](https://cestat.gov.in/openfilec/129525/109553) · Acc
   page 4: aum g.sampath & s. raghu/dr raghuhanjer@gmail.com 33 c/20602/2022 commissioner of customs airport & acc, bangalore aeronautical development establishment, dr/ip
 - **02-09-2026 CHENNAI** · PDF [109618](https://cestat.gov.in/openfilec/133568/109618) · Orient
@@ -51,4 +53,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33129937428
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33178024497
