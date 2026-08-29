@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 28-08-2026 to 03-09-2026
-**Generated:** 28-08-2026 21:23:03 IST
+**Range:** 29-08-2026 to 04-09-2026
+**Generated:** 29-08-2026 05:50:13 IST
 
 ## Summary
 
 - Matching PDFs: **19**
-- PDFs checked: **133**
+- PDFs checked: **116**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **28-08-2026 AHMEDABAD** · PDF [109299](https://cestat.gov.in/openfilec/124438/109299) · Shree
-  page 1:  2 1 c/10783/2025 jai jagdish ship breakers pvt. ltd customs (p) jamnagar ip/dr 19 2 2 c/11011/2025 shree sai baba ship breaking co customs (p) jamnagar ip/dr 2
 - **31-08-2026 DELHI** · PDF [109578](https://cestat.gov.in/openfilec/107079/109578) · Shree
   page 1: ical) sr. no. (defect diary no.) case type petitioner. respondent. advocate remarks 1. 51015/2025 c shree ganesh enterprises commissioner of customs-indore balr
 - **31-08-2026 HYDERABAD** · PDF [109634](https://cestat.gov.in/openfilec/136507/109634) · A C C, GMR
@@ -50,7 +48,9 @@
   page 1:  computers pvt ltd cce nasik- ii shailesh p. sheth/dr shailesh.sheth@spslegal.co.in 4 st/85988/2017 ambuja cements ltd commissioner ce & st(ltu) mumbai trilegal
 - **03-09-2026 MUMBAI** · PDF [109641](https://cestat.gov.in/openfilec/127482/109641) · Shree
   page 2: e division bench matters causelist er of central goods and services tax cbd belapur 13 e/85037/2018 shree pandurang ssk ltd commisioner ,central excise and serv
+- **04-09-2026 BANGALORE** · PDF [109555](https://cestat.gov.in/openfilec/129525/109555) · Acc
+  page 4: rm resolve law office/dr firmresolvellp@gmail.com 32 c/20280/2022 commissioner of customs airport & acc, bangalore bharat electronics ltd dr/ip 33 e/20689/2022 
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33185699252
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33222390399
