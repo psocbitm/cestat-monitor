@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:25:20+05:30",
+  "generated_at": "2026-09-02T13:45:03+05:30",
   "start_date": "02-09-2026",
   "end_date": "08-09-2026",
   "days": 7,
@@ -106,6 +106,34 @@
           "url": "https://cestat.gov.in/openfilec/124438/109756",
           "result_type": "regular",
           "uploaded_at": "2026-09-01 17:16:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "02-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109772",
+          "url": "https://cestat.gov.in/openfilec/124438/109772",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 12:01:00",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "02-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109773",
+          "url": "https://cestat.gov.in/openfilec/124438/109773",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 12:01:16",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -232,6 +260,34 @@
           "url": "https://cestat.gov.in/openfilec/129525/109562",
           "result_type": "regular",
           "uploaded_at": "2026-08-27 14:45:13",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "02-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109766",
+          "url": "https://cestat.gov.in/openfilec/129525/109766",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 10:20:15",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "02-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109767",
+          "url": "https://cestat.gov.in/openfilec/129525/109767",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 10:20:47",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -424,6 +480,20 @@
               "snippet": "ype petitioner. respondent. advocate remarks 1. st/cod /50027/2026 in appeal diary no.55250/2024 st shree shyam infrastructure and developers commissioner of central excise & cgst- raipur j.k.gupta tax lit"
             }
           ]
+        },
+        {
+          "date": "02-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109765",
+          "url": "https://cestat.gov.in/openfilec/107079/109765",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 10:09:25",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -699,6 +769,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "03-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109771",
+          "url": "https://cestat.gov.in/openfilec/124438/109771",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-02 12:00:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
