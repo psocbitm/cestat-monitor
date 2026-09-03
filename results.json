@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T13:53:07+05:30",
+  "generated_at": "2026-09-03T18:24:28+05:30",
   "start_date": "03-09-2026",
   "end_date": "09-09-2026",
   "days": 7,
@@ -912,6 +912,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "04-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109945",
+          "url": "https://cestat.gov.in/openfilec/133568/109945",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:53:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -932,8 +946,23 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "04-09-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "109905",
+          "url": "https://cestat.gov.in/openfilec/136507/109905",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:44:03",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1047,6 +1076,20 @@
           "url": "https://cestat.gov.in/openfilec/127482/109684",
           "result_type": "regular",
           "uploaded_at": "2026-08-28 15:02:16",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "04-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109847",
+          "url": "https://cestat.gov.in/openfilec/127482/109847",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:55:38",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1285,6 +1328,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109836",
+          "url": "https://cestat.gov.in/openfilec/124438/109836",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:58:40",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1295,8 +1352,51 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109933",
+          "url": "https://cestat.gov.in/openfilec/109120/109933",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:45:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109938",
+          "url": "https://cestat.gov.in/openfilec/109120/109938",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:46:47",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109946",
+          "url": "https://cestat.gov.in/openfilec/109120/109946",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:54:26",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1305,8 +1405,37 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109868",
+          "url": "https://cestat.gov.in/openfilec/129525/109868",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:03:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109916",
+          "url": "https://cestat.gov.in/openfilec/129525/109916",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:28:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1325,8 +1454,51 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109844",
+          "url": "https://cestat.gov.in/openfilec/133568/109844",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:36:24",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109902",
+          "url": "https://cestat.gov.in/openfilec/133568/109902",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:43:12",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109918",
+          "url": "https://cestat.gov.in/openfilec/133568/109918",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:35:32",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1378,6 +1550,107 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109848",
+          "url": "https://cestat.gov.in/openfilec/107079/109848",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:57:12",
+          "status": "matched",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "ner of customs preventive- jaipur jitin singhal adv./dr jitin.singhal@sagelawfirm.in 3 c/50015/2024 shree rishabhdev marble and mineral p ltd commissioner of customs preventive- jaipur jitin singhal adv./d"
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "ner of customs preventive- jaipur jitin singhal adv./dr jitin.singhal@sagelawfirm.in 4 c/50016/2024 shree rishabhdev marble and mineral p ltd commissioner of customs preventive- jaipur jitin singhal adv./d"
+            }
+          ]
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109854",
+          "url": "https://cestat.gov.in/openfilec/107079/109854",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 15:36:42",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109859",
+          "url": "https://cestat.gov.in/openfilec/107079/109859",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 15:37:49",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109884",
+          "url": "https://cestat.gov.in/openfilec/107079/109884",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:23:07",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109886",
+          "url": "https://cestat.gov.in/openfilec/107079/109886",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:25:41",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 5,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109896",
+          "url": "https://cestat.gov.in/openfilec/107079/109896",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:35:01",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": ") sl no. appeal no. appellant respondent representative remarks misc. matters 1 c/eh/50622/2026 m/s shree gold art pvt. ltd. principal commissioner of customs (acc import)- new delhi dmd advocates/dr selec"
+            }
+          ]
         }
       ],
       "error": ""
@@ -1388,8 +1661,23 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "109898",
+          "url": "https://cestat.gov.in/openfilec/136507/109898",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:40:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1398,8 +1686,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "109923",
+          "url": "https://cestat.gov.in/openfilec/119315/109923",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:39:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1408,8 +1711,95 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109873",
+          "url": "https://cestat.gov.in/openfilec/127482/109873",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:14:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109878",
+          "url": "https://cestat.gov.in/openfilec/127482/109878",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:16:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109885",
+          "url": "https://cestat.gov.in/openfilec/127482/109885",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:24:26",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109910",
+          "url": "https://cestat.gov.in/openfilec/127482/109910",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:01:54",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "ltd cc nhava sheva m.h.patil/dr cenexservices@rediffmail.com 10 c/86354/2015 abdul majid ansari cc (acc & export) mumbai b j raichandani, advocate/ip ubrlegal@yahoo.in"
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "icatio n-mumbai devraj kansara/dr devraj.email@gmail.com c/87334/2025 regular matters 5 c/1183/2008 shree ram urban insfrastructure ltd. commissione r of customs (import) mumbai economic laws practices/dr "
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "missione r of customs (import) mumbai economic laws practices/dr litigation@elp-in.com 6 c/244/2009 shree ram urban infrastructure ltd commissione r of customs (import) mumbai economic laws practices/dr li"
+            }
+          ]
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109928",
+          "url": "https://cestat.gov.in/openfilec/127482/109928",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:44:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1463,8 +1853,37 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109934",
+          "url": "https://cestat.gov.in/openfilec/109120/109934",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:46:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109939",
+          "url": "https://cestat.gov.in/openfilec/109120/109939",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:47:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1473,8 +1892,37 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109869",
+          "url": "https://cestat.gov.in/openfilec/129525/109869",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:03:37",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109917",
+          "url": "https://cestat.gov.in/openfilec/129525/109917",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:29:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1493,8 +1941,37 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109903",
+          "url": "https://cestat.gov.in/openfilec/133568/109903",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:43:41",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109919",
+          "url": "https://cestat.gov.in/openfilec/133568/109919",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:35:58",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1538,6 +2015,66 @@
               "snippet": "ommissioner, central excise & cgst-jaipur i r.krishnan, adv./dr rkriadvo@gmail.com 13 st/51709/2022 shree vasu logistics limited commissioner, central excise, customs & cgst- raipur j.k.gupta tax litigator"
             }
           ]
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109849",
+          "url": "https://cestat.gov.in/openfilec/107079/109849",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:57:39",
+          "status": "matched",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 4,
+              "snippet": "ras aneja/dr anejaparas95@gmail.com 37 c/50880/2025 mmtc-pamp india pvt ltd commissioner of customs acc (import),new delhi -acc import tushar jarwal and rahul sateeja dmd advocates/dr admin@dumeds.com 38"
+            }
+          ]
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109855",
+          "url": "https://cestat.gov.in/openfilec/107079/109855",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 15:36:54",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "oram: sl no. appeal no. appellant respondent representative remarks regular matters 1 st/50744/2021 shree balaji construction commissioner, central excise & cgst-bhopal i bipin garg and jwaria kainaat advo"
+            }
+          ]
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109887",
+          "url": "https://cestat.gov.in/openfilec/107079/109887",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:25:57",
+          "status": "matched",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 3,
+              "snippet": " pvt ltd commissioner of central excise & cgst-jabalpur shubham jain c a and prasann kumar jain c a acc.bkdcars@gmail.com cod & other issues 5. 53504/2025 st world class automobiles private limited addit"
+            }
+          ]
         }
       ],
       "error": ""
@@ -1548,8 +2085,23 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "109899",
+          "url": "https://cestat.gov.in/openfilec/136507/109899",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:41:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1558,8 +2110,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "109924",
+          "url": "https://cestat.gov.in/openfilec/119315/109924",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:41:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1568,8 +2135,79 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109874",
+          "url": "https://cestat.gov.in/openfilec/127482/109874",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:14:32",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109879",
+          "url": "https://cestat.gov.in/openfilec/127482/109879",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:17:34",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109890",
+          "url": "https://cestat.gov.in/openfilec/127482/109890",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:26:39",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109911",
+          "url": "https://cestat.gov.in/openfilec/127482/109911",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:02:14",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109929",
+          "url": "https://cestat.gov.in/openfilec/127482/109929",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:44:47",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1617,8 +2255,37 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109935",
+          "url": "https://cestat.gov.in/openfilec/109120/109935",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:46:12",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "109940",
+          "url": "https://cestat.gov.in/openfilec/109120/109940",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:47:22",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1627,8 +2294,51 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109861",
+          "url": "https://cestat.gov.in/openfilec/129525/109861",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:00:38",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 5,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109864",
+          "url": "https://cestat.gov.in/openfilec/129525/109864",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:01:27",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109870",
+          "url": "https://cestat.gov.in/openfilec/129525/109870",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:03:56",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1647,8 +2357,51 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109845",
+          "url": "https://cestat.gov.in/openfilec/133568/109845",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:37:13",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109904",
+          "url": "https://cestat.gov.in/openfilec/133568/109904",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:43:53",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109920",
+          "url": "https://cestat.gov.in/openfilec/133568/109920",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:36:13",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1686,6 +2439,78 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109843",
+          "url": "https://cestat.gov.in/openfilec/107079/109843",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:35:32",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109850",
+          "url": "https://cestat.gov.in/openfilec/107079/109850",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 14:58:09",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": " chander bhushan mishra, c.c. new delhi (import & general) ip/dr remanded from hon. sc 3 c/112/2011 shree amba cargo movers private ltd., c.c. new delhi (import & general) ip/dr 4 c/misc/51182/2025 shri ni"
+            },
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": "hary adv/dr saliencelegalgst@gmail.com 20 c/50949/2025 abhiuday kumar singh commissioner of customs acc (import),new delhi -acc import c.l.paul. advocate./dr clpaul01@gmail.com 21 c/50960/2025 prem kumar"
+            },
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": " c.l.paul. advocate./dr clpaul01@gmail.com 21 c/50960/2025 prem kumar singh commissioner of customs acc c.l.paul. advocate./dr clpaul01@gmail.com"
+            }
+          ]
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109856",
+          "url": "https://cestat.gov.in/openfilec/107079/109856",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 15:37:07",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109888",
+          "url": "https://cestat.gov.in/openfilec/107079/109888",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:26:14",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1696,8 +2521,23 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "109900",
+          "url": "https://cestat.gov.in/openfilec/136507/109900",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:42:13",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1706,8 +2546,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "109927",
+          "url": "https://cestat.gov.in/openfilec/119315/109927",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:43:43",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1716,8 +2571,106 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109875",
+          "url": "https://cestat.gov.in/openfilec/127482/109875",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:15:14",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109880",
+          "url": "https://cestat.gov.in/openfilec/127482/109880",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:18:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109892",
+          "url": "https://cestat.gov.in/openfilec/127482/109892",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 16:28:23",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109912",
+          "url": "https://cestat.gov.in/openfilec/127482/109912",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:02:32",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "mehta - akshar laws/dr aksharlaws@gmail.com 9 c/85493/2015 unique logistic solutions (i) pvt ltd cc acc mumbai c. subba reddy & co./dr subbareddyandco@gmail.co m 10 c/85548/2015 sunshine tiles co pvt ltd"
+            },
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "bai c. subba reddy & co./dr subbareddyandco@gmail.co m 10 c/85548/2015 sunshine tiles co pvt ltd cc acc mumbai ip/dr 11 c/85554/2015 manoj govindbhai varmora cc acc mumbai ip/dr 12 c/86089/2015 milan cho"
+            },
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "5548/2015 sunshine tiles co pvt ltd cc acc mumbai ip/dr 11 c/85554/2015 manoj govindbhai varmora cc acc mumbai ip/dr 12 c/86089/2015 milan chokshi cc ( ii ) - (airport special cargo) economic laws practi"
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": " ) sl n o. appeal no. appellant respondent representative remar ks misc. matters 1 c/eh/85034/202 6 shree mallikarjun shipping p ltd commissioner of customs-goa l.s. shetty & associates /dr c/89425/2018 2 "
+            }
+          ]
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "109930",
+          "url": "https://cestat.gov.in/openfilec/127482/109930",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 17:45:00",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": " dr/lakshmi kumaran sridharan cestat.filingmumbai@lakshmi sri.com e/86471/2017 15 e/misc/86208/2024 acc ltd commissioner of central excise - mumbai-i ip/dr e/87130/2017 16 e/87670/2017 s m shankarrao moh"
+            }
+          ]
+        }
+      ],
       "error": ""
     }
   ]
