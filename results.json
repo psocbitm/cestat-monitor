@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T00:32:02+05:30",
+  "generated_at": "2026-09-03T13:53:07+05:30",
   "start_date": "03-09-2026",
   "end_date": "09-09-2026",
   "days": 7,
@@ -208,20 +208,6 @@
           "date": "03-09-2026",
           "bench": "ALLAHABAD",
           "bench_id": "109120",
-          "pdf_id": "109632",
-          "url": "https://cestat.gov.in/openfilec/109120/109632",
-          "result_type": "regular",
-          "uploaded_at": "2026-08-27 17:52:30",
-          "status": "checked_no_match",
-          "error": "",
-          "pages": 5,
-          "text_status": "text_extracted",
-          "matches": []
-        },
-        {
-          "date": "03-09-2026",
-          "bench": "ALLAHABAD",
-          "bench_id": "109120",
           "pdf_id": "109809",
           "url": "https://cestat.gov.in/openfilec/109120/109809",
           "result_type": "regular",
@@ -288,6 +274,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "03-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "109821",
+          "url": "https://cestat.gov.in/openfilec/129525/109821",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 12:34:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -367,6 +367,31 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "03-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109810",
+          "url": "https://cestat.gov.in/openfilec/133568/109810",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 09:09:25",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "al ) sl no. appeal no. appellant respondent representative remarks for pronouncement 1 c/40098/2017 shree grotex trade links pvt ltd commissioner of customs sea,cc sea ch - iii v.m.doiphode & co/dr 2 c/420"
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "toms sea,cc sea ch - iii v.m.doiphode & co/dr 2 c/42096/2017 lalit kumar jagdish grover director of shree grotex trade links pvt ltd cc sea ch - ii v.m.doiphode & co/dr 3 e/cross/41922/2018 commisioner of "
+            }
+          ]
         }
       ],
       "error": ""
@@ -1232,6 +1257,34 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109814",
+          "url": "https://cestat.gov.in/openfilec/124438/109814",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 12:21:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109828",
+          "url": "https://cestat.gov.in/openfilec/124438/109828",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:27:03",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1282,8 +1335,51 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109823",
+          "url": "https://cestat.gov.in/openfilec/107079/109823",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 12:59:24",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109829",
+          "url": "https://cestat.gov.in/openfilec/107079/109829",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:30:18",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109830",
+          "url": "https://cestat.gov.in/openfilec/107079/109830",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:35:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1343,6 +1439,20 @@
               "snippet": "rin chevli cgst & central excise surat deepali kamble adv./dr dipali_2000@yahoo.com 2 st/11285/2018 shree balkrishna exports cgst & central excise surat rahul gajera/dr rahulgajera1982@gma il.com 3 c/10043"
             }
           ]
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109815",
+          "url": "https://cestat.gov.in/openfilec/124438/109815",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 12:21:57",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1393,8 +1503,43 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "08-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109824",
+          "url": "https://cestat.gov.in/openfilec/107079/109824",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:00:01",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109831",
+          "url": "https://cestat.gov.in/openfilec/107079/109831",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:35:13",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "ommissioner, central excise & cgst-jaipur i r.krishnan, adv./dr rkriadvo@gmail.com 13 st/51709/2022 shree vasu logistics limited commissioner, central excise, customs & cgst- raipur j.k.gupta tax litigator"
+            }
+          ]
+        }
+      ],
       "error": ""
     },
     {
@@ -1448,6 +1593,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "109816",
+          "url": "https://cestat.gov.in/openfilec/124438/109816",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 12:22:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1498,8 +1657,37 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109825",
+          "url": "https://cestat.gov.in/openfilec/107079/109825",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:00:26",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "109832",
+          "url": "https://cestat.gov.in/openfilec/107079/109832",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-03 13:35:28",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
