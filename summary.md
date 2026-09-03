@@ -1,27 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 03-09-2026 to 09-09-2026
-**Generated:** 03-09-2026 22:56:22 IST
+**Range:** 04-09-2026 to 10-09-2026
+**Generated:** 04-09-2026 00:36:24 IST
 
 ## Summary
 
-- Matching PDFs: **17**
-- PDFs checked: **128**
+- Matching PDFs: **15**
+- PDFs checked: **111**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **03-09-2026 AHMEDABAD** · PDF [109589](https://cestat.gov.in/openfilec/124438/109589) · Shree
-  page 1: dia private limited commissioner of central excise and service tax,vadodara-ii ip/dr 8 e/10377/2022 shree jagdamba dyg and ptg mills pvt ltd cgst & central exci
-- **03-09-2026 BANGALORE** · PDF [109554](https://cestat.gov.in/openfilec/129525/109554) · Acc
-  page 4: agavi commissionerate c.s. sudheendra p. ghali/dr 32 c/20120/2022 commissioner of customs airport & acc, bangalore crafts infotech pvt ltd dr/ip 33 e/20414/2022
-- **03-09-2026 CHENNAI** · PDF [109810](https://cestat.gov.in/openfilec/133568/109810) · Shree
-  page 1: al ) sl no. appeal no. appellant respondent representative remarks for pronouncement 1 c/40098/2017 shree grotex trade links pvt ltd commissioner of customs sea
-- **03-09-2026 MUMBAI** · PDF [109610](https://cestat.gov.in/openfilec/127482/109610) · Ambuja
-  page 1:  computers pvt ltd cce nasik- ii shailesh p. sheth/dr shailesh.sheth@spslegal.co.in 4 st/85988/2017 ambuja cements ltd commissioner ce & st(ltu) mumbai trilegal
-- **03-09-2026 MUMBAI** · PDF [109641](https://cestat.gov.in/openfilec/127482/109641) · Shree
-  page 2: e division bench matters causelist er of central goods and services tax cbd belapur 13 e/85037/2018 shree pandurang ssk ltd commisioner ,central excise and serv
 - **04-09-2026 BANGALORE** · PDF [109555](https://cestat.gov.in/openfilec/129525/109555) · Acc
   page 4: rm resolve law office/dr firmresolvellp@gmail.com 32 c/20280/2022 commissioner of customs airport & acc, bangalore bharat electronics ltd dr/ip 33 e/20689/2022 
 - **07-09-2026 DELHI** · PDF [109848](https://cestat.gov.in/openfilec/107079/109848) · Shree
@@ -46,7 +36,13 @@
   page 1: mehta - akshar laws/dr aksharlaws@gmail.com 9 c/85493/2015 unique logistic solutions (i) pvt ltd cc acc mumbai c. subba reddy & co./dr subbareddyandco@gmail.co 
 - **09-09-2026 MUMBAI** · PDF [109930](https://cestat.gov.in/openfilec/127482/109930) · Acc
   page 2:  dr/lakshmi kumaran sridharan cestat.filingmumbai@lakshmi sri.com e/86471/2017 15 e/misc/86208/2024 acc ltd commissioner of central excise - mumbai-i ip/dr e/87
+- **10-09-2026 AHMEDABAD** · PDF [109799](https://cestat.gov.in/openfilec/124438/109799) · Shree
+  page 1: issioner of central excise and service tax,daman raj k vyas/dr rajvyas14@gmail.com 11 st/12997/2019 shree salasar logistic & shipping private limited cgst & cen
+- **10-09-2026 ALLAHABAD** · PDF [109941](https://cestat.gov.in/openfilec/109120/109941) · Shree
+  page 1: al no. appellant respondent representative remarks misc. matters 1 e/eh/70229/2026 e/70653/2025 m/s shree balaji concast unit ii pvt. ltd. commissioner of custo
+- **10-09-2026 MUMBAI** · PDF [109913](https://cestat.gov.in/openfilec/127482/109913) · Acc
+  page 1: ular matters 7 c/85684/2014 aunde india ltd cc nhava sheva ip/dr 8 c/87734/2014 k sera sera ltd cc (acc & export) mumbai akshay b mahadik/dr 9 c/89356/2014 chir
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33782690633
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33792823196
