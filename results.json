@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:36:24+05:30",
+  "generated_at": "2026-09-04T13:54:35+05:30",
   "start_date": "04-09-2026",
   "end_date": "10-09-2026",
   "days": 7,
@@ -1258,6 +1258,20 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109947",
+          "url": "https://cestat.gov.in/openfilec/133568/109947",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-04 10:20:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2163,6 +2177,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "109948",
+          "url": "https://cestat.gov.in/openfilec/133568/109948",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-04 10:20:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2264,6 +2292,20 @@
           "url": "https://cestat.gov.in/openfilec/136507/109901",
           "result_type": "regular",
           "uploaded_at": "2026-09-03 16:42:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "109954",
+          "url": "https://cestat.gov.in/openfilec/136507/109954",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-04 12:11:39",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
