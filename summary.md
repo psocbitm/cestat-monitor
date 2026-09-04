@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 04-09-2026 to 10-09-2026
-**Generated:** 04-09-2026 13:54:35 IST
+**Range:** 05-09-2026 to 11-09-2026
+**Generated:** 05-09-2026 00:54:22 IST
 
 ## Summary
 
-- Matching PDFs: **15**
-- PDFs checked: **114**
+- Matching PDFs: **19**
+- PDFs checked: **128**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **04-09-2026 BANGALORE** · PDF [109555](https://cestat.gov.in/openfilec/129525/109555) · Acc
-  page 4: rm resolve law office/dr firmresolvellp@gmail.com 32 c/20280/2022 commissioner of customs airport & acc, bangalore bharat electronics ltd dr/ip 33 e/20689/2022 
 - **07-09-2026 DELHI** · PDF [109848](https://cestat.gov.in/openfilec/107079/109848) · Shree
   page 1: ner of customs preventive- jaipur jitin singhal adv./dr jitin.singhal@sagelawfirm.in 3 c/50015/2024 shree rishabhdev marble and mineral p ltd commissioner of cu
 - **07-09-2026 DELHI** · PDF [109896](https://cestat.gov.in/openfilec/107079/109896) · Shree
@@ -42,7 +40,17 @@
   page 1: al no. appellant respondent representative remarks misc. matters 1 e/eh/70229/2026 e/70653/2025 m/s shree balaji concast unit ii pvt. ltd. commissioner of custo
 - **10-09-2026 MUMBAI** · PDF [109913](https://cestat.gov.in/openfilec/127482/109913) · Acc
   page 1: ular matters 7 c/85684/2014 aunde india ltd cc nhava sheva ip/dr 8 c/87734/2014 k sera sera ltd cc (acc & export) mumbai akshay b mahadik/dr 9 c/89356/2014 chir
+- **10-09-2026 MUMBAI** · PDF [109962](https://cestat.gov.in/openfilec/127482/109962) · Shree
+  page 1: shmi kumaran sridharan cestat.filingmumbai@lakshmisri.com pd & misc. 8 appeal diary no: 883042022 c shree ganesh remedies ltd contact@ganeshremedies.com commiss
+- **11-09-2026 DELHI** · PDF [109834](https://cestat.gov.in/openfilec/107079/109834) · Shree
+  page 1: cal ) sl no. appeal no. appellant respondent representative remarks regular matters 1 st/51911/2021 shree krishna enterprises commissioner, central excise & cgs
+- **11-09-2026 DELHI** · PDF [109858](https://cestat.gov.in/openfilec/107079/109858) · Shree
+  page 1: r of central excise & cgst- jabalpur arya bhatt, advocate/dr aryabhattadv@gmail.com 6 st/50145/2026 shree anand khanij udyog principal commissioner of central e
+- **11-09-2026 MUMBAI** · PDF [109897](https://cestat.gov.in/openfilec/127482/109897) · Shree
+  page 1: l ) sl no. appeal no. appellant respondent representative remarks misc. matters 1 st/rom/86986/2025 shree padma publicity commisioner central excise and service
+- **11-09-2026 MUMBAI** · PDF [109932](https://cestat.gov.in/openfilec/127482/109932) · Shree
+  page 1: itananta@gmail.com e/85219/2016 6 e/85501/2019 commissioner,centra l goods and service tax-kolhapur shree renuka sugars ltd dr/ip 7 e/misc/85519/2026 hindalco i
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33851901606
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/33906384857
