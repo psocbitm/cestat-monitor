@@ -1,23 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 07-09-2026 to 13-09-2026
-**Generated:** 07-09-2026 14:21:42 IST
+**Range:** 08-09-2026 to 14-09-2026
+**Generated:** 08-09-2026 01:06:26 IST
 
 ## Summary
 
-- Matching PDFs: **19**
-- PDFs checked: **132**
+- Matching PDFs: **16**
+- PDFs checked: **106**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **07-09-2026 DELHI** · PDF [109848](https://cestat.gov.in/openfilec/107079/109848) · Shree
-  page 1: ner of customs preventive- jaipur jitin singhal adv./dr jitin.singhal@sagelawfirm.in 3 c/50015/2024 shree rishabhdev marble and mineral p ltd commissioner of cu
-- **07-09-2026 DELHI** · PDF [109896](https://cestat.gov.in/openfilec/107079/109896) · Shree
-  page 1: ) sl no. appeal no. appellant respondent representative remarks misc. matters 1 c/eh/50622/2026 m/s shree gold art pvt. ltd. principal commissioner of customs (
-- **07-09-2026 MUMBAI** · PDF [109910](https://cestat.gov.in/openfilec/127482/109910) · Acc, Shree
-  page 1: ltd cc nhava sheva m.h.patil/dr cenexservices@rediffmail.com 10 c/86354/2015 abdul majid ansari cc (acc & export) mumbai b j raichandani, advocate/ip ubrlegal@y
 - **08-09-2026 AHMEDABAD** · PDF [109797](https://cestat.gov.in/openfilec/124438/109797) · Shree
   page 1: rin chevli cgst & central excise surat deepali kamble adv./dr dipali_2000@yahoo.com 2 st/11285/2018 shree balkrishna exports cgst & central excise surat rahul g
 - **08-09-2026 DELHI** · PDF [109831](https://cestat.gov.in/openfilec/107079/109831) · Shree
@@ -53,4 +47,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34101112927
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34155186489
