@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T01:06:26+05:30",
+  "generated_at": "2026-09-08T14:01:16+05:30",
   "start_date": "08-09-2026",
   "end_date": "14-09-2026",
   "days": 7,
@@ -140,6 +140,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "110019",
+          "url": "https://cestat.gov.in/openfilec/109120/110019",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-08 10:48:42",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -298,6 +312,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "08-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110018",
+          "url": "https://cestat.gov.in/openfilec/133568/110018",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-08 10:27:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
