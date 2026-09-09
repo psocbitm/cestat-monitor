@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T00:36:28+05:30",
+  "generated_at": "2026-09-09T13:01:06+05:30",
   "start_date": "09-09-2026",
   "end_date": "15-09-2026",
   "days": 7,
@@ -489,6 +489,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "09-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110057",
+          "url": "https://cestat.gov.in/openfilec/107079/110057",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-09 11:11:29",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -767,6 +781,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "110062",
+          "url": "https://cestat.gov.in/openfilec/124438/110062",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-09 12:11:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
