@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T00:29:06+05:30",
+  "generated_at": "2026-09-10T12:45:33+05:30",
   "start_date": "10-09-2026",
   "end_date": "16-09-2026",
   "days": 7,
@@ -232,6 +232,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "110095",
+          "url": "https://cestat.gov.in/openfilec/109120/110095",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 10:52:39",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -283,6 +297,34 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "110103",
+          "url": "https://cestat.gov.in/openfilec/129525/110103",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:01:40",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "110104",
+          "url": "https://cestat.gov.in/openfilec/129525/110104",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:04:05",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -497,6 +539,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "10-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110094",
+          "url": "https://cestat.gov.in/openfilec/107079/110094",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 10:04:21",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1478,8 +1534,23 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "14-09-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "110112",
+          "url": "https://cestat.gov.in/openfilec/104044/110112",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:16:22",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1498,8 +1569,37 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "14-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110098",
+          "url": "https://cestat.gov.in/openfilec/107079/110098",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 11:12:23",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "14-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110105",
+          "url": "https://cestat.gov.in/openfilec/107079/110105",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:13:36",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1568,8 +1668,29 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "15-09-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "110113",
+          "url": "https://cestat.gov.in/openfilec/104044/110113",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:16:38",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "ds & services tax, jalandhar ravi chopra advocate/none ravi.chopra.adv@gmail.com 3 e/60327/2024 m/s shree sidhi vinayak alloys commissioner of central excise and service tax,ludhiana sp singh/none sunny6se"
+            }
+          ]
+        }
+      ],
       "error": ""
     },
     {
@@ -1588,8 +1709,53 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "15-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110099",
+          "url": "https://cestat.gov.in/openfilec/107079/110099",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 11:12:36",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110106",
+          "url": "https://cestat.gov.in/openfilec/107079/110106",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:14:03",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "ision bench matters causelist 13 e/51242/2019 principal commissioner, cgst & central excise -raipur shree gajraj road lines dr/ip 14 e/51243/2019 principal commissioner, cgst & central excise-raipur shree "
+            },
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": " shree gajraj road lines dr/ip 14 e/51243/2019 principal commissioner, cgst & central excise-raipur shree bajrang transport service dr/ip 15 e/51244/2019 principal commissioner, cgst & central excise-raipu"
+            },
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "st- jabalpur lakshmikumaran & sridharan, adv.-delhi/dr cestat.filing@lakshmisri.com 24 e/50330/2026 shree radhey krishan associates commissioner of central excise & cgst-alwar b.l.sharma, i.r.s. (rtd.) con"
+            }
+          ]
+        }
+      ],
       "error": ""
     },
     {
@@ -1658,8 +1824,23 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "16-09-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "110114",
+          "url": "https://cestat.gov.in/openfilec/104044/110114",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:16:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1678,8 +1859,43 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "16-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110100",
+          "url": "https://cestat.gov.in/openfilec/107079/110100",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 11:12:47",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "-delhi/dr cestat.filing@lakshmisri.com 3 st/50353/2021 commissioner, central excise & cgst- jodhpur shree cement ltd dr/sarvada legal contact@sarvada.co.in 4 st/50772/2021 s r construction pvt ltd commissi"
+            }
+          ]
+        },
+        {
+          "date": "16-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110107",
+          "url": "https://cestat.gov.in/openfilec/107079/110107",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-10 12:14:34",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {

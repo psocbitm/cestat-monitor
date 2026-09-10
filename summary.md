@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 10-09-2026 to 16-09-2026
-**Generated:** 10-09-2026 00:29:06 IST
+**Generated:** 10-09-2026 12:45:33 IST
 
 ## Summary
 
-- Matching PDFs: **8**
-- PDFs checked: **68**
+- Matching PDFs: **11**
+- PDFs checked: **81**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -28,7 +28,13 @@
   page 1: l ) sl no. appeal no. appellant respondent representative remarks misc. matters 1 st/rom/86986/2025 shree padma publicity commisioner central excise and service
 - **11-09-2026 MUMBAI** · PDF [109932](https://cestat.gov.in/openfilec/127482/109932) · Shree
   page 1: itananta@gmail.com e/85219/2016 6 e/85501/2019 commissioner,centra l goods and service tax-kolhapur shree renuka sugars ltd dr/ip 7 e/misc/85519/2026 hindalco i
+- **15-09-2026 CHANDIGARH** · PDF [110113](https://cestat.gov.in/openfilec/104044/110113) · Shree
+  page 1: ds & services tax, jalandhar ravi chopra advocate/none ravi.chopra.adv@gmail.com 3 e/60327/2024 m/s shree sidhi vinayak alloys commissioner of central excise an
+- **15-09-2026 DELHI** · PDF [110106](https://cestat.gov.in/openfilec/107079/110106) · Shree
+  page 2: ision bench matters causelist 13 e/51242/2019 principal commissioner, cgst & central excise -raipur shree gajraj road lines dr/ip 14 e/51243/2019 principal comm
+- **16-09-2026 DELHI** · PDF [110100](https://cestat.gov.in/openfilec/107079/110100) · Shree
+  page 1: -delhi/dr cestat.filing@lakshmisri.com 3 st/50353/2021 commissioner, central excise & cgst- jodhpur shree cement ltd dr/sarvada legal contact@sarvada.co.in 4 st
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34391172417
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34447811222
