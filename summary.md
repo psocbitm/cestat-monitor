@@ -1,25 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 11-09-2026 to 17-09-2026
-**Generated:** 11-09-2026 14:00:09 IST
+**Range:** 12-09-2026 to 18-09-2026
+**Generated:** 12-09-2026 00:39:23 IST
 
 ## Summary
 
-- Matching PDFs: **16**
-- PDFs checked: **125**
+- Matching PDFs: **15**
+- PDFs checked: **126**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **11-09-2026 DELHI** · PDF [109834](https://cestat.gov.in/openfilec/107079/109834) · Shree
-  page 1: cal ) sl no. appeal no. appellant respondent representative remarks regular matters 1 st/51911/2021 shree krishna enterprises commissioner, central excise & cgs
-- **11-09-2026 DELHI** · PDF [109858](https://cestat.gov.in/openfilec/107079/109858) · Shree
-  page 1: r of central excise & cgst- jabalpur arya bhatt, advocate/dr aryabhattadv@gmail.com 6 st/50145/2026 shree anand khanij udyog principal commissioner of central e
-- **11-09-2026 MUMBAI** · PDF [109897](https://cestat.gov.in/openfilec/127482/109897) · Shree
-  page 1: l ) sl no. appeal no. appellant respondent representative remarks misc. matters 1 st/rom/86986/2025 shree padma publicity commisioner central excise and service
-- **11-09-2026 MUMBAI** · PDF [109932](https://cestat.gov.in/openfilec/127482/109932) · Shree
-  page 1: itananta@gmail.com e/85219/2016 6 e/85501/2019 commissioner,centra l goods and service tax-kolhapur shree renuka sugars ltd dr/ip 7 e/misc/85519/2026 hindalco i
 - **14-09-2026 AHMEDABAD** · PDF [110213](https://cestat.gov.in/openfilec/124438/110213) · Shree
   page 1: e tax,daman rahul gajera/dr rahulgajera1982@ gmail.com e/10211/2018 regular matters 4 st/11434/2013 shree sayan vibhas sahakari khand udyog mandli ltd cgst & ce
 - **14-09-2026 DELHI** · PDF [110133](https://cestat.gov.in/openfilec/107079/110133) · Shree
@@ -44,7 +36,13 @@
   page 2: aran & sridharan/dr lsblr@lakshmisri.com 2 st/22247/2015 edelweiss hyderabad-i ip/dr 3 e/30365/2018 penna cement industries ltd the commissioner of central tax-
 - **17-09-2026 MUMBAI** · PDF [110146](https://cestat.gov.in/openfilec/127482/110146) · Shree
   page 1: trial products commissioner of central excise- thane-ii s.s.gupta/dr ssg@ssgupta.in 10 e/85108/2017 shree industries commissioner of central excise and service 
+- **18-09-2026 BANGALORE** · PDF [110157](https://cestat.gov.in/openfilec/129525/110157) · Penna
+  page 5: nd central excise bengaluru north-west swamy associates/dr mail@swamyassociates.com 37 e/20406/2023 penna cement industries ltd commissioner of customs,excise a
+- **18-09-2026 DELHI** · PDF [110102](https://cestat.gov.in/openfilec/107079/110102) · Shree
+  page 2: ise and service tax,jaipur vipin khandelwal adv./dr vipinkhandelwal_24@yahoo.co.in 15 st/55189/2023 shree mohan industries commissioner of central excise & cgst
+- **18-09-2026 MUMBAI** · PDF [110182](https://cestat.gov.in/openfilec/127482/110182) · Acc
+  page 1: n & associates,/dr willingdon_associates@yahoo.co.in 5 c/87190/2015 maneesh pharmaceuticals ltd cc (acc & export) mumbai anil balani/dr advocatebalani@hotmail.c
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34578039547
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34634768868
