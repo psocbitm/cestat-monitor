@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T00:06:28+05:30",
-  "start_date": "13-09-2026",
-  "end_date": "19-09-2026",
+  "generated_at": "2026-09-14T14:59:22+05:30",
+  "start_date": "14-09-2026",
+  "end_date": "20-09-2026",
   "days": 7,
   "keywords": [
     "Acc",
@@ -62,96 +62,6 @@
     }
   ],
   "results": [
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "124438",
-        "name": "AHMEDABAD"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "109120",
-        "name": "ALLAHABAD"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "129525",
-        "name": "BANGALORE"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "104044",
-        "name": "CHANDIGARH"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "133568",
-        "name": "CHENNAI"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "107079",
-        "name": "DELHI"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "136507",
-        "name": "HYDERABAD"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "119315",
-        "name": "KOLKATA"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
-    {
-      "requested_date": "13-09-2026",
-      "bench": {
-        "value": "127482",
-        "name": "MUMBAI"
-      },
-      "status": "success_empty",
-      "pdfs": [],
-      "error": ""
-    },
     {
       "requested_date": "14-09-2026",
       "bench": {
@@ -389,6 +299,46 @@
               "snippet": "tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 regular matters 2 c/stay/50530/2023 commission"
             }
           ]
+        },
+        {
+          "date": "14-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110280",
+          "url": "https://cestat.gov.in/openfilec/107079/110280",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-14 10:15:30",
+          "status": "matched",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 3,
+              "snippet": "cgst delhi west rajesh kumar and associates office@rklegal.org (pre-deposit issue) 3. 53231/2025 st shree balaji contractor principal commissioner of central excise and cgst-alwar brijesh verma and associa"
+            }
+          ]
+        },
+        {
+          "date": "14-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110281",
+          "url": "https://cestat.gov.in/openfilec/107079/110281",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-14 10:16:55",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 regular matters 2 c/stay/50530/2023 commission"
+            }
+          ]
         }
       ],
       "error": ""
@@ -616,6 +566,20 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "15-09-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "110292",
+          "url": "https://cestat.gov.in/openfilec/104044/110292",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-14 13:14:59",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -792,6 +756,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 4,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110285",
+          "url": "https://cestat.gov.in/openfilec/107079/110285",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-14 12:05:10",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -2629,6 +2607,96 @@
     },
     {
       "requested_date": "19-09-2026",
+      "bench": {
+        "value": "127482",
+        "name": "MUMBAI"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "124438",
+        "name": "AHMEDABAD"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "109120",
+        "name": "ALLAHABAD"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "129525",
+        "name": "BANGALORE"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "104044",
+        "name": "CHANDIGARH"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "133568",
+        "name": "CHENNAI"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "107079",
+        "name": "DELHI"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "136507",
+        "name": "HYDERABAD"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
+      "bench": {
+        "value": "119315",
+        "name": "KOLKATA"
+      },
+      "status": "success_empty",
+      "pdfs": [],
+      "error": ""
+    },
+    {
+      "requested_date": "20-09-2026",
       "bench": {
         "value": "127482",
         "name": "MUMBAI"

@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
-**Range:** 13-09-2026 to 19-09-2026
-**Generated:** 14-09-2026 00:06:28 IST
+**Range:** 14-09-2026 to 20-09-2026
+**Generated:** 14-09-2026 14:59:22 IST
 
 ## Summary
 
-- Matching PDFs: **15**
-- PDFs checked: **126**
+- Matching PDFs: **17**
+- PDFs checked: **130**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -17,6 +17,10 @@
 - **14-09-2026 DELHI** · PDF [110133](https://cestat.gov.in/openfilec/107079/110133) · Shree
   page 3: cgst delhi west rajesh kumar and associates office@rklegal.org (pre-deposit issue) 3. 53231/2025 st shree balaji contractor principal commissioner of central ex
 - **14-09-2026 DELHI** · PDF [110138](https://cestat.gov.in/openfilec/107079/110138) · Acc
+  page 1: tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 reg
+- **14-09-2026 DELHI** · PDF [110280](https://cestat.gov.in/openfilec/107079/110280) · Shree
+  page 3: cgst delhi west rajesh kumar and associates office@rklegal.org (pre-deposit issue) 3. 53231/2025 st shree balaji contractor principal commissioner of central ex
+- **14-09-2026 DELHI** · PDF [110281](https://cestat.gov.in/openfilec/107079/110281) · Acc
   page 1: tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 reg
 - **15-09-2026 BANGALORE** · PDF [110161](https://cestat.gov.in/openfilec/129525/110161) · Shree
   page 1: mad shaheed commissioner of customs,cochin-cus ashok k s/dr ashokdnair1966@gmail.com 5 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commission
@@ -45,4 +49,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34774168636
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34826395790
