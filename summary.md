@@ -1,27 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 14-09-2026 to 20-09-2026
-**Generated:** 14-09-2026 14:59:22 IST
+**Range:** 15-09-2026 to 21-09-2026
+**Generated:** 15-09-2026 01:42:40 IST
 
 ## Summary
 
-- Matching PDFs: **17**
-- PDFs checked: **130**
+- Matching PDFs: **12**
+- PDFs checked: **120**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **14-09-2026 AHMEDABAD** · PDF [110213](https://cestat.gov.in/openfilec/124438/110213) · Shree
-  page 1: e tax,daman rahul gajera/dr rahulgajera1982@ gmail.com e/10211/2018 regular matters 4 st/11434/2013 shree sayan vibhas sahakari khand udyog mandli ltd cgst & ce
-- **14-09-2026 DELHI** · PDF [110133](https://cestat.gov.in/openfilec/107079/110133) · Shree
-  page 3: cgst delhi west rajesh kumar and associates office@rklegal.org (pre-deposit issue) 3. 53231/2025 st shree balaji contractor principal commissioner of central ex
-- **14-09-2026 DELHI** · PDF [110138](https://cestat.gov.in/openfilec/107079/110138) · Acc
-  page 1: tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 reg
-- **14-09-2026 DELHI** · PDF [110280](https://cestat.gov.in/openfilec/107079/110280) · Shree
-  page 3: cgst delhi west rajesh kumar and associates office@rklegal.org (pre-deposit issue) 3. 53231/2025 st shree balaji contractor principal commissioner of central ex
-- **14-09-2026 DELHI** · PDF [110281](https://cestat.gov.in/openfilec/107079/110281) · Acc
-  page 1: tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi ip/dr early hearing c/50343/2026 reg
 - **15-09-2026 BANGALORE** · PDF [110161](https://cestat.gov.in/openfilec/129525/110161) · Shree
   page 1: mad shaheed commissioner of customs,cochin-cus ashok k s/dr ashokdnair1966@gmail.com 5 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commission
 - **15-09-2026 CHANDIGARH** · PDF [110113](https://cestat.gov.in/openfilec/104044/110113) · Shree
@@ -49,4 +39,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34826395790
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34889729235
