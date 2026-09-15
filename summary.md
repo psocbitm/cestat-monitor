@@ -1,25 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 15-09-2026 to 21-09-2026
-**Generated:** 15-09-2026 14:40:05 IST
+**Range:** 16-09-2026 to 22-09-2026
+**Generated:** 16-09-2026 00:52:48 IST
 
 ## Summary
 
-- Matching PDFs: **12**
-- PDFs checked: **122**
+- Matching PDFs: **8**
+- PDFs checked: **88**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **15-09-2026 BANGALORE** · PDF [110161](https://cestat.gov.in/openfilec/129525/110161) · Shree
-  page 1: mad shaheed commissioner of customs,cochin-cus ashok k s/dr ashokdnair1966@gmail.com 5 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commission
-- **15-09-2026 CHANDIGARH** · PDF [110113](https://cestat.gov.in/openfilec/104044/110113) · Shree
-  page 1: ds & services tax, jalandhar ravi chopra advocate/none ravi.chopra.adv@gmail.com 3 e/60327/2024 m/s shree sidhi vinayak alloys commissioner of central excise an
-- **15-09-2026 DELHI** · PDF [110106](https://cestat.gov.in/openfilec/107079/110106) · Shree
-  page 2: ision bench matters causelist 13 e/51242/2019 principal commissioner, cgst & central excise -raipur shree gajraj road lines dr/ip 14 e/51243/2019 principal comm
-- **15-09-2026 MUMBAI** · PDF [110239](https://cestat.gov.in/openfilec/127482/110239) · Orient
-  page 1: ral goods and service tax- bhiwandi ca balaji sundararaman/dr balaji.srca@gmail.com 5 st/85448/2026 orient ship management and managing private limited commisss
 - **16-09-2026 DELHI** · PDF [110100](https://cestat.gov.in/openfilec/107079/110100) · Shree
   page 1: -delhi/dr cestat.filing@lakshmisri.com 3 st/50353/2021 commissioner, central excise & cgst- jodhpur shree cement ltd dr/sarvada legal contact@sarvada.co.in 4 st
 - **17-09-2026 BANGALORE** · PDF [110156](https://cestat.gov.in/openfilec/129525/110156) · Acc, Acc Limited
@@ -39,4 +31,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/34949279626
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/35011812129
