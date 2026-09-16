@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 16-09-2026 to 22-09-2026
-**Generated:** 16-09-2026 14:34:11 IST
+**Range:** 17-09-2026 to 23-09-2026
+**Generated:** 17-09-2026 00:41:36 IST
 
 ## Summary
 
-- Matching PDFs: **8**
-- PDFs checked: **89**
+- Matching PDFs: **7**
+- PDFs checked: **65**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **16-09-2026 DELHI** · PDF [110100](https://cestat.gov.in/openfilec/107079/110100) · Shree
-  page 1: -delhi/dr cestat.filing@lakshmisri.com 3 st/50353/2021 commissioner, central excise & cgst- jodhpur shree cement ltd dr/sarvada legal contact@sarvada.co.in 4 st
 - **17-09-2026 BANGALORE** · PDF [110156](https://cestat.gov.in/openfilec/129525/110156) · Acc, Acc Limited
   page 4:  & central excise, calicut raghavendra b hanjer/dr raghavendra.hanjer1984@gmail.com 27 e/21859/2018 acc limited commissioner of central tax and central excise, 
 - **17-09-2026 CHANDIGARH** · PDF [110115](https://cestat.gov.in/openfilec/104044/110115) · Shree
@@ -31,4 +29,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/35075526686
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/35137910882
