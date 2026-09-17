@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T00:41:36+05:30",
+  "generated_at": "2026-09-17T14:30:28+05:30",
   "start_date": "17-09-2026",
   "end_date": "23-09-2026",
   "days": 7,
@@ -471,6 +471,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "17-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110372",
+          "url": "https://cestat.gov.in/openfilec/107079/110372",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-17 10:31:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1039,6 +1053,34 @@
           "url": "https://cestat.gov.in/openfilec/107079/110147",
           "result_type": "regular",
           "uploaded_at": "2026-09-10 15:58:50",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "18-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110377",
+          "url": "https://cestat.gov.in/openfilec/107079/110377",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-17 11:38:34",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "18-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110379",
+          "url": "https://cestat.gov.in/openfilec/107079/110379",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-17 12:33:06",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
