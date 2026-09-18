@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:57:04+05:30",
+  "generated_at": "2026-09-18T14:11:53+05:30",
   "start_date": "18-09-2026",
   "end_date": "24-09-2026",
   "days": 7,
@@ -979,13 +979,27 @@
           "date": "21-09-2026",
           "bench": "CHENNAI",
           "bench_id": "133568",
-          "pdf_id": "110479",
-          "url": "https://cestat.gov.in/openfilec/133568/110479",
+          "pdf_id": "110512",
+          "url": "https://cestat.gov.in/openfilec/133568/110512",
           "result_type": "regular",
-          "uploaded_at": "2026-09-17 17:23:52",
+          "uploaded_at": "2026-09-18 12:39:27",
           "status": "checked_no_match",
           "error": "",
-          "pages": 1,
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "21-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110513",
+          "url": "https://cestat.gov.in/openfilec/133568/110513",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 12:39:44",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1104,8 +1118,37 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "21-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110525",
+          "url": "https://cestat.gov.in/openfilec/119315/110525",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:44:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        },
+        {
+          "date": "21-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110530",
+          "url": "https://cestat.gov.in/openfilec/119315/110530",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:55:14",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1197,6 +1240,20 @@
               "snippet": "issioner of customs central excise & service tax -goa goa sponge and power ltd dr/ip 8 e/86060/2019 ambuja cements limited commissioner central goods and service tax- palghar trilegal mumbai/dr mumbaicourte"
             }
           ]
+        },
+        {
+          "date": "21-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "110518",
+          "url": "https://cestat.gov.in/openfilec/127482/110518",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:13:18",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1348,6 +1405,20 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110504",
+          "url": "https://cestat.gov.in/openfilec/133568/110504",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 11:18:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1476,8 +1547,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "22-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110526",
+          "url": "https://cestat.gov.in/openfilec/119315/110526",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:45:49",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1574,6 +1660,20 @@
               "snippet": "sioner ,central excise and service tax- pune-iv ip/dr e/misc/86729/2025 e/86747/2016 5 e/86337/2017 acc ltd commissioner ce & st(ltu) mumbai ip/dr 6 e/85015/2018 bombay snuff p ltd commissioner central g"
             }
           ]
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "110519",
+          "url": "https://cestat.gov.in/openfilec/127482/110519",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:13:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1706,6 +1806,20 @@
           "url": "https://cestat.gov.in/openfilec/133568/110481",
           "result_type": "regular",
           "uploaded_at": "2026-09-17 17:24:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "23-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110502",
+          "url": "https://cestat.gov.in/openfilec/133568/110502",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 11:15:42",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1847,8 +1961,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "23-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110527",
+          "url": "https://cestat.gov.in/openfilec/119315/110527",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:48:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -1934,6 +2063,20 @@
               "snippet": " gaikwad/dr vbg.tri@gmail.com 17 e/86646/2019 commissioner,cent ral goods and service tax- kolhapur shree pushkar chemical & fertilisers ltd dr/ip 18 e/86792/2019 commissioner,cent ral goods and service ta"
             }
           ]
+        },
+        {
+          "date": "23-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "110520",
+          "url": "https://cestat.gov.in/openfilec/127482/110520",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:14:24",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2057,6 +2200,34 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "24-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110495",
+          "url": "https://cestat.gov.in/openfilec/133568/110495",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 10:21:32",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "24-09-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "110503",
+          "url": "https://cestat.gov.in/openfilec/133568/110503",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 11:15:58",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2115,10 +2286,10 @@
           "date": "24-09-2026",
           "bench": "DELHI",
           "bench_id": "107079",
-          "pdf_id": "110459",
-          "url": "https://cestat.gov.in/openfilec/107079/110459",
+          "pdf_id": "110499",
+          "url": "https://cestat.gov.in/openfilec/107079/110499",
           "result_type": "regular",
-          "uploaded_at": "2026-09-17 16:56:45",
+          "uploaded_at": "2026-09-18 11:00:59",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2159,8 +2330,23 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "24-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110528",
+          "url": "https://cestat.gov.in/openfilec/119315/110528",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:49:56",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
@@ -2277,6 +2463,40 @@
           "url": "https://cestat.gov.in/openfilec/127482/110493",
           "result_type": "regular",
           "uploaded_at": "2026-09-17 18:16:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "24-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "110521",
+          "url": "https://cestat.gov.in/openfilec/127482/110521",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:15:18",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "cexmumbai3.go v.in ip/dr cod 11 application diary no:8624920 26 in appeal diary no: 862472026 c m/s shree sai shipping agency pratik.karande31@gmail. com commissioner central goods and service tax and cent"
+            }
+          ]
+        },
+        {
+          "date": "24-09-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "110522",
+          "url": "https://cestat.gov.in/openfilec/127482/110522",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-18 13:16:38",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
