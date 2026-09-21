@@ -1,21 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 21-09-2026 to 27-09-2026
-**Generated:** 21-09-2026 14:59:33 IST
+**Range:** 22-09-2026 to 28-09-2026
+**Generated:** 22-09-2026 01:52:21 IST
 
 ## Summary
 
-- Matching PDFs: **13**
-- PDFs checked: **128**
+- Matching PDFs: **11**
+- PDFs checked: **112**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **21-09-2026 MUMBAI** · PDF [110435](https://cestat.gov.in/openfilec/127482/110435) · Acc
-  page 2: pt legal advocates promptlegal@gmail.com 19 c/eh/86229/202 6 hewlett packard india sales pvt ltd cc acc mumbai v. sridharan,/dr lsbom@lakshmisri.com c/85642/201
-- **21-09-2026 MUMBAI** · PDF [110489](https://cestat.gov.in/openfilec/127482/110489) · Ambuja
-  page 1: issioner of customs central excise & service tax -goa goa sponge and power ltd dr/ip 8 e/86060/2019 ambuja cements limited commissioner central goods and servic
 - **22-09-2026 AHMEDABAD** · PDF [110556](https://cestat.gov.in/openfilec/124438/110556) · Shree
   page 1: @excise.nic.in paresh m dave advocate pareshdave.lawyer@gmail.com pre-deposit &ors. 5 10666/2026 st shree balaji construction co. hastin_acharya@yahoo.com kutch
 - **22-09-2026 DELHI** · PDF [110455](https://cestat.gov.in/openfilec/107079/110455) · Shree
@@ -41,4 +37,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/35581871181
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/35648872182
