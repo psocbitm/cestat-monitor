@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:52:21+05:30",
+  "generated_at": "2026-09-22T14:30:39+05:30",
   "start_date": "22-09-2026",
   "end_date": "28-09-2026",
   "days": 7,
@@ -445,6 +445,60 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110601",
+          "url": "https://cestat.gov.in/openfilec/107079/110601",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 10:03:54",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "tion dr/ip e-filed 18 c/51353/2025 commissioner of customs,commissioner of customs-nhava sheva - ii shree siddhi vinayak textiles dr/ip e-filed 19 c/51354/2025 commissioner of customs,commissioner of custo"
+            }
+          ]
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110602",
+          "url": "https://cestat.gov.in/openfilec/107079/110602",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 10:08:11",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": "l.com (e-filed, pre-deposit issue) 11. 51197/2026 c m/s frick india limited commissioner of customs acc (import) new delhi akshansh gupta akshanshofficial.10@gmail.com (e-filed, pre-deposit & other issue"
+            }
+          ]
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110603",
+          "url": "https://cestat.gov.in/openfilec/107079/110603",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 10:15:23",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -532,6 +586,34 @@
           "url": "https://cestat.gov.in/openfilec/119315/110600",
           "result_type": "regular",
           "uploaded_at": "2026-09-21 18:37:56",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110605",
+          "url": "https://cestat.gov.in/openfilec/119315/110605",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 11:19:06",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        },
+        {
+          "date": "22-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110606",
+          "url": "https://cestat.gov.in/openfilec/119315/110606",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 11:19:38",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1039,6 +1121,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        },
+        {
+          "date": "23-09-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "110611",
+          "url": "https://cestat.gov.in/openfilec/119315/110611",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-22 12:25:11",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "empty_text_possible_scan",
           "matches": []
         }
