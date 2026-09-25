@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 25-09-2026 to 01-10-2026
-**Generated:** 25-09-2026 14:50:27 IST
+**Range:** 26-09-2026 to 02-10-2026
+**Generated:** 26-09-2026 01:12:56 IST
 
 ## Summary
 
-- Matching PDFs: **11**
-- PDFs checked: **139**
+- Matching PDFs: **10**
+- PDFs checked: **103**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **25-09-2026 AHMEDABAD** · PDF [110468](https://cestat.gov.in/openfilec/124438/110468) · Shree
-  page 1: ging ltd trivedi and gupta advocates/ip liberals1986@gmail.com remanded from hon. hc 5 e/12514/2018 shree umiyasurgicals pvt ltd cgst & central excise ahmedabad
 - **28-09-2026 DELHI** · PDF [110727](https://cestat.gov.in/openfilec/107079/110727) · Shree
   page 1: .in early hearing c/50765/2026 regular matters 3 c/50789/2026 c/eh/50622/2026 c/misc/50612/2026 m/s shree gold art pvt. ltd. principal commissioner of customs (
 - **28-09-2026 MUMBAI** · PDF [110745](https://cestat.gov.in/openfilec/127482/110745) · Acc
@@ -37,4 +35,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36115933963
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36179660125
