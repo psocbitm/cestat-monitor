@@ -1,21 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 28-09-2026 to 04-10-2026
-**Generated:** 28-09-2026 15:51:14 IST
+**Range:** 29-09-2026 to 05-10-2026
+**Generated:** 29-09-2026 03:02:39 IST
 
 ## Summary
 
-- Matching PDFs: **10**
-- PDFs checked: **110**
+- Matching PDFs: **8**
+- PDFs checked: **79**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **28-09-2026 DELHI** · PDF [110727](https://cestat.gov.in/openfilec/107079/110727) · Shree
-  page 1: .in early hearing c/50765/2026 regular matters 3 c/50789/2026 c/eh/50622/2026 c/misc/50612/2026 m/s shree gold art pvt. ltd. principal commissioner of customs (
-- **28-09-2026 MUMBAI** · PDF [110745](https://cestat.gov.in/openfilec/127482/110745) · Acc
-  page 2: 5 e/85888/2015 purti power & sugar ltd commissioner of central excise- nagpur ip/dr 16 e/86391/2016 acc ltd commissioner ce & st(ltu) mumbai ip/dr 17 e/85357/20
 - **29-09-2026 MUMBAI** · PDF [110730](https://cestat.gov.in/openfilec/127482/110730) · Acc
   page 2: ssanjaysinghal@gmail.com 27 c/85105/2021 shakti pumps india limited commissioner of customs(import) acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@
 - **30-09-2026 DELHI** · PDF [110721](https://cestat.gov.in/openfilec/107079/110721) · Shree
@@ -35,4 +31,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36407307022
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36485303018
