@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 29-09-2026 to 05-10-2026
-**Generated:** 29-09-2026 15:53:51 IST
+**Range:** 30-09-2026 to 06-10-2026
+**Generated:** 30-09-2026 01:50:07 IST
 
 ## Summary
 
-- Matching PDFs: **8**
-- PDFs checked: **84**
+- Matching PDFs: **7**
+- PDFs checked: **64**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **29-09-2026 MUMBAI** · PDF [110730](https://cestat.gov.in/openfilec/127482/110730) · Acc
-  page 2: ssanjaysinghal@gmail.com 27 c/85105/2021 shakti pumps india limited commissioner of customs(import) acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@
 - **30-09-2026 DELHI** · PDF [110721](https://cestat.gov.in/openfilec/107079/110721) · Shree
   page 1: jeet pandey and ajay awasthi and shikha bharadwaj advs/dr suyash.hnlu@gmail.com 8 st/51069/2022 jai shree nathji logistics india commissioner, cgst & central ex
 - **30-09-2026 DELHI** · PDF [110752](https://cestat.gov.in/openfilec/107079/110752) · Anti-dumping
@@ -31,4 +29,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36552966052
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36624222982
