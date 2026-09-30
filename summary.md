@@ -1,11 +1,11 @@
 # CESTAT keyword report
 
 **Range:** 30-09-2026 to 06-10-2026
-**Generated:** 30-09-2026 01:50:07 IST
+**Generated:** 30-09-2026 15:35:34 IST
 
 ## Summary
 
-- Matching PDFs: **7**
+- Matching PDFs: **6**
 - PDFs checked: **64**
 - Failed searches: **0**
 - Failed PDFs: **0**
@@ -14,8 +14,6 @@
 
 - **30-09-2026 DELHI** · PDF [110721](https://cestat.gov.in/openfilec/107079/110721) · Shree
   page 1: jeet pandey and ajay awasthi and shikha bharadwaj advs/dr suyash.hnlu@gmail.com 8 st/51069/2022 jai shree nathji logistics india commissioner, cgst & central ex
-- **30-09-2026 DELHI** · PDF [110752](https://cestat.gov.in/openfilec/107079/110752) · Anti-dumping
-  page 1:  53551/2025 ad all india glass manufacturers federation designated authority directorate general of anti-dumping and allied duties new delhi siddharth joshi, (e
 - **30-09-2026 MUMBAI** · PDF [110731](https://cestat.gov.in/openfilec/127482/110731) · Shree
   page 1: cal ) sl no. appeal no. appellant respondent representative remarks misc. matters 1 c/eh/85034/2026 shree mallikarjun shipping p ltd commissioner of customs- go
 - **01-10-2026 ALLAHABAD** · PDF [110707](https://cestat.gov.in/openfilec/109120/110707) · Shree
@@ -29,4 +27,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36624222982
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36699068108

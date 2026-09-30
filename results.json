@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T01:50:07+05:30",
+  "generated_at": "2026-09-30T15:35:34+05:30",
   "start_date": "30-09-2026",
   "end_date": "06-10-2026",
   "days": 7,
@@ -330,36 +330,6 @@
           "date": "30-09-2026",
           "bench": "DELHI",
           "bench_id": "107079",
-          "pdf_id": "110752",
-          "url": "https://cestat.gov.in/openfilec/107079/110752",
-          "result_type": "regular",
-          "uploaded_at": "2026-09-24 15:56:56",
-          "status": "matched",
-          "error": "",
-          "pages": 2,
-          "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Anti-dumping",
-              "page": 1,
-              "snippet": " 53551/2025 ad all india glass manufacturers federation designated authority directorate general of anti-dumping and allied duties new delhi siddharth joshi, (e-filed, proof of service) 9. 53552/2025 ad kazan sod"
-            },
-            {
-              "keyword": "Anti-dumping",
-              "page": 1,
-              "snippet": "rvice) 9. 53552/2025 ad kazan soda elektrik uretim a.s. designated authority directorate general of anti-dumping and allied duties new delhi siddharth joshi, (e-filed, proof of service)"
-            },
-            {
-              "keyword": "Anti-dumping",
-              "page": 2,
-              "snippet": "rlama nakliyat ve elektrik uretim sanayi ve ticaret a.s designated authority directorate general of anti-dumping and allied duties new delhi siddharth joshi, (e-filed, proof of service) 11. 50178/2026 st m/s raje"
-            }
-          ]
-        },
-        {
-          "date": "30-09-2026",
-          "bench": "DELHI",
-          "bench_id": "107079",
           "pdf_id": "110762",
           "url": "https://cestat.gov.in/openfilec/107079/110762",
           "result_type": "regular",
@@ -395,6 +365,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "30-09-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "110906",
+          "url": "https://cestat.gov.in/openfilec/107079/110906",
+          "result_type": "regular",
+          "uploaded_at": "2026-09-30 09:28:27",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
           "text_status": "text_extracted",
           "matches": []
         }
