@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
-**Range:** 02-10-2026 to 08-10-2026
-**Generated:** 02-10-2026 15:44:10 IST
+**Range:** 03-10-2026 to 09-10-2026
+**Generated:** 03-10-2026 01:54:06 IST
 
 ## Summary
 
-- Matching PDFs: **12**
-- PDFs checked: **104**
+- Matching PDFs: **18**
+- PDFs checked: **130**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -36,7 +36,19 @@
   page 1: v-hearing 3 st/26798/2013 m l krishnaswami commissioner of central excise and service tax,mangalore shree & co/dr 4 st/27226/2013 g p venkatesh commissioner of 
 - **08-10-2026 MUMBAI** · PDF [110989](https://cestat.gov.in/openfilec/127482/110989) · Acc
   page 1: heva-iv ) mumbai m s murthy advocate/dr msmurthy1961@gmail.com 7 c/85833/2016 sony india pvt ltd cc acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@
+- **09-10-2026 AHMEDABAD** · PDF [110958](https://cestat.gov.in/openfilec/124438/110958) · Orient
+  page 1: agar ab n dhruv autocraft pvt ltd dr/p p jadeja ppjadeja2012@gmail.c om e/12287/2019 7 e/10060/2020 orient bell limite d commissioner of cent ral excise and ser
+- **09-10-2026 BANGALORE** · PDF [110938](https://cestat.gov.in/openfilec/129525/110938) · Acc
+  page 4: wassociates.india@gmail.com 32 c/20503/2022 smile electronics ltd commissioner of customs airport & acc, bangalore dr shyam prasad ts/dr globallawassociates.ind
+- **09-10-2026 BANGALORE** · PDF [110948](https://cestat.gov.in/openfilec/129525/110948) · Shree
+  page 1: ical ) sl no. appeal no. appellant respondent representative remarks regular matters 1 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commission
+- **09-10-2026 CHENNAI** · PDF [111091](https://cestat.gov.in/openfilec/133568/111091) · Shree
+  page 1: rin r a associates/dr ram.arumugam69@gmail.com 7 c/40177/2019 commissioner of customs,tuticorin jai shree impex dr/ip 8 c/40603/2019 jai shree impex commissione
+- **09-10-2026 MUMBAI** · PDF [110991](https://cestat.gov.in/openfilec/127482/110991) · Acc
+  page 1: ogi /dr abhishek@rastogichambers.com c/85310/2026 regular matters 2 c/86875/2013 taiyyab khatri cc (acc & export) mumbai ip/dr 3 c/misc/85932/2021 pandhari pach
+- **09-10-2026 MUMBAI** · PDF [111097](https://cestat.gov.in/openfilec/127482/111097) · Shree
+  page 2: l excise and service tax- raigad ajay singh and associates/dr a.singh.adv@gmail.com 24 e/86713/2019 shree ramdev metal mart commissioner of central excise and s
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/36992781829
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37058294992
