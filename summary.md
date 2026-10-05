@@ -1,23 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 05-10-2026 to 11-10-2026
-**Generated:** 05-10-2026 16:32:38 IST
+**Range:** 06-10-2026 to 12-10-2026
+**Generated:** 06-10-2026 03:53:10 IST
 
 ## Summary
 
-- Matching PDFs: **19**
-- PDFs checked: **132**
+- Matching PDFs: **16**
+- PDFs checked: **110**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **05-10-2026 ALLAHABAD** · PDF [111099](https://cestat.gov.in/openfilec/109120/111099) · Orient
-  page 1: actories l td commissioner cgst , gautam bu ddh nagar aaaaa/dr d.o.h 19-08-2026 2 st/70230/2026 m/s orient traders (prop. sh ri suhail ahmad) commissioner cgst 
-- **05-10-2026 DELHI** · PDF [111076](https://cestat.gov.in/openfilec/107079/111076) · Shree
-  page 2: block no. 2, r.k.puram, new delhi - 110066 customs division bench matters causelist 10 c/51931/2024 shree ridhi sidhi chemicals commissioner of customs- new del
-- **05-10-2026 MUMBAI** · PDF [110977](https://cestat.gov.in/openfilec/127482/110977) · Shree
-  page 2:  hinge hingesumedh@gmail.com cod 10 application diary no:9115920 25 in appeal diary no:9115820 25 e shree balaji concast p ltd mukeshduttmishra@gmail.co m addit
 - **06-10-2026 BANGALORE** · PDF [110935](https://cestat.gov.in/openfilec/129525/110935) · Acc
   page 3: ar and co/dr seetharam.madhvachar@bgl.kochhar.com 28 c/20280/2022 commissioner of customs airport & acc, bangalore bharat electronics ltd dr/ip
 - **06-10-2026 DELHI** · PDF [111072](https://cestat.gov.in/openfilec/107079/111072) · GMR
@@ -53,4 +47,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37298414940
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37380450306
