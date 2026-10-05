@@ -1,17 +1,19 @@
 # CESTAT keyword report
 
 **Range:** 05-10-2026 to 11-10-2026
-**Generated:** 05-10-2026 00:34:25 IST
+**Generated:** 05-10-2026 16:32:38 IST
 
 ## Summary
 
-- Matching PDFs: **18**
-- PDFs checked: **130**
+- Matching PDFs: **19**
+- PDFs checked: **132**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
+- **05-10-2026 ALLAHABAD** · PDF [111099](https://cestat.gov.in/openfilec/109120/111099) · Orient
+  page 1: actories l td commissioner cgst , gautam bu ddh nagar aaaaa/dr d.o.h 19-08-2026 2 st/70230/2026 m/s orient traders (prop. sh ri suhail ahmad) commissioner cgst 
 - **05-10-2026 DELHI** · PDF [111076](https://cestat.gov.in/openfilec/107079/111076) · Shree
   page 2: block no. 2, r.k.puram, new delhi - 110066 customs division bench matters causelist 10 c/51931/2024 shree ridhi sidhi chemicals commissioner of customs- new del
 - **05-10-2026 MUMBAI** · PDF [110977](https://cestat.gov.in/openfilec/127482/110977) · Shree
@@ -51,4 +53,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37225529899
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37298414940

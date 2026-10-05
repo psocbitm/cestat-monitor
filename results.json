@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T00:34:25+05:30",
+  "generated_at": "2026-10-05T16:32:38+05:30",
   "start_date": "05-10-2026",
   "end_date": "11-10-2026",
   "days": 7,
@@ -136,6 +136,26 @@
           "pages": 3,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "05-10-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "111099",
+          "url": "https://cestat.gov.in/openfilec/109120/111099",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-05 10:23:41",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Orient",
+              "page": 1,
+              "snippet": "actories l td commissioner cgst , gautam bu ddh nagar aaaaa/dr d.o.h 19-08-2026 2 st/70230/2026 m/s orient traders (prop. sh ri suhail ahmad) commissioner cgst & centra l excise commissionerate ,allahabad- "
+            }
+          ]
         }
       ],
       "error": ""
@@ -1342,6 +1362,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "07-10-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "111098",
+          "url": "https://cestat.gov.in/openfilec/107079/111098",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-05 10:20:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
           "text_status": "text_extracted",
           "matches": []
         }
