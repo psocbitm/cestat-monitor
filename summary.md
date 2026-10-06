@@ -1,25 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 06-10-2026 to 12-10-2026
-**Generated:** 06-10-2026 16:24:12 IST
+**Range:** 07-10-2026 to 13-10-2026
+**Generated:** 07-10-2026 02:11:38 IST
 
 ## Summary
 
-- Matching PDFs: **16**
-- PDFs checked: **111**
+- Matching PDFs: **12**
+- PDFs checked: **84**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **06-10-2026 BANGALORE** · PDF [110935](https://cestat.gov.in/openfilec/129525/110935) · Acc
-  page 3: ar and co/dr seetharam.madhvachar@bgl.kochhar.com 28 c/20280/2022 commissioner of customs airport & acc, bangalore bharat electronics ltd dr/ip
-- **06-10-2026 DELHI** · PDF [111072](https://cestat.gov.in/openfilec/107079/111072) · GMR
-  page 1: - prev a.k.batra & associates, ca/dr caashokbatra@gmail.com 10 st/51828/2021 st/misc/51533/2025 jsw gmr cricket pvt ltd principal commissioner, central excise &
-- **06-10-2026 DELHI** · PDF [111078](https://cestat.gov.in/openfilec/107079/111078) · Acc
-  page 2: ail.com 12 c/51973/2024 c/misc/50033/2026 mmtc pamp india pvt ltd principal commissioner of customs acc (import),new delhi - import dmd advocates/dr admin@dmd.l
-- **06-10-2026 MUMBAI** · PDF [110987](https://cestat.gov.in/openfilec/127482/110987) · Acc
-  page 2: ) mumbai abhishek a rastogi /dr abhishek@rastogichambers.com 21 c/86128/2016 ryan sea air agent cc (acc & export) mumbai n. d. george/dr ndgeorge_66@yahoo.co.in
 - **07-10-2026 AHMEDABAD** · PDF [110956](https://cestat.gov.in/openfilec/124438/110956) · Shree
   page 1: 16 commissioner of central ex cise and service tax,surat-ii k patel engineers dr/ip 10 c/10780/2018 shree laxmi fashion commissioner of customs ,ahmedabad trive
 - **07-10-2026 DELHI** · PDF [111006](https://cestat.gov.in/openfilec/107079/111006) · Shree
@@ -47,4 +39,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37450953990
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37526736128
