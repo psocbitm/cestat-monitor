@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 06-10-2026 to 12-10-2026
-**Generated:** 06-10-2026 03:53:10 IST
+**Generated:** 06-10-2026 16:24:12 IST
 
 ## Summary
 
 - Matching PDFs: **16**
-- PDFs checked: **110**
+- PDFs checked: **111**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -47,4 +47,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37380450306
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37450953990
