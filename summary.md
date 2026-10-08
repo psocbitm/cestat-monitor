@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 08-10-2026 to 14-10-2026
-**Generated:** 08-10-2026 02:22:23 IST
+**Generated:** 08-10-2026 16:31:06 IST
 
 ## Summary
 
-- Matching PDFs: **8**
-- PDFs checked: **57**
+- Matching PDFs: **14**
+- PDFs checked: **83**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -28,7 +28,19 @@
   page 1: ogi /dr abhishek@rastogichambers.com c/85310/2026 regular matters 2 c/86875/2013 taiyyab khatri cc (acc & export) mumbai ip/dr 3 c/misc/85932/2021 pandhari pach
 - **09-10-2026 MUMBAI** · PDF [111097](https://cestat.gov.in/openfilec/127482/111097) · Shree
   page 2: l excise and service tax- raigad ajay singh and associates/dr a.singh.adv@gmail.com 24 e/86713/2019 shree ramdev metal mart commissioner of central excise and s
+- **12-10-2026 DELHI** · PDF [111222](https://cestat.gov.in/openfilec/107079/111222) · Shree
+  page 1: ical) sr. no. (defect diary no.) case type petitioner. respondent. advocate remarks 1. 51015/2025 c shree ganesh enterprises commissioner of customs- indore bal
+- **13-10-2026 DELHI** · PDF [111214](https://cestat.gov.in/openfilec/107079/111214) · Acc
+  page 1:  arora advocate/dr gs.arora@aroralawchambers.com 4 c/54841/2023 nipun impex commissioner of customs acc (export),new delhi - acc export piyush kumar advocate/dr
+- **13-10-2026 DELHI** · PDF [111223](https://cestat.gov.in/openfilec/107079/111223) · Acc
+  page 2:  issue) 11. 50199/2026 c m/s solankili logistics private limited principal commissioner of customs (acc (e-filed, pre-deposit issue) 12. 50769/2026 c nehasach i
+- **14-10-2026 CHENNAI** · PDF [111249](https://cestat.gov.in/openfilec/133568/111249) · Shree
+  page 1:  mills ltd commissioner of customs,tuticorin renganathan s/dr kannanmabl@hotmail.com 9 c/41363/2017 shree jaysundar mills p ltd formerly known as karthikeya spi
+- **14-10-2026 DELHI** · PDF [111210](https://cestat.gov.in/openfilec/107079/111210) · Shree
+  page 2:  no. 2, r.k.puram, new delhi - 110066 service tax division bench matters causelist 11 st/54692/2023 shree balaji construction company commissioner of central gs
+- **14-10-2026 DELHI** · PDF [111243](https://cestat.gov.in/openfilec/107079/111243) · Shree
+  page 1: cal ) sl no. appeal no. appellant respondent representative remarks regular matters 1 st/50744/2021 shree balaji construction commissioner, central excise & cgs
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37684058072
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/37765954029
