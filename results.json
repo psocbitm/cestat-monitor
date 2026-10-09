@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:31:56+05:30",
+  "generated_at": "2026-10-09T16:36:52+05:30",
   "start_date": "09-10-2026",
   "end_date": "15-10-2026",
   "days": 7,
@@ -184,6 +184,20 @@
           "url": "https://cestat.gov.in/openfilec/109120/111324",
           "result_type": "regular",
           "uploaded_at": "2026-10-08 18:10:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-10-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "111345",
+          "url": "https://cestat.gov.in/openfilec/109120/111345",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 12:26:07",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -491,6 +505,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "09-10-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "111354",
+          "url": "https://cestat.gov.in/openfilec/107079/111354",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 14:28:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -913,6 +941,20 @@
           "pages": 4,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "111349",
+          "url": "https://cestat.gov.in/openfilec/124438/111349",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 13:37:06",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1055,6 +1097,34 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111356",
+          "url": "https://cestat.gov.in/openfilec/133568/111356",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:02:22",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111361",
+          "url": "https://cestat.gov.in/openfilec/133568/111361",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:08:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1161,6 +1231,48 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "111346",
+          "url": "https://cestat.gov.in/openfilec/107079/111346",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 12:29:16",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "111347",
+          "url": "https://cestat.gov.in/openfilec/107079/111347",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 12:29:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "111355",
+          "url": "https://cestat.gov.in/openfilec/107079/111355",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 14:40:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1255,6 +1367,34 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111325",
+          "url": "https://cestat.gov.in/openfilec/127482/111325",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:51:40",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111326",
+          "url": "https://cestat.gov.in/openfilec/127482/111326",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:52:20",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1278,6 +1418,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-10-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "111350",
+          "url": "https://cestat.gov.in/openfilec/124438/111350",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 13:39:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1417,6 +1571,34 @@
           "url": "https://cestat.gov.in/openfilec/133568/111271",
           "result_type": "regular",
           "uploaded_at": "2026-10-08 17:04:15",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111357",
+          "url": "https://cestat.gov.in/openfilec/133568/111357",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:06:37",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111362",
+          "url": "https://cestat.gov.in/openfilec/133568/111362",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:13:20",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1625,6 +1807,34 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "13-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111327",
+          "url": "https://cestat.gov.in/openfilec/127482/111327",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:52:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111328",
+          "url": "https://cestat.gov.in/openfilec/127482/111328",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:53:09",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1648,6 +1858,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "14-10-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "111351",
+          "url": "https://cestat.gov.in/openfilec/124438/111351",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 13:41:10",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1792,6 +2016,34 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "14-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111358",
+          "url": "https://cestat.gov.in/openfilec/133568/111358",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:06:58",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "14-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111363",
+          "url": "https://cestat.gov.in/openfilec/133568/111363",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:13:41",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
@@ -1975,6 +2227,20 @@
           "pages": 2,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "14-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111329",
+          "url": "https://cestat.gov.in/openfilec/127482/111329",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:53:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2009,6 +2275,20 @@
           "url": "https://cestat.gov.in/openfilec/124438/111295",
           "result_type": "regular",
           "uploaded_at": "2026-10-08 17:19:40",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "111352",
+          "url": "https://cestat.gov.in/openfilec/124438/111352",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 13:41:34",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2165,6 +2445,34 @@
           "url": "https://cestat.gov.in/openfilec/133568/111274",
           "result_type": "regular",
           "uploaded_at": "2026-10-08 17:04:30",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111359",
+          "url": "https://cestat.gov.in/openfilec/133568/111359",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:07:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111364",
+          "url": "https://cestat.gov.in/openfilec/133568/111364",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 15:14:04",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -2368,6 +2676,48 @@
           "url": "https://cestat.gov.in/openfilec/127482/111306",
           "result_type": "regular",
           "uploaded_at": "2026-10-08 17:32:09",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111330",
+          "url": "https://cestat.gov.in/openfilec/127482/111330",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:54:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111331",
+          "url": "https://cestat.gov.in/openfilec/127482/111331",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:55:26",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "15-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111332",
+          "url": "https://cestat.gov.in/openfilec/127482/111332",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-09 10:55:53",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
