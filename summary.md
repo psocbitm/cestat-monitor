@@ -1,21 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 12-10-2026 to 18-10-2026
-**Generated:** 12-10-2026 17:01:28 IST
+**Range:** 13-10-2026 to 19-10-2026
+**Generated:** 13-10-2026 04:19:16 IST
 
 ## Summary
 
-- Matching PDFs: **16**
-- PDFs checked: **134**
+- Matching PDFs: **14**
+- PDFs checked: **107**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **12-10-2026 DELHI** · PDF [111222](https://cestat.gov.in/openfilec/107079/111222) · Shree
-  page 1: ical) sr. no. (defect diary no.) case type petitioner. respondent. advocate remarks 1. 51015/2025 c shree ganesh enterprises commissioner of customs- indore bal
-- **12-10-2026 MUMBAI** · PDF [111264](https://cestat.gov.in/openfilec/127482/111264) · Shree
-  page 1: mmisioner ,central excise and service tax- pune-ii max legal/dr makarand@maxlegal.in 9 e/85037/2018 shree pandurang ssk ltd commisioner ,central excise and serv
 - **13-10-2026 DELHI** · PDF [111214](https://cestat.gov.in/openfilec/107079/111214) · Acc
   page 1:  arora advocate/dr gs.arora@aroralawchambers.com 4 c/54841/2023 nipun impex commissioner of customs acc (export),new delhi - acc export piyush kumar advocate/dr
 - **13-10-2026 DELHI** · PDF [111223](https://cestat.gov.in/openfilec/107079/111223) · Acc
@@ -47,4 +43,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38241067825
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38317277836
