@@ -1,23 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 14-10-2026 to 20-10-2026
-**Generated:** 14-10-2026 14:40:02 IST
+**Range:** 15-10-2026 to 21-10-2026
+**Generated:** 15-10-2026 01:17:15 IST
 
 ## Summary
 
-- Matching PDFs: **10**
-- PDFs checked: **91**
+- Matching PDFs: **7**
+- PDFs checked: **66**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **14-10-2026 CHENNAI** · PDF [111249](https://cestat.gov.in/openfilec/133568/111249) · Shree
-  page 1:  mills ltd commissioner of customs,tuticorin renganathan s/dr kannanmabl@hotmail.com 9 c/41363/2017 shree jaysundar mills p ltd formerly known as karthikeya spi
-- **14-10-2026 DELHI** · PDF [111210](https://cestat.gov.in/openfilec/107079/111210) · Shree
-  page 2:  no. 2, r.k.puram, new delhi - 110066 service tax division bench matters causelist 11 st/54692/2023 shree balaji construction company commissioner of central gs
-- **14-10-2026 DELHI** · PDF [111243](https://cestat.gov.in/openfilec/107079/111243) · Shree
-  page 1: cal ) sl no. appeal no. appellant respondent representative remarks regular matters 1 st/50744/2021 shree balaji construction commissioner, central excise & cgs
 - **15-10-2026 MUMBAI** · PDF [111287](https://cestat.gov.in/openfilec/127482/111287) · Shree
   page 2: ayurjain6789@gmail.com st/87171/2018 18 st/90041/2018 commissioner of cgst & central excise- nagpur shree jagdamba construction co dr/ip 19 st/85091/2021 jm mha
 - **16-10-2026 AHMEDABAD** · PDF [111296](https://cestat.gov.in/openfilec/124438/111296) · Shree
@@ -35,4 +29,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38538608203
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38624992970
