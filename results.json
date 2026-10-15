@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T01:17:15+05:30",
+  "generated_at": "2026-10-15T14:10:31+05:30",
   "start_date": "15-10-2026",
   "end_date": "21-10-2026",
   "days": 7,
@@ -1645,8 +1645,23 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "success_empty",
-      "pdfs": [],
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "21-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111518",
+          "url": "https://cestat.gov.in/openfilec/133568/111518",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-15 13:35:29",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
       "error": ""
     },
     {
