@@ -1,29 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 16-10-2026 to 22-10-2026
-**Generated:** 16-10-2026 14:06:18 IST
+**Range:** 17-10-2026 to 23-10-2026
+**Generated:** 17-10-2026 00:54:22 IST
 
 ## Summary
 
-- Matching PDFs: **15**
-- PDFs checked: **82**
+- Matching PDFs: **12**
+- PDFs checked: **77**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **16-10-2026 AHMEDABAD** · PDF [111296](https://cestat.gov.in/openfilec/124438/111296) · Shree
-  page 2: ,bhavn agar rahul gajera/dr rahulgajera1982@ gmail.com 21 st/12270/2019 cgst & central excise surat shree gurjari industries ltd dr/ip 22 e/10403/2020 haritaze 
-- **16-10-2026 AHMEDABAD** · PDF [111353](https://cestat.gov.in/openfilec/124438/111353) · Shree
-  page 1: ise.nic.in a banerjee advocate ajaybaner@gmail.com for compliance 4 st/cod/10540/2026 11271/2026 st shree enterprise shreeminesh@gmail.com commissioner of centr
-- **16-10-2026 CHANDIGARH** · PDF [111238](https://cestat.gov.in/openfilec/104044/111238) · Shree
-  page 1: /2018 commissioner of central goods & service tax,gurgaon i mm asan auto ltd none/ip 7 e/60190/2018 shree krishna paper mills and industries ltd commissioner of
-- **16-10-2026 DELHI** · PDF [111217](https://cestat.gov.in/openfilec/107079/111217) · Acc
-  page 2: hi -airport and general 11 c/53419/2015 microsoft corporation india pvt ltd commissioner of customs acc (export),new delhi-air cargo export pooja sharma and tar
-- **16-10-2026 DELHI** · PDF [111226](https://cestat.gov.in/openfilec/107079/111226) · Acc
-  page 3: rtunity, pre-deposit & cod issues) 19. 51197/2026 c m/s frick india limited commissioner of customs acc (import) new delhi akshansh gupta akshanshofficial.10@gm
-- **16-10-2026 MUMBAI** · PDF [111283](https://cestat.gov.in/openfilec/127482/111283) · Acc
-  page 1: ppellant respondent representative remarks misc. matters 1 c/eh/86335/2026 suashish diamonds ltd cc acc mumbai jhamman singh/dr jhammansingh@hotmail.com c/86410
 - **19-10-2026 DELHI** · PDF [111574](https://cestat.gov.in/openfilec/107079/111574) · Shree
   page 1: central gst & central excise-jodhpur m. m. gupta, (jaipur)/dr mmgupta1959@gmail.com 4 st/51200/2020 shree krishna logistics principal commissioner of cgst and c
 - **21-10-2026 AHMEDABAD** · PDF [111554](https://cestat.gov.in/openfilec/124438/111554) · Shree
@@ -42,7 +30,13 @@
   page 2:  vadodara commr-appl-vad@gov.in hirak r shah ca advhirakshah@outlook.com cod & ors. 5 11282/2026 st shree ashapura construction cakbjadejanco1@gmail.com cgst & 
 - **22-10-2026 MUMBAI** · PDF [111560](https://cestat.gov.in/openfilec/127482/111560) · Acc
   page 2: mbai ajay singh and associates/dr a.singh.adv@gmail.com 23 c/eh/86455/2026 basant kumar agarwal cc (acc & export) mumbai ajay singh and associates/dr a.singh.ad
+- **23-10-2026 AHMEDABAD** · PDF [111559](https://cestat.gov.in/openfilec/124438/111559) · Shree
+  page 1: o.co.in 8 c/11674/2015 nitin shah jamnagar(prev) hasit d dave/dr hasitdd@yahoo.co.in 9 c/11721/2015 shree krushi seva mandal jamnagar(prev) subramanya law c omp
+- **23-10-2026 DELHI** · PDF [111577](https://cestat.gov.in/openfilec/107079/111577) · Acc, Acc Limited, Shree
+  page 1: l commissioner of cgst and central excise-jaipur shyamlal agarwal & company,c.a./dr 2 st/51756/2021 acc limited commissioner, central excise & cgst-bhopal i ip/
+- **23-10-2026 DELHI** · PDF [111608](https://cestat.gov.in/openfilec/107079/111608) · Acc
+  page 1: tive remarks misc. matters 1 c/eh/50591/2026 essma felts limited principal commissioner of customs, acc (import), new delhi sagar verma and diksha verma advocat
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38873284279
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38950976945
