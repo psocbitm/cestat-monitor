@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 16-10-2026 to 22-10-2026
-**Generated:** 16-10-2026 01:01:22 IST
+**Generated:** 16-10-2026 14:06:18 IST
 
 ## Summary
 
-- Matching PDFs: **14**
-- PDFs checked: **77**
+- Matching PDFs: **15**
+- PDFs checked: **82**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -34,6 +34,8 @@
   page 1: esource services p ltd commr service tax -i pune suresh singh, cost accountant /dr 10 st/85619/2017 shree padmanabha charitable trust commr service tax- i mumba
 - **21-10-2026 MUMBAI** · PDF [111598](https://cestat.gov.in/openfilec/127482/111598) · Acc, Shree
   page 2: ) mumbai nisha bineesh adv/dr nishabineeshlawyer@gmail.com 26 c/eh/86486/2026 gitanjali gems ltd cc acc mumbai pds legal/dr contact@pdslegal.co c/86673/2016 27 
+- **21-10-2026 MUMBAI** · PDF [111610](https://cestat.gov.in/openfilec/127482/111610) · Shree
+  page 1: esource services p ltd commr service tax -i pune suresh singh, cost accountant /dr 10 st/85619/2017 shree padmanabha charitable trust commr service tax- i mumba
 - **22-10-2026 AHMEDABAD** · PDF [111556](https://cestat.gov.in/openfilec/124438/111556) · Shree
   page 1: te limi ted cgst & central excise su rat ssn lawyers adv ocates/dr suri6law@mail.com 6 e/10828/2020 shree ved prakesh agrawal cgst & central excise surat ssn la
 - **22-10-2026 AHMEDABAD** · PDF [111582](https://cestat.gov.in/openfilec/124438/111582) · Shree
@@ -43,4 +45,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38792814977
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/38873284279

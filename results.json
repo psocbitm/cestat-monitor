@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T01:01:22+05:30",
+  "generated_at": "2026-10-16T14:06:18+05:30",
   "start_date": "16-10-2026",
   "end_date": "22-10-2026",
   "days": 7,
@@ -143,6 +143,20 @@
           "url": "https://cestat.gov.in/openfilec/109120/111602",
           "result_type": "regular",
           "uploaded_at": "2026-10-15 18:08:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "16-10-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "111619",
+          "url": "https://cestat.gov.in/openfilec/109120/111619",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-16 11:52:30",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1283,6 +1297,34 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "21-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111612",
+          "url": "https://cestat.gov.in/openfilec/133568/111612",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-16 11:21:27",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "21-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111614",
+          "url": "https://cestat.gov.in/openfilec/133568/111614",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-16 11:25:10",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1479,6 +1521,26 @@
           "pages": 3,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "21-10-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "111610",
+          "url": "https://cestat.gov.in/openfilec/127482/111610",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-16 11:05:56",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "esource services p ltd commr service tax -i pune suresh singh, cost accountant /dr 10 st/85619/2017 shree padmanabha charitable trust commr service tax- i mumbai vipin kumar jain/dr vipin@tlclegal.in 11 st"
+            }
+          ]
         }
       ],
       "error": ""
@@ -1711,6 +1773,20 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "22-10-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "111613",
+          "url": "https://cestat.gov.in/openfilec/133568/111613",
+          "result_type": "regular",
+          "uploaded_at": "2026-10-16 11:22:09",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "text_extracted",
           "matches": []
         }
