@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T14:16:53+05:30",
-  "start_date": "23-10-2026",
-  "end_date": "29-10-2026",
+  "generated_at": "2026-10-25T14:09:50+05:30",
+  "start_date": "25-10-2026",
+  "end_date": "31-10-2026",
   "days": 7,
   "keywords": [
     "Acc",
@@ -63,186 +63,6 @@
   ],
   "results": [
     {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "124438",
-        "name": "AHMEDABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "109120",
-        "name": "ALLAHABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "129525",
-        "name": "BANGALORE"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "104044",
-        "name": "CHANDIGARH"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "133568",
-        "name": "CHENNAI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "107079",
-        "name": "DELHI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "136507",
-        "name": "HYDERABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "119315",
-        "name": "KOLKATA"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "23-10-2026",
-      "bench": {
-        "value": "127482",
-        "name": "MUMBAI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "124438",
-        "name": "AHMEDABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "109120",
-        "name": "ALLAHABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "129525",
-        "name": "BANGALORE"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "104044",
-        "name": "CHANDIGARH"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "133568",
-        "name": "CHENNAI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "107079",
-        "name": "DELHI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "136507",
-        "name": "HYDERABAD"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "119315",
-        "name": "KOLKATA"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
-      "requested_date": "24-10-2026",
-      "bench": {
-        "value": "127482",
-        "name": "MUMBAI"
-      },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
-    },
-    {
       "requested_date": "25-10-2026",
       "bench": {
         "value": "124438",
@@ -684,6 +504,186 @@
     },
     {
       "requested_date": "29-10-2026",
+      "bench": {
+        "value": "127482",
+        "name": "MUMBAI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "124438",
+        "name": "AHMEDABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "109120",
+        "name": "ALLAHABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "129525",
+        "name": "BANGALORE"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "104044",
+        "name": "CHANDIGARH"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "133568",
+        "name": "CHENNAI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "107079",
+        "name": "DELHI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "136507",
+        "name": "HYDERABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "119315",
+        "name": "KOLKATA"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "30-10-2026",
+      "bench": {
+        "value": "127482",
+        "name": "MUMBAI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "124438",
+        "name": "AHMEDABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "109120",
+        "name": "ALLAHABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "129525",
+        "name": "BANGALORE"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "104044",
+        "name": "CHANDIGARH"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "133568",
+        "name": "CHENNAI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "107079",
+        "name": "DELHI"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "136507",
+        "name": "HYDERABAD"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
+      "bench": {
+        "value": "119315",
+        "name": "KOLKATA"
+      },
+      "status": "failed",
+      "pdfs": [],
+      "error": "CESTAT did not return the expected search form or CSRF token."
+    },
+    {
+      "requested_date": "31-10-2026",
       "bench": {
         "value": "127482",
         "name": "MUMBAI"
