@@ -1,7 +1,7 @@
 # CESTAT keyword report
 
-**Range:** 06-11-2026 to 12-11-2026
-**Generated:** 06-11-2026 16:49:39 IST
+**Range:** 07-11-2026 to 13-11-2026
+**Generated:** 07-11-2026 02:31:33 IST
 
 ## Summary
 
@@ -16,15 +16,6 @@ No keyword matches in this run.
 
 ## Failures
 
-- **06-11-2026 AHMEDABAD** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 ALLAHABAD** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 BANGALORE** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 CHANDIGARH** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 CHENNAI** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 DELHI** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 HYDERABAD** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 KOLKATA** (search): CESTAT did not return the expected search form or CSRF token.
-- **06-11-2026 MUMBAI** (search): CESTAT did not return the expected search form or CSRF token.
 - **07-11-2026 AHMEDABAD** (search): CESTAT did not return the expected search form or CSRF token.
 - **07-11-2026 ALLAHABAD** (search): CESTAT did not return the expected search form or CSRF token.
 - **07-11-2026 BANGALORE** (search): CESTAT did not return the expected search form or CSRF token.
@@ -79,7 +70,16 @@ No keyword matches in this run.
 - **12-11-2026 HYDERABAD** (search): CESTAT did not return the expected search form or CSRF token.
 - **12-11-2026 KOLKATA** (search): CESTAT did not return the expected search form or CSRF token.
 - **12-11-2026 MUMBAI** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 AHMEDABAD** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 ALLAHABAD** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 BANGALORE** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 CHANDIGARH** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 CHENNAI** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 DELHI** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 HYDERABAD** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 KOLKATA** (search): CESTAT did not return the expected search form or CSRF token.
+- **13-11-2026 MUMBAI** (search): CESTAT did not return the expected search form or CSRF token.
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/42209090718
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/42292874545
