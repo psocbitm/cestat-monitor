@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T01:04:45+05:30",
+  "generated_at": "2026-11-08T11:15:30+05:30",
   "start_date": "08-11-2026",
   "end_date": "14-11-2026",
   "days": 7,
@@ -68,9 +68,9 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -78,9 +78,9 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -88,9 +88,9 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -98,9 +98,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -108,9 +108,9 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -118,9 +118,9 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -128,9 +128,9 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -138,9 +138,9 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "08-11-2026",
@@ -148,9 +148,9 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -158,9 +158,9 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -168,9 +168,9 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -178,9 +178,9 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -188,9 +188,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -198,9 +198,9 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -208,9 +208,9 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -218,9 +218,9 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -228,9 +228,9 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "09-11-2026",
@@ -238,9 +238,9 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -248,9 +248,9 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -258,9 +258,9 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -268,9 +268,9 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -278,9 +278,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -288,9 +288,9 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -298,9 +298,9 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -308,9 +308,9 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -318,9 +318,9 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "10-11-2026",
@@ -328,9 +328,9 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -338,9 +338,52 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112312",
+          "url": "https://cestat.gov.in/openfilec/124438/112312",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:51:59",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112315",
+          "url": "https://cestat.gov.in/openfilec/124438/112315",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:52:45",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112354",
+          "url": "https://cestat.gov.in/openfilec/124438/112354",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:49:36",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -348,9 +391,24 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "112385",
+          "url": "https://cestat.gov.in/openfilec/109120/112385",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:26:51",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -358,9 +416,58 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112389",
+          "url": "https://cestat.gov.in/openfilec/129525/112389",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:37:52",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 5,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112392",
+          "url": "https://cestat.gov.in/openfilec/129525/112392",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:39:38",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "ical ) sl no. appeal no. appellant respondent representative remarks regular matters 1 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commissioner of central tax, belagavi commissionerate c"
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112395",
+          "url": "https://cestat.gov.in/openfilec/129525/112395",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:40:31",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -368,9 +475,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -378,9 +485,66 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112340",
+          "url": "https://cestat.gov.in/openfilec/133568/112340",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 15:30:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112344",
+          "url": "https://cestat.gov.in/openfilec/133568/112344",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:08:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112423",
+          "url": "https://cestat.gov.in/openfilec/133568/112423",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 14:09:58",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112442",
+          "url": "https://cestat.gov.in/openfilec/133568/112442",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-06 16:07:23",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -388,9 +552,172 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112327",
+          "url": "https://cestat.gov.in/openfilec/107079/112327",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 12:59:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112336",
+          "url": "https://cestat.gov.in/openfilec/107079/112336",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 14:07:32",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "gh, adv. vineetsingh2003@gmail.com (e-filed, pre-deposit, cod & other issues) 12. 52155/2026 st m/s shree cement limited commissioner of central gst & central excise- jodhpur sarvada legal devnath@sarvada."
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112373",
+          "url": "https://cestat.gov.in/openfilec/107079/112373",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:11:02",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": "cestat.filing @lakshmisri.com 18 c/51132/2025 denso haryana private limited commissioner of customs acc (import), new delhi -acc import v. lakshmikumaran, adv/dr cestat.filing @lakshmisri.com 19 c/50100/"
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112377",
+          "url": "https://cestat.gov.in/openfilec/107079/112377",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:22:27",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112417",
+          "url": "https://cestat.gov.in/openfilec/107079/112417",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 12:41:51",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "entral excise & cgst-jaipur i ujjval & associates, c.a./dr caujjvalsharma@gmail.com 8 st/52217/2022 shree vasu logistics limited commissioner, customs, central excise & cgst- raipur j.k.gupta tax litigator"
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112431",
+          "url": "https://cestat.gov.in/openfilec/107079/112431",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:41:43",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": "cestat.filing @lakshmisri.com 18 c/51132/2025 denso haryana private limited commissioner of customs acc (import), new delhi -acc import v. lakshmikumaran, adv/dr cestat.filing @lakshmisri.com 19 c/50100/"
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112435",
+          "url": "https://cestat.gov.in/openfilec/107079/112435",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:44:59",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "entral excise & cgst-jaipur i ujjval & associates, c.a./dr caujjvalsharma@gmail.com 8 st/52217/2022 shree vasu logistics limited commissioner, customs, central excise & cgst- raipur j.k.gupta tax litigator"
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112440",
+          "url": "https://cestat.gov.in/openfilec/107079/112440",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:58:22",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "gh, adv. vineetsingh2003@gmail.com (e-filed, pre-deposit, cod & other issues) 12. 52155/2026 st m/s shree cement limited commissioner of central gst & central excise- jodhpur sarvada legal devnath@sarvada."
+            }
+          ]
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112446",
+          "url": "https://cestat.gov.in/openfilec/107079/112446",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:16:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -398,9 +725,38 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112382",
+          "url": "https://cestat.gov.in/openfilec/136507/112382",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:25:02",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112402",
+          "url": "https://cestat.gov.in/openfilec/136507/112402",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 10:22:43",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -408,9 +764,9 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "11-11-2026",
@@ -418,9 +774,108 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112348",
+          "url": "https://cestat.gov.in/openfilec/127482/112348",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:27:30",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112351",
+          "url": "https://cestat.gov.in/openfilec/127482/112351",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:33:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112355",
+          "url": "https://cestat.gov.in/openfilec/127482/112355",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:55:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112360",
+          "url": "https://cestat.gov.in/openfilec/127482/112360",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:03:56",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112363",
+          "url": "https://cestat.gov.in/openfilec/127482/112363",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:04:30",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112366",
+          "url": "https://cestat.gov.in/openfilec/127482/112366",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:06:09",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "11-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112371",
+          "url": "https://cestat.gov.in/openfilec/127482/112371",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:08:16",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -428,9 +883,66 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112313",
+          "url": "https://cestat.gov.in/openfilec/124438/112313",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:52:15",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112316",
+          "url": "https://cestat.gov.in/openfilec/124438/112316",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:52:58",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112429",
+          "url": "https://cestat.gov.in/openfilec/124438/112429",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:20:37",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112444",
+          "url": "https://cestat.gov.in/openfilec/124438/112444",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-06 16:12:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -438,9 +950,24 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "112386",
+          "url": "https://cestat.gov.in/openfilec/109120/112386",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:27:01",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -448,9 +975,52 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112390",
+          "url": "https://cestat.gov.in/openfilec/129525/112390",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:38:50",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 6,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112393",
+          "url": "https://cestat.gov.in/openfilec/129525/112393",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:39:53",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112396",
+          "url": "https://cestat.gov.in/openfilec/129525/112396",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:40:49",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -458,9 +1028,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -468,9 +1038,58 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112341",
+          "url": "https://cestat.gov.in/openfilec/133568/112341",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 15:30:29",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112345",
+          "url": "https://cestat.gov.in/openfilec/133568/112345",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:08:24",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "of customs - chennai ii (import commissionerate) agol associates/dr contact@agol.in 34 c/40558/2025 shree info system solutions private limited commissioner of customs - chennai ii (import commissionerate)"
+            }
+          ]
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112424",
+          "url": "https://cestat.gov.in/openfilec/133568/112424",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 14:10:16",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -478,9 +1097,122 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112328",
+          "url": "https://cestat.gov.in/openfilec/107079/112328",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 12:59:39",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112337",
+          "url": "https://cestat.gov.in/openfilec/107079/112337",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 14:07:47",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112374",
+          "url": "https://cestat.gov.in/openfilec/107079/112374",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:11:27",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112378",
+          "url": "https://cestat.gov.in/openfilec/107079/112378",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:22:43",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112418",
+          "url": "https://cestat.gov.in/openfilec/107079/112418",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 12:44:32",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112432",
+          "url": "https://cestat.gov.in/openfilec/107079/112432",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:42:05",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112434",
+          "url": "https://cestat.gov.in/openfilec/107079/112434",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:44:36",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112448",
+          "url": "https://cestat.gov.in/openfilec/107079/112448",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:16:19",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -488,9 +1220,50 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112383",
+          "url": "https://cestat.gov.in/openfilec/136507/112383",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:25:18",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "4 diary no. 31261/2024 appeal no. e/30761/2024 tirupati - cgst commissionerate comm.tpt@gov.in m/s. shree radha krishna alloys (p) ltd vvsthermex@gmail.com defect 5 30471-30483/2025 (13 appeals) m/s g. t. "
+            }
+          ]
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112403",
+          "url": "https://cestat.gov.in/openfilec/136507/112403",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 10:23:01",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "4 diary no. 31261/2024 appeal no. e/30761/2024 tirupati - cgst commissionerate comm.tpt@gov.in m/s. shree radha krishna alloys (p) ltd vvsthermex@gmail.com defect 5 30471-30483/2025 (13 appeals) m/s g. t. "
+            }
+          ]
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -498,9 +1271,24 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "112450",
+          "url": "https://cestat.gov.in/openfilec/119315/112450",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:28:26",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "12-11-2026",
@@ -508,9 +1296,111 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112349",
+          "url": "https://cestat.gov.in/openfilec/127482/112349",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:28:04",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112352",
+          "url": "https://cestat.gov.in/openfilec/127482/112352",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:34:21",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112356",
+          "url": "https://cestat.gov.in/openfilec/127482/112356",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:55:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 4,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112364",
+          "url": "https://cestat.gov.in/openfilec/127482/112364",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:04:54",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112365",
+          "url": "https://cestat.gov.in/openfilec/127482/112365",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:05:46",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "fect diary no.) cas e typ e petitioner. respondent. advocate remarks 1 appeal diary no:8830420 22 c shree ganesh remedies ltd contact@ganeshremedies.co m commissioner of customs(impor t) -nhava sheva ip/dr"
+            }
+          ]
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112368",
+          "url": "https://cestat.gov.in/openfilec/127482/112368",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:06:56",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": " cc (preventive) mumbai srd legal/dr savita@srdlegal.in 15 c/eh/86511/2026 ultra tech cement ltd cc acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@lakshmisri.com c/86168/2016 16 c/misc/86685"
+            },
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "akshmisri.com c/86168/2016 16 c/misc/86685/2026 c/eh/86686/2026 c/87321/2016 komal international cc acc mumbai pds legal mumbai/dr contact@pdslegal.co 17 c/87422/2017 moti g.bhatia commissioner of custom"
+            }
+          ]
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -518,9 +1408,63 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112314",
+          "url": "https://cestat.gov.in/openfilec/124438/112314",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:52:28",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112317",
+          "url": "https://cestat.gov.in/openfilec/124438/112317",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 11:53:16",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112430",
+          "url": "https://cestat.gov.in/openfilec/124438/112430",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:20:59",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "cal ) sr. no. (defect diary no.) case type petitioner. respondent. advocate remarks 1 10666/2026 st shree balaji construction co. hastin_acharya@yahoo.com kutch-gandhidham cexappealsrajkot@gmail.com hemen "
+            },
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "m cexappealsrajkot@gmail.com hemen furiya hemenfuriya@gmail.com pre- deposit & ors. 2 10719/2026 st shree balaji construction co hastin_acharya@reediffmail.com kutch-gandhidham cexappealsrajkot@gmail.com h"
+            }
+          ]
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -528,9 +1472,24 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "112387",
+          "url": "https://cestat.gov.in/openfilec/109120/112387",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:27:12",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -538,9 +1497,52 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112391",
+          "url": "https://cestat.gov.in/openfilec/129525/112391",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:39:20",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 5,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112394",
+          "url": "https://cestat.gov.in/openfilec/129525/112394",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:40:07",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "BANGALORE",
+          "bench_id": "129525",
+          "pdf_id": "112397",
+          "url": "https://cestat.gov.in/openfilec/129525/112397",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:41:10",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -548,9 +1550,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -558,9 +1560,38 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112342",
+          "url": "https://cestat.gov.in/openfilec/133568/112342",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 15:30:56",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112346",
+          "url": "https://cestat.gov.in/openfilec/133568/112346",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:09:11",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -568,9 +1599,369 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112329",
+          "url": "https://cestat.gov.in/openfilec/107079/112329",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 12:59:57",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112338",
+          "url": "https://cestat.gov.in/openfilec/107079/112338",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 14:08:10",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 2,
+              "snippet": ".com (e-filed, cod is required) 15. 52131/2026 c deepesh chamoli principal commissioner of customs, acc-import dhiraj k sammi advocate dsammi_108@yahoo.co.in (e-filed, pre-deposit & other issues) prepare"
+            }
+          ]
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112375",
+          "url": "https://cestat.gov.in/openfilec/107079/112375",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:12:01",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112379",
+          "url": "https://cestat.gov.in/openfilec/107079/112379",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:23:06",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112412",
+          "url": "https://cestat.gov.in/openfilec/107079/112412",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 11:40:38",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112420",
+          "url": "https://cestat.gov.in/openfilec/107079/112420",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 13:13:22",
+          "status": "matched",
+          "error": "",
+          "pages": 16,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 1,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 1,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 3,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 3,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 3,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 3,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 4,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 5,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 5,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 5,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 5,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 6,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 7,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 7,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 7,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 7,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 8,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 9,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 9,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 9,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 9,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 10,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 11,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 11,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 11,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 11,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 12,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 13,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 13,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 13,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 13,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 14,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            },
+            {
+              "keyword": "Acc",
+              "page": 15,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 15,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 15,
+              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 15,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 16,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+            }
+          ]
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112433",
+          "url": "https://cestat.gov.in/openfilec/107079/112433",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:42:25",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112436",
+          "url": "https://cestat.gov.in/openfilec/107079/112436",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 15:45:30",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": " kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.co m 6 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51"
+            },
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 8 st/514"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 1,
+              "snippet": " kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.co m 6 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021"
+            },
+            {
+              "keyword": "Acc Limited",
+              "page": 1,
+              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 8 st/51484/2022 "
+            },
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 17 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 18 st/55388/2023 yog"
+            }
+          ]
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112449",
+          "url": "https://cestat.gov.in/openfilec/107079/112449",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:16:34",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -578,9 +1969,52 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112384",
+          "url": "https://cestat.gov.in/openfilec/136507/112384",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:25:35",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112404",
+          "url": "https://cestat.gov.in/openfilec/136507/112404",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 10:23:17",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "HYDERABAD",
+          "bench_id": "136507",
+          "pdf_id": "112441",
+          "url": "https://cestat.gov.in/openfilec/136507/112441",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:02:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -588,9 +2022,24 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "112451",
+          "url": "https://cestat.gov.in/openfilec/119315/112451",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-06 16:28:52",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "13-11-2026",
@@ -598,9 +2047,100 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112350",
+          "url": "https://cestat.gov.in/openfilec/127482/112350",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:28:33",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112353",
+          "url": "https://cestat.gov.in/openfilec/127482/112353",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:35:00",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112357",
+          "url": "https://cestat.gov.in/openfilec/127482/112357",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 16:55:46",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112367",
+          "url": "https://cestat.gov.in/openfilec/127482/112367",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:06:52",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112369",
+          "url": "https://cestat.gov.in/openfilec/127482/112369",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:07:12",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112370",
+          "url": "https://cestat.gov.in/openfilec/127482/112370",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-05 17:07:17",
+          "status": "matched",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Acc",
+              "page": 1,
+              "snippet": "ngh and associates/dr a.singh.adv@gmail.com 9 c/eh/86687/2026 c/87673/2016 asahi india glass ltd cc acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@lakshmisri.com 10 c/eh/86237/2026 commissio"
+            }
+          ]
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -608,9 +2148,9 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -618,9 +2158,9 @@
         "value": "109120",
         "name": "ALLAHABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -628,9 +2168,9 @@
         "value": "129525",
         "name": "BANGALORE"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -638,9 +2178,9 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -648,9 +2188,9 @@
         "value": "133568",
         "name": "CHENNAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -658,9 +2198,9 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -668,9 +2208,9 @@
         "value": "136507",
         "name": "HYDERABAD"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -678,9 +2218,9 @@
         "value": "119315",
         "name": "KOLKATA"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     },
     {
       "requested_date": "14-11-2026",
@@ -688,9 +2228,9 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
+      "status": "success_empty",
       "pdfs": [],
-      "error": "CESTAT did not return the expected search form or CSRF token."
+      "error": ""
     }
   ]
 }
