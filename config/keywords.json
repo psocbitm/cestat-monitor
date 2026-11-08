@@ -14,5 +14,12 @@
     "CVD",
     "GMR"
   ],
-  "excluded_phrases": ["ACC IMPORT", "ACC EXPORT", "accounts"]
+  "excluded_phrases": [
+    "ACC IMPORT",
+    "ACC EXPORT",
+    "CC ACC",
+    "CUSTOMS ACC",
+    "AIR CARGO COMPLEX",
+    "accounts"
+  ]
 }
