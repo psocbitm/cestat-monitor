@@ -227,12 +227,24 @@ class CestatClient:
             initial = self._request(session, "GET", BASE_URL)
             soup = BeautifulSoup(initial.text, "html.parser")
             form = soup.select_one("form#cauform")
-            token = soup.select_one('input[name="csrf_token"]')
-            if not form or not token or not token.get("value"):
+            if not form:
                 raise MonitorError("CESTAT did not return the expected search form or CSRF token.")
             data: dict[str, str] = {}
             for field in form.select('input[type="hidden"][name]'):
                 data[field["name"]] = field.get("value", "")
+            csrf_token = next(
+                (value.strip() for name, value in data.items() if "csrf" in name.casefold() and value.strip()),
+                "",
+            )
+            if not csrf_token:
+                meta_csrf = soup.select_one('meta[name*="csrf" i][content], meta[name="X-CSRF-TOKEN"][content]')
+                if meta_csrf and (meta_csrf.get("content") or "").strip():
+                    meta_name = (meta_csrf.get("name") or "").strip()
+                    csrf_field = "csrf_test_name" if meta_name.upper() == "X-CSRF-TOKEN" else meta_name
+                    csrf_token = meta_csrf["content"].strip()
+                    data[csrf_field] = csrf_token
+            if not csrf_token:
+                raise MonitorError("CESTAT did not return the expected search form or CSRF token.")
             data.update({"schemas": bench.value, "from": requested.strftime(DATE_FORMAT), "captcha_code": "111111"})
             action = urljoin(BASE_URL, form.get("action") or BASE_URL)
             response = self._request(session, "POST", action, data=data)
@@ -244,7 +256,9 @@ class CestatClient:
             pdfs: list[PdfRecord] = []
             for table_index, table in enumerate(result_soup.select("table")):
                 heading = normalize(table.get_text(" ", strip=True))
-                result_type = "supplementary" if "supplement" in heading else "regular"
+                prev = table.find_previous_sibling()
+                prev_heading = normalize(prev.get_text(" ", strip=True)) if prev else ""
+                result_type = "supplementary" if ("supplemen" in heading or "supplemen" in prev_heading) else "regular"
                 for row in table.select("tr"):
                     cells = [" ".join(cell.get_text(" ", strip=True).split()) for cell in row.select("th, td")]
                     link = row.select_one('a[href*="/openfilec/"]')
@@ -297,14 +311,6 @@ def should_retry_pdf(record: PdfRecord) -> bool:
 
 def should_retry_search(result: SearchResult) -> bool:
     return result.status == "failed" and is_transient_error(result.error)
-
-
-def reset_pdf_for_retry(record: PdfRecord) -> None:
-    record.status = "found"
-    record.error = ""
-    record.pages = 0
-    record.text_status = "not_processed"
-    record.matches.clear()
 
 
 def reset_pdf_for_retry(record: PdfRecord) -> None:

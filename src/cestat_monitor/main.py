@@ -23,10 +23,19 @@ def main() -> int:
         if args.days < 1 or args.days > 7:
             raise MonitorError("Days must be between 1 and 7.")
         payload = run(start, keywords, exclusions, args.bench_limit, args.days, args.output)
-        failures = sum(result["status"] == "failed" for result in payload["results"])
+        search_failures = sum(result["status"] == "failed" for result in payload["results"])
+        pdf_failures = sum(pdf["status"] == "failed" for result in payload["results"] for pdf in result["pdfs"])
         matches = sum(bool(pdf["matches"]) for result in payload["results"] for pdf in result["pdfs"])
-        logging.info("Completed %s to %s: %d date/bench searches, %d matching PDFs, %d failed searches", payload["start_date"], payload["end_date"], len(payload["results"]), matches, failures)
-        return 1 if failures else 0
+        logging.info(
+            "Completed %s to %s: %d date/bench searches, %d matching PDFs, %d failed searches, %d failed PDFs",
+            payload["start_date"],
+            payload["end_date"],
+            len(payload["results"]),
+            matches,
+            search_failures,
+            pdf_failures,
+        )
+        return 1 if (search_failures or pdf_failures) else 0
     except MonitorError as exc:
         logging.error("ERROR: %s", exc)
         return 2

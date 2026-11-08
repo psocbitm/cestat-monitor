@@ -261,6 +261,15 @@ function rowVisible(row, q) {{
   const text = ((row.dataset.date || '') + ' ' + (row.dataset.bench || '') + ' ' + row.textContent).toLowerCase();
   return !q || text.includes(q);
 }}
+function pdfFullText(pdfRow) {{
+  let text = pdfRow.textContent || '';
+  let next = pdfRow.nextElementSibling;
+  while (next && next.classList.contains('detail-row')) {{
+    text += ' ' + (next.textContent || '');
+    next = next.nextElementSibling;
+  }}
+  return text.toLowerCase();
+}}
 function applyFilters() {{
   const only = matchesOnly.checked;
   const q = searchInput.value.trim().toLowerCase();
@@ -269,7 +278,15 @@ function applyFilters() {{
     const detail = document.getElementById(row.dataset.group);
     const hasMatches = row.dataset.hasMatches === '1';
     const hasFailures = row.dataset.hasFailures === '1';
-    const visible = (!only || hasMatches || hasFailures) && rowVisible(row, q);
+    const groupMatched = rowVisible(row, q);
+    const pdfRows = detail ? [...detail.querySelectorAll('tr.pdf-row')] : [];
+    let anyPdfMatched = false;
+    pdfRows.forEach((pdfRow) => {{
+      const pdfMatched = !q || groupMatched || pdfFullText(pdfRow).includes(q);
+      if (pdfMatched) anyPdfMatched = true;
+    }});
+    const detailMatched = detail ? detail.textContent.toLowerCase().includes(q) : false;
+    const visible = (!only || hasMatches || hasFailures) && (!q || groupMatched || anyPdfMatched || detailMatched);
     row.classList.toggle('filter-hidden', !visible);
     if (detail) {{
       detail.classList.toggle('filter-hidden', !visible);
@@ -279,8 +296,8 @@ function applyFilters() {{
       }}
     }}
     if (visible) shown += 1;
-    detail?.querySelectorAll('tr.pdf-row').forEach((pdfRow) => {{
-      const pdfVisible = visible && rowVisible(pdfRow, q);
+    pdfRows.forEach((pdfRow) => {{
+      const pdfVisible = visible && (!q || groupMatched || pdfFullText(pdfRow).includes(q));
       pdfRow.classList.toggle('filter-hidden', !pdfVisible);
       let next = pdfRow.nextElementSibling;
       while (next && next.classList.contains('detail-row')) {{

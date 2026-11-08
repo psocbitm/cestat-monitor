@@ -17,9 +17,13 @@ try:
     keywords, exclusions = load_config(Path("config/keywords.json"))
     payload = run(parse_start_date(args.start_date), keywords, exclusions, bench_limit=2, days=2, output_dir=args.output)
     pdf_count = sum(len(result["pdfs"]) for result in payload["results"])
+    search_failures = sum(result["status"] == "failed" for result in payload["results"])
     pdf_failures = sum(pdf["status"] == "failed" for result in payload["results"] for pdf in result["pdfs"])
-    print(f"Smoke run complete: {len(payload['results'])} date/bench searches, {pdf_count} PDFs processed, {pdf_failures} PDF failure(s).")
-    if pdf_failures:
-        raise SystemExit("Smoke run finished with PDF failures; inspect smoke-output/results.json.")
+    print(
+        f"Smoke run complete: {len(payload['results'])} date/bench searches, "
+        f"{pdf_count} PDFs processed, {search_failures} search failure(s), {pdf_failures} PDF failure(s)."
+    )
+    if search_failures or pdf_failures:
+        raise SystemExit("Smoke run finished with failures; inspect smoke-output/results.json.")
 except MonitorError as exc:
     raise SystemExit(f"Smoke run failed: {exc}")
