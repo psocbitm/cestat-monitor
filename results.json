@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T11:15:30+05:30",
+  "generated_at": "2026-11-08T12:02:52+05:30",
   "start_date": "08-11-2026",
   "end_date": "14-11-2026",
   "days": 7,
@@ -21,6 +21,9 @@
   "excluded_phrases": [
     "ACC IMPORT",
     "ACC EXPORT",
+    "CC ACC",
+    "CUSTOMS ACC",
+    "AIR CARGO COMPLEX",
     "accounts"
   ],
   "benches": [
@@ -348,6 +351,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112312",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:51:59",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -362,6 +366,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112315",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:52:45",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -376,6 +381,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112354",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:49:36",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -401,6 +407,7 @@
           "url": "https://cestat.gov.in/openfilec/109120/112385",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:26:51",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -426,6 +433,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112389",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:37:52",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 5,
@@ -440,6 +448,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112392",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:39:38",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "matched",
           "error": "",
           "pages": 1,
@@ -448,7 +457,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "ical ) sl no. appeal no. appellant respondent representative remarks regular matters 1 e/20184/2021 shree halasidhanath sahakari sakhare karkhana ltd commissioner of central tax, belagavi commissionerate c"
+              "snippet": "ICAL ) Sl No. APPEAL NO. APPELLANT RESPONDENT REPRESENTATIVE REMARKS REGULAR MATTERS 1 E/20184/2021 Shree Halasidhanath Sahakari Sakhare Karkhana Ltd Commissioner Of Central Tax, Belagavi Commissionerate C"
             }
           ]
         },
@@ -460,6 +469,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112395",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:40:31",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -495,6 +505,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112340",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 15:30:02",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -509,6 +520,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112344",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:08:04",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -523,6 +535,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112423",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 14:09:58",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -537,6 +550,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112442",
           "result_type": "supplementary",
           "uploaded_at": "2026-11-06 16:07:23",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -562,6 +576,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112327",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 12:59:17",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -576,6 +591,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112336",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 14:07:32",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -584,7 +600,7 @@
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": "gh, adv. vineetsingh2003@gmail.com (e-filed, pre-deposit, cod & other issues) 12. 52155/2026 st m/s shree cement limited commissioner of central gst & central excise- jodhpur sarvada legal devnath@sarvada."
+              "snippet": "GH, ADV. vineetsingh2003@gmail.com (E-FILED, PRE-DEPOSIT, COD & OTHER ISSUES) 12. 52155/2026 ST M/s Shree Cement Limited COMMISSIONER OF CENTRAL GST & CENTRAL EXCISE- JODHPUR Sarvada Legal devnath@sarvada."
             }
           ]
         },
@@ -596,17 +612,12 @@
           "url": "https://cestat.gov.in/openfilec/107079/112373",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:11:02",
-          "status": "matched",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
           "error": "",
           "pages": 2,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 2,
-              "snippet": "cestat.filing @lakshmisri.com 18 c/51132/2025 denso haryana private limited commissioner of customs acc (import), new delhi -acc import v. lakshmikumaran, adv/dr cestat.filing @lakshmisri.com 19 c/50100/"
-            }
-          ]
+          "matches": []
         },
         {
           "date": "11-11-2026",
@@ -616,6 +627,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112377",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:22:27",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -630,6 +642,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112417",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 12:41:51",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -638,7 +651,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "entral excise & cgst-jaipur i ujjval & associates, c.a./dr caujjvalsharma@gmail.com 8 st/52217/2022 shree vasu logistics limited commissioner, customs, central excise & cgst- raipur j.k.gupta tax litigator"
+              "snippet": "ENTRAL EXCISE & CGST-JAIPUR I UJJVAL & ASSOCIATES, C.A./DR caujjvalsharma@gmail.com 8 ST/52217/2022 SHREE VASU LOGISTICS LIMITED COMMISSIONER, CUSTOMS, CENTRAL EXCISE & CGST- RAIPUR J.K.GUPTA TAX LITIGATOR"
             }
           ]
         },
@@ -650,17 +663,12 @@
           "url": "https://cestat.gov.in/openfilec/107079/112431",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:41:43",
-          "status": "matched",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
           "error": "",
           "pages": 2,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 2,
-              "snippet": "cestat.filing @lakshmisri.com 18 c/51132/2025 denso haryana private limited commissioner of customs acc (import), new delhi -acc import v. lakshmikumaran, adv/dr cestat.filing @lakshmisri.com 19 c/50100/"
-            }
-          ]
+          "matches": []
         },
         {
           "date": "11-11-2026",
@@ -670,6 +678,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112435",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:44:59",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -678,7 +687,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "entral excise & cgst-jaipur i ujjval & associates, c.a./dr caujjvalsharma@gmail.com 8 st/52217/2022 shree vasu logistics limited commissioner, customs, central excise & cgst- raipur j.k.gupta tax litigator"
+              "snippet": "ENTRAL EXCISE & CGST-JAIPUR I UJJVAL & ASSOCIATES, C.A./DR caujjvalsharma@gmail.com 8 ST/52217/2022 SHREE VASU LOGISTICS LIMITED COMMISSIONER, CUSTOMS, CENTRAL EXCISE & CGST- RAIPUR J.K.GUPTA TAX LITIGATOR"
             }
           ]
         },
@@ -690,6 +699,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112440",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:58:22",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -698,7 +708,7 @@
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": "gh, adv. vineetsingh2003@gmail.com (e-filed, pre-deposit, cod & other issues) 12. 52155/2026 st m/s shree cement limited commissioner of central gst & central excise- jodhpur sarvada legal devnath@sarvada."
+              "snippet": "GH, ADV. vineetsingh2003@gmail.com (E-FILED, PRE-DEPOSIT, COD & OTHER ISSUES) 12. 52155/2026 ST M/s Shree Cement Limited COMMISSIONER OF CENTRAL GST & CENTRAL EXCISE- JODHPUR Sarvada Legal devnath@sarvada."
             }
           ]
         },
@@ -710,6 +720,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112446",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:16:04",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -735,6 +746,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112382",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:25:02",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -749,6 +761,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112402",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 10:22:43",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -784,6 +797,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112348",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:27:30",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -798,6 +812,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112351",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:33:33",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -812,6 +827,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112355",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:55:19",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -826,6 +842,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112360",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:03:56",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -840,6 +857,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112363",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:04:30",
+          "bench_type": "CST(SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -854,6 +872,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112366",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:06:09",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -868,6 +887,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112371",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:08:16",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -893,6 +913,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112313",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:52:15",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -907,6 +928,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112316",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:52:58",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -921,6 +943,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112429",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:20:37",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -935,6 +958,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112444",
           "result_type": "supplementary",
           "uploaded_at": "2026-11-06 16:12:46",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -960,6 +984,7 @@
           "url": "https://cestat.gov.in/openfilec/109120/112386",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:27:01",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -985,6 +1010,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112390",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:38:50",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 6,
@@ -999,6 +1025,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112393",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:39:53",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1013,6 +1040,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112396",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:40:49",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1048,6 +1076,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112341",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 15:30:29",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1062,6 +1091,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112345",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:08:24",
+          "bench_type": "CUSTOM (DB)",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -1070,7 +1100,7 @@
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": "of customs - chennai ii (import commissionerate) agol associates/dr contact@agol.in 34 c/40558/2025 shree info system solutions private limited commissioner of customs - chennai ii (import commissionerate)"
+              "snippet": "of Customs - Chennai II (Import Commissionerate) AGOL Associates/DR contact@agol.in 34 C/40558/2025 Shree Info System Solutions Private Limited Commissioner of Customs - Chennai II (Import Commissionerate)"
             }
           ]
         },
@@ -1082,6 +1112,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112424",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 14:10:16",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1107,6 +1138,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112328",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 12:59:39",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1121,6 +1153,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112337",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 14:07:47",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1135,6 +1168,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112374",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:11:27",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1149,6 +1183,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112378",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:22:43",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1163,6 +1198,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112418",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 12:44:32",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1177,6 +1213,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112432",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:42:05",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1191,6 +1228,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112434",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:44:36",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1205,6 +1243,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112448",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:16:19",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1230,6 +1269,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112383",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:25:18",
+          "bench_type": "DIVISION BENCH",
           "status": "matched",
           "error": "",
           "pages": 3,
@@ -1238,7 +1278,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "4 diary no. 31261/2024 appeal no. e/30761/2024 tirupati - cgst commissionerate comm.tpt@gov.in m/s. shree radha krishna alloys (p) ltd vvsthermex@gmail.com defect 5 30471-30483/2025 (13 appeals) m/s g. t. "
+              "snippet": "4 Diary No. 31261/2024 Appeal No. E/30761/2024 Tirupati - CGST Commissionerate comm.tpt@gov.in M/s. Shree Radha Krishna Alloys (P) Ltd vvsthermex@gmail.com Defect 5 30471-30483/2025 (13 Appeals) M/s G. T. "
             }
           ]
         },
@@ -1250,6 +1290,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112403",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 10:23:01",
+          "bench_type": "DIVISION BENCH",
           "status": "matched",
           "error": "",
           "pages": 3,
@@ -1258,7 +1299,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "4 diary no. 31261/2024 appeal no. e/30761/2024 tirupati - cgst commissionerate comm.tpt@gov.in m/s. shree radha krishna alloys (p) ltd vvsthermex@gmail.com defect 5 30471-30483/2025 (13 appeals) m/s g. t. "
+              "snippet": "4 Diary No. 31261/2024 Appeal No. E/30761/2024 Tirupati - CGST Commissionerate comm.tpt@gov.in M/s. Shree Radha Krishna Alloys (P) Ltd vvsthermex@gmail.com Defect 5 30471-30483/2025 (13 Appeals) M/s G. T. "
             }
           ]
         }
@@ -1281,6 +1322,7 @@
           "url": "https://cestat.gov.in/openfilec/119315/112450",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:28:26",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1306,6 +1348,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112349",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:28:04",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1320,6 +1363,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112352",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:34:21",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1334,6 +1378,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112356",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:55:33",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 4,
@@ -1348,6 +1393,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112364",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:04:54",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1362,6 +1408,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112365",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:05:46",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "matched",
           "error": "",
           "pages": 2,
@@ -1370,7 +1417,7 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "fect diary no.) cas e typ e petitioner. respondent. advocate remarks 1 appeal diary no:8830420 22 c shree ganesh remedies ltd contact@ganeshremedies.co m commissioner of customs(impor t) -nhava sheva ip/dr"
+              "snippet": "fect Diary No.) Cas e Typ e Petitioner. Respondent. Advocate Remarks 1 Appeal Diary No:8830420 22 C SHREE GANESH REMEDIES LTD contact@ganeshremedies.co m COMMISSIONER OF CUSTOMS(IMPOR T) -NHAVA SHEVA IP/DR"
             }
           ]
         },
@@ -1382,22 +1429,12 @@
           "url": "https://cestat.gov.in/openfilec/127482/112368",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:06:56",
-          "status": "matched",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
           "error": "",
           "pages": 2,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": " cc (preventive) mumbai srd legal/dr savita@srdlegal.in 15 c/eh/86511/2026 ultra tech cement ltd cc acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@lakshmisri.com c/86168/2016 16 c/misc/86685"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "akshmisri.com c/86168/2016 16 c/misc/86685/2026 c/eh/86686/2026 c/87321/2016 komal international cc acc mumbai pds legal mumbai/dr contact@pdslegal.co 17 c/87422/2017 moti g.bhatia commissioner of custom"
-            }
-          ]
+          "matches": []
         }
       ],
       "error": ""
@@ -1418,6 +1455,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112314",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:52:28",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1432,6 +1470,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112317",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 11:53:16",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1446,6 +1485,7 @@
           "url": "https://cestat.gov.in/openfilec/124438/112430",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:20:59",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "matched",
           "error": "",
           "pages": 1,
@@ -1454,12 +1494,12 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "cal ) sr. no. (defect diary no.) case type petitioner. respondent. advocate remarks 1 10666/2026 st shree balaji construction co. hastin_acharya@yahoo.com kutch-gandhidham cexappealsrajkot@gmail.com hemen "
+              "snippet": "CAL ) Sr. No. (Defect Diary No.) Case Type Petitioner. Respondent. Advocate Remarks 1 10666/2026 ST SHREE BALAJI CONSTRUCTION CO. hastin_acharya@yahoo.com KUTCH-GANDHIDHAM cexappealsrajkot@gmail.com Hemen "
             },
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "m cexappealsrajkot@gmail.com hemen furiya hemenfuriya@gmail.com pre- deposit & ors. 2 10719/2026 st shree balaji construction co hastin_acharya@reediffmail.com kutch-gandhidham cexappealsrajkot@gmail.com h"
+              "snippet": "M cexappealsrajkot@gmail.com Hemen Furiya hemenfuriya@gmail.com Pre- Deposit & ors. 2 10719/2026 ST Shree Balaji Construction Co hastin_acharya@reediffmail.com KUTCH-GANDHIDHAM cexappealsrajkot@gmail.com H"
             }
           ]
         }
@@ -1482,6 +1522,7 @@
           "url": "https://cestat.gov.in/openfilec/109120/112387",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:27:12",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1507,6 +1548,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112391",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:39:20",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 5,
@@ -1521,6 +1563,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112394",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:40:07",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1535,6 +1578,7 @@
           "url": "https://cestat.gov.in/openfilec/129525/112397",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:41:10",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1570,6 +1614,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112342",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 15:30:56",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1584,6 +1629,7 @@
           "url": "https://cestat.gov.in/openfilec/133568/112346",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:09:11",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1609,6 +1655,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112329",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 12:59:57",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
@@ -1623,17 +1670,12 @@
           "url": "https://cestat.gov.in/openfilec/107079/112338",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 14:08:10",
-          "status": "matched",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
           "error": "",
           "pages": 2,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 2,
-              "snippet": ".com (e-filed, cod is required) 15. 52131/2026 c deepesh chamoli principal commissioner of customs, acc-import dhiraj k sammi advocate dsammi_108@yahoo.co.in (e-filed, pre-deposit & other issues) prepare"
-            }
-          ]
+          "matches": []
         },
         {
           "date": "13-11-2026",
@@ -1643,6 +1685,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112375",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:12:01",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
@@ -1657,6 +1700,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112379",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:23:06",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1671,6 +1715,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112412",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 11:40:38",
+          "bench_type": "CST(DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1685,210 +1730,56 @@
           "url": "https://cestat.gov.in/openfilec/107079/112420",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 13:13:22",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "matched",
           "error": "",
           "pages": 16,
           "text_status": "text_extracted",
           "matches": [
             {
-              "keyword": "Acc",
+              "keyword": "Acc Limited",
               "page": 1,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
+              "snippet": "H KUMAR KABRA, C.A. C/O APPELLANT/DR NRKABRAASSOCIATES@GMAIL.COM 7 ST/51756/2021 ST/MISC/50790/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-BHOPAL I SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 8 ST/51781/2021",
+              "pages": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ]
             },
             {
               "keyword": "Acc Limited",
               "page": 1,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 1,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
+              "snippet": "AL EXCISE & CGST-BHOPAL I SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 8 ST/51781/2021 ST/MISC/50789/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-JODHPUR SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 9 ST/51484/2022 ",
+              "pages": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ]
             },
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 3,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 3,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 3,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 3,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 4,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 5,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 5,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 5,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 5,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 6,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 7,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 7,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 7,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 7,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 8,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 9,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 9,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 9,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 9,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 10,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 11,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 11,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 11,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 11,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 12,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 13,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 13,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 13,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 13,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 14,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
-            },
-            {
-              "keyword": "Acc",
-              "page": 15,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 15,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/514"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 15,
-              "snippet": "h kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.com 7 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 15,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 8 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 9 st/51484/2022 "
-            },
-            {
-              "keyword": "Shree",
-              "page": 16,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 18 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 19 st/55388/2023 yog"
+              "snippet": "SSIONER, CGST- DELHI EAST RAKESH CHITKARA, ADVOCATE/DR CHITKARA.ADVOCATE@GMAIL.COM 18 ST/55376/2023 SHREE SERVICES COMMISSIONER OF CENTRAL EXCISE & CGST-BHOPAL-I ROHIT VASWANI, C.A./DR 19 ST/55388/2023 YOG",
+              "pages": [
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                16
+              ]
             }
           ]
         },
@@ -1900,6 +1791,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112433",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:42:25",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 3,
@@ -1914,35 +1806,26 @@
           "url": "https://cestat.gov.in/openfilec/107079/112436",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 15:45:30",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "matched",
           "error": "",
           "pages": 2,
           "text_status": "text_extracted",
           "matches": [
             {
-              "keyword": "Acc",
+              "keyword": "Acc Limited",
               "page": 1,
-              "snippet": " kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.co m 6 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 8 st/514"
+              "snippet": " KUMAR KABRA, C.A. C/O APPELLANT/DR NRKABRAASSOCIATES@GMAIL.CO M 6 ST/51756/2021 ST/MISC/50790/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-BHOPAL I SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 7 ST/51781/2021"
             },
             {
               "keyword": "Acc Limited",
               "page": 1,
-              "snippet": " kumar kabra, c.a. c/o appellant/dr nrkabraassociates@gmail.co m 6 st/51756/2021 st/misc/50790/2026 acc limited commissioner, central excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021"
-            },
-            {
-              "keyword": "Acc Limited",
-              "page": 1,
-              "snippet": "al excise & cgst-bhopal i sarvada legal/dr devnath@sarvada.co.in 7 st/51781/2021 st/misc/50789/2026 acc limited commissioner, central excise & cgst-jodhpur sarvada legal/dr devnath@sarvada.co.in 8 st/51484/2022 "
+              "snippet": "AL EXCISE & CGST-BHOPAL I SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 7 ST/51781/2021 ST/MISC/50789/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-JODHPUR SARVADA LEGAL/DR DEVNATH@SARVADA.CO.IN 8 ST/51484/2022 "
             },
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": "ssioner, cgst- delhi east rakesh chitkara, advocate/dr chitkara.advocate@gmail.com 17 st/55376/2023 shree services commissioner of central excise & cgst-bhopal-i rohit vaswani, c.a./dr 18 st/55388/2023 yog"
+              "snippet": "SSIONER, CGST- DELHI EAST RAKESH CHITKARA, ADVOCATE/DR CHITKARA.ADVOCATE@GMAIL.COM 17 ST/55376/2023 SHREE SERVICES COMMISSIONER OF CENTRAL EXCISE & CGST-BHOPAL-I ROHIT VASWANI, C.A./DR 18 ST/55388/2023 YOG"
             }
           ]
         },
@@ -1954,6 +1837,7 @@
           "url": "https://cestat.gov.in/openfilec/107079/112449",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:16:34",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -1979,6 +1863,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112384",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:25:35",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -1993,6 +1878,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112404",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 10:23:17",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2007,6 +1893,7 @@
           "url": "https://cestat.gov.in/openfilec/136507/112441",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:02:33",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -2032,6 +1919,7 @@
           "url": "https://cestat.gov.in/openfilec/119315/112451",
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:28:52",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2057,6 +1945,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112350",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:28:33",
+          "bench_type": "SINGLE MEMBER (SM)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -2071,6 +1960,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112353",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:35:00",
+          "bench_type": "SERVICE TAX (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2085,6 +1975,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112357",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 16:55:46",
+          "bench_type": "EXCISE (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
@@ -2099,6 +1990,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112367",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:06:52",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -2113,6 +2005,7 @@
           "url": "https://cestat.gov.in/openfilec/127482/112369",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:07:12",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
@@ -2127,17 +2020,12 @@
           "url": "https://cestat.gov.in/openfilec/127482/112370",
           "result_type": "regular",
           "uploaded_at": "2026-11-05 17:07:17",
-          "status": "matched",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
           "error": "",
           "pages": 1,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "ngh and associates/dr a.singh.adv@gmail.com 9 c/eh/86687/2026 c/87673/2016 asahi india glass ltd cc acc mumbai lakshmi kumaran sridharan/dr cestat.filingmumbai@lakshmisri.com 10 c/eh/86237/2026 commissio"
-            }
-          ]
+          "matches": []
         }
       ],
       "error": ""
