@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T01:35:16+05:30",
+  "generated_at": "2026-11-09T17:39:24+05:30",
   "start_date": "09-11-2026",
   "end_date": "15-11-2026",
   "days": 7,
@@ -492,27 +492,6 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
-        },
-        {
-          "date": "11-11-2026",
-          "bench": "DELHI",
-          "bench_id": "107079",
-          "pdf_id": "112336",
-          "url": "https://cestat.gov.in/openfilec/107079/112336",
-          "result_type": "regular",
-          "uploaded_at": "2026-11-05 14:07:32",
-          "bench_type": "CENTRAL REGISTRY",
-          "status": "matched",
-          "error": "",
-          "pages": 2,
-          "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Shree",
-              "page": 2,
-              "snippet": "GH, ADV. vineetsingh2003@gmail.com (E-FILED, PRE-DEPOSIT, COD & OTHER ISSUES) 12. 52155/2026 ST M/s Shree Cement Limited COMMISSIONER OF CENTRAL GST & CENTRAL EXCISE- JODHPUR Sarvada Legal devnath@sarvada."
-            }
-          ]
         },
         {
           "date": "11-11-2026",
@@ -1748,6 +1727,21 @@
           "result_type": "regular",
           "uploaded_at": "2026-11-06 16:16:34",
           "bench_type": "EXCISE (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112461",
+          "url": "https://cestat.gov.in/openfilec/107079/112461",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-09 14:40:32",
+          "bench_type": "CUSTOM (DB)",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
