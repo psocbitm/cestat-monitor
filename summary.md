@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 10-11-2026 to 16-11-2026
-**Generated:** 10-11-2026 05:32:43 IST
+**Generated:** 10-11-2026 17:14:38 IST
 
 ## Summary
 
-- Matching PDFs: **11**
-- PDFs checked: **85**
+- Matching PDFs: **10**
+- PDFs checked: **99**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -30,11 +30,9 @@
   page 1: fect Diary No.) Cas e Typ e Petitioner. Respondent. Advocate Remarks 1 Appeal Diary No:8830420 22 C SHREE GANESH REMEDIES LTD contact@ganeshremedies.co m COMMIS
 - **13-11-2026 AHMEDABAD** (CENTRAL REGISTRY) · PDF [112430](https://cestat.gov.in/openfilec/124438/112430#page=1) · Shree
   page 1: CAL ) Sr. No. (Defect Diary No.) Case Type Petitioner. Respondent. Advocate Remarks 1 10666/2026 ST SHREE BALAJI CONSTRUCTION CO. hastin_acharya@yahoo.com KUTCH
-- **13-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112420](https://cestat.gov.in/openfilec/107079/112420#page=1) · Acc Limited, Shree
-  page 1: H KUMAR KABRA, C.A. C/O APPELLANT/DR NRKABRAASSOCIATES@GMAIL.COM 7 ST/51756/2021 ST/MISC/50790/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-BHOPAL I SAR
 - **13-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112436](https://cestat.gov.in/openfilec/107079/112436#page=1) · Acc Limited, Shree
   page 1:  KUMAR KABRA, C.A. C/O APPELLANT/DR NRKABRAASSOCIATES@GMAIL.CO M 6 ST/51756/2021 ST/MISC/50790/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-BHOPAL I SAR
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/42723538652
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/42807891355
