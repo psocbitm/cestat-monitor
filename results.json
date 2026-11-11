@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T03:07:49+05:30",
+  "generated_at": "2026-11-11T17:03:51+05:30",
   "start_date": "11-11-2026",
   "end_date": "17-11-2026",
   "days": 7,
@@ -927,6 +927,21 @@
           "result_type": "regular",
           "uploaded_at": "2026-11-06 14:10:16",
           "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "12-11-2026",
+          "bench": "CHENNAI",
+          "bench_id": "133568",
+          "pdf_id": "112492",
+          "url": "https://cestat.gov.in/openfilec/133568/112492",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-11 15:37:06",
+          "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
