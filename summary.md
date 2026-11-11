@@ -1,25 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 11-11-2026 to 17-11-2026
-**Generated:** 11-11-2026 17:03:51 IST
+**Range:** 12-11-2026 to 18-11-2026
+**Generated:** 12-11-2026 03:49:00 IST
 
 ## Summary
 
-- Matching PDFs: **10**
-- PDFs checked: **101**
+- Matching PDFs: **6**
+- PDFs checked: **69**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **11-11-2026 BANGALORE** (SINGLE MEMBER (SM)) · PDF [112392](https://cestat.gov.in/openfilec/129525/112392#page=1) · Shree
-  page 1: ICAL ) Sl No. APPEAL NO. APPELLANT RESPONDENT REPRESENTATIVE REMARKS REGULAR MATTERS 1 E/20184/2021 Shree Halasidhanath Sahakari Sakhare Karkhana Ltd Commission
-- **11-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112417](https://cestat.gov.in/openfilec/107079/112417#page=1) · Shree
-  page 1: ENTRAL EXCISE & CGST-JAIPUR I UJJVAL & ASSOCIATES, C.A./DR caujjvalsharma@gmail.com 8 ST/52217/2022 SHREE VASU LOGISTICS LIMITED COMMISSIONER, CUSTOMS, CENTRAL 
-- **11-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112435](https://cestat.gov.in/openfilec/107079/112435#page=1) · Shree
-  page 1: ENTRAL EXCISE & CGST-JAIPUR I UJJVAL & ASSOCIATES, C.A./DR caujjvalsharma@gmail.com 8 ST/52217/2022 SHREE VASU LOGISTICS LIMITED COMMISSIONER, CUSTOMS, CENTRAL 
-- **11-11-2026 DELHI** (CENTRAL REGISTRY) · PDF [112440](https://cestat.gov.in/openfilec/107079/112440#page=2) · Shree
-  page 2: GH, ADV. vineetsingh2003@gmail.com (E-FILED, PRE-DEPOSIT, COD & OTHER ISSUES) 12. 52155/2026 ST M/s Shree Cement Limited COMMISSIONER OF CENTRAL GST & CENTRAL E
 - **12-11-2026 CHENNAI** (CUSTOM (DB)) · PDF [112345](https://cestat.gov.in/openfilec/133568/112345#page=2) · Shree
   page 2: of Customs - Chennai II (Import Commissionerate) AGOL Associates/DR contact@agol.in 34 C/40558/2025 Shree Info System Solutions Private Limited Commissioner of 
 - **12-11-2026 HYDERABAD** (DIVISION BENCH) · PDF [112383](https://cestat.gov.in/openfilec/136507/112383#page=1) · Shree
@@ -35,4 +27,4 @@
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43010858053
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43109083848
