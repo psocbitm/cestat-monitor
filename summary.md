@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 12-11-2026 to 18-11-2026
-**Generated:** 12-11-2026 03:49:00 IST
+**Generated:** 12-11-2026 17:25:58 IST
 
 ## Summary
 
-- Matching PDFs: **6**
-- PDFs checked: **69**
+- Matching PDFs: **8**
+- PDFs checked: **123**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -24,7 +24,11 @@
   page 1: CAL ) Sr. No. (Defect Diary No.) Case Type Petitioner. Respondent. Advocate Remarks 1 10666/2026 ST SHREE BALAJI CONSTRUCTION CO. hastin_acharya@yahoo.com KUTCH
 - **13-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112436](https://cestat.gov.in/openfilec/107079/112436#page=1) · Acc Limited, Shree
   page 1:  KUMAR KABRA, C.A. C/O APPELLANT/DR NRKABRAASSOCIATES@GMAIL.CO M 6 ST/51756/2021 ST/MISC/50790/2026 ACC LIMITED COMMISSIONER, CENTRAL EXCISE & CGST-BHOPAL I SAR
+- **16-11-2026 MUMBAI** (CUSTOM (DB)) · PDF [112578](https://cestat.gov.in/openfilec/127482/112578#page=1) · Shree
+  page 1: EXTILES CC (NHAVA SHEVA-IV ) MUMBAI K.I.Vyas/DR kiryas@yahoo.com 13 C/86157/2017 C/CROSS/91101/2017 SHREE SIMMANDHAR SHIPPING SERVICES CC (EXPORT-I ) MUMBAI PDS
+- **18-11-2026 CHANDIGARH** (DIVISION BENCH) · PDF [112563](https://cestat.gov.in/openfilec/104044/112563#page=3) · Acc
+  page 3: Fillingchd@Lakshmisri.Co m 34 E/61379/2019 Commissioner Of Central Excise And Service Tax,Shimla Ms Acc Ltd None/Ip 35 ST/60012/2020 Ms Vijay Builders Commissio
 
 Keywords: Acc, Associated cement, A C C, Acc Ltd., Acc Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43109083848
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43210864059
