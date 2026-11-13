@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T03:41:41+05:30",
+  "generated_at": "2026-11-13T17:09:44+05:30",
   "start_date": "13-11-2026",
   "end_date": "19-11-2026",
   "days": 7,
@@ -575,6 +575,21 @@
           "url": "https://cestat.gov.in/openfilec/119315/112596",
           "result_type": "supplementary",
           "uploaded_at": "2026-11-12 16:44:55",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "empty_text_possible_scan",
+          "matches": []
+        },
+        {
+          "date": "13-11-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "112638",
+          "url": "https://cestat.gov.in/openfilec/119315/112638",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-13 10:33:04",
           "bench_type": "DIVISION BENCH",
           "status": "checked_no_match",
           "error": "",
@@ -1352,6 +1367,36 @@
               "snippet": "aicourtemail@trile gal.com 11 E/MISC/86587/2026 COMMISSIONER CENTRAL GOODS AND SERVICE TAX- PALGHAR AMBUJA CEMENTS LTD DR/Trilegal Mumbai mumbaicourtemail@trile gal.com E/86193/2019 E/CO-85699/2019 Prepared"
             }
           ]
+        },
+        {
+          "date": "16-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112640",
+          "url": "https://cestat.gov.in/openfilec/127482/112640",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:35:14",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "16-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112641",
+          "url": "https://cestat.gov.in/openfilec/127482/112641",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:36:29",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -1795,6 +1840,36 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "17-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112642",
+          "url": "https://cestat.gov.in/openfilec/127482/112642",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:36:59",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "17-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112643",
+          "url": "https://cestat.gov.in/openfilec/127482/112643",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:37:42",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2226,6 +2301,36 @@
               "snippet": "HANDRA GHOSH COMMISSIONER OF CENTRAL EXCISE- THANE-I A.V.Naik/DR av.naik@hotmail.com 4 E/85665/2016 SHREE SAI PRINTERS COMMISSIONER OF CENTRAL EXCISE-THANE-II IP/DR 5 E/85475/2017 SUPER LABEL MFG CO COMMIS"
             }
           ]
+        },
+        {
+          "date": "18-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112644",
+          "url": "https://cestat.gov.in/openfilec/127482/112644",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:38:10",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "18-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112645",
+          "url": "https://cestat.gov.in/openfilec/127482/112645",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:38:42",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -2691,6 +2796,36 @@
           "result_type": "regular",
           "uploaded_at": "2026-11-12 17:18:19",
           "bench_type": "EXCISE (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112646",
+          "url": "https://cestat.gov.in/openfilec/127482/112646",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:39:15",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112647",
+          "url": "https://cestat.gov.in/openfilec/127482/112647",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:39:43",
+          "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
           "pages": 1,
