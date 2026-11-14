@@ -1,14 +1,10 @@
 {
-  "generated_at": "2026-11-14T03:46:20+05:30",
+  "generated_at": "2026-11-14T16:33:36+05:30",
   "start_date": "14-11-2026",
   "end_date": "20-11-2026",
   "days": 7,
   "keywords": [
-    "Acc",
-    "Associated cement",
-    "A C C",
-    "Acc Ltd.",
-    "Acc Limited",
+    "ACC Limited",
     "Ambuja",
     "Orient",
     "Penna",
@@ -23,9 +19,14 @@
     "ACC EXPORT",
     "CC ACC",
     "CUSTOMS ACC",
-    "AIR CARGO COMPLEX",
-    "accounts"
+    "AIR CARGO COMPLEX"
   ],
+  "suppressions": {
+    "ACC Limited (near ACC IMPORT)": 186,
+    "ACC Limited (near CUSTOMS ACC)": 4,
+    "ACC Limited (near CC ACC)": 18,
+    "ACC Limited (near ACC EXPORT)": 8
+  },
   "benches": [
     {
       "value": "107079",
@@ -658,7 +659,11 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "EXTILES CC (NHAVA SHEVA-IV ) MUMBAI K.I.Vyas/DR kiryas@yahoo.com 13 C/86157/2017 C/CROSS/91101/2017 SHREE SIMMANDHAR SHIPPING SERVICES CC (EXPORT-I ) MUMBAI PDS Legal/DR contact@pdslegal.co 14 C/CROSS/9307"
+              "snippet": "…C/87805/2016 HARMESH TEXTILES CC (NHAVA SHEVA-IV ) MUMBAI K.I.Vyas/DR kiryas@yahoo.com 13 C/86157/2017 C/CROSS/91101/2017 SHREE SIMMANDHAR SHIPPING SERVICES CC (EXPORT-I ) MUMBAI PDS Legal/DR contact@pdslegal.co 14 C/CROSS/93074/2017 Commissioner…",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
             }
           ]
         },
@@ -694,12 +699,20 @@
             {
               "keyword": "Ambuja",
               "page": 1,
-              "snippet": "OOD PRODUCTS INDIA LTD COMMISSIONER OF CENTRAL EXCISE AND SERVICE TAX- NASHIK IP/DR 10 E/86060/2019 AMBUJA CEMENTS LIMITED COMMISSIONER CENTRAL GOODS AND SERVICE TAX- PALGHAR Trilegal Mumbai/DR mumbaicourte"
+              "snippet": "…CAPRICORN FOOD PRODUCTS INDIA LTD COMMISSIONER OF CENTRAL EXCISE AND SERVICE TAX NASHIK IP/DR 10 E/86060/2019 AMBUJA CEMENTS LIMITED COMMISSIONER CENTRAL GOODS AND SERVICE TAX PALGHAR Trilegal Mumbai/DR mumbaicourtemail@trile gal.com…",
+              "confidence": "high",
+              "matched_texts": [
+                "AMBUJA"
+              ]
             },
             {
               "keyword": "Ambuja",
               "page": 1,
-              "snippet": "aicourtemail@trile gal.com 11 E/MISC/86587/2026 COMMISSIONER CENTRAL GOODS AND SERVICE TAX- PALGHAR AMBUJA CEMENTS LTD DR/Trilegal Mumbai mumbaicourtemail@trile gal.com E/86193/2019 E/CO-85699/2019 Prepared"
+              "snippet": "…Mumbai/DR mumbaicourtemail@trile gal.com 11 E/MISC/86587/2026 COMMISSIONER CENTRAL GOODS AND SERVICE TAX PALGHAR AMBUJA CEMENTS LTD DR/Trilegal Mumbai mumbaicourtemail@trile gal.com E/86193/2019 E/CO-85699/2019 Prepared by - LDC Verified…",
+              "confidence": "high",
+              "matched_texts": [
+                "AMBUJA"
+              ]
             }
           ]
         },
@@ -1295,7 +1308,11 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "OMMISSIONER OF CE NTRAL EXCISE,Ahmedab ad-ii NIRAV P SHAH/DR niravpshah@outlook.com 2 ST/11285/2018 Shree Balkrishna Exports CGST & Central Excise Surat RAHUL GAJERA/DR RAHULGAJERA1982@GMAIL.COM 3 E/11621/"
+              "snippet": "…Plastics P Ltd COMMISSIONER OF CE NTRAL EXCISE,Ahmedab ad-ii NIRAV P SHAH/DR niravpshah@outlook.com 2 ST/11285/2018 Shree Balkrishna Exports CGST & Central Excise Surat RAHUL GAJERA/DR RAHULGAJERA1982@GMAIL.COM 3 E/11621/2018 Vardhman…",
+              "confidence": "standard",
+              "matched_texts": [
+                "Shree"
+              ]
             }
           ]
         }
@@ -1407,9 +1424,13 @@
           "text_status": "text_extracted",
           "matches": [
             {
-              "keyword": "Acc",
+              "keyword": "ACC Limited",
               "page": 3,
-              "snippet": "Fillingchd@Lakshmisri.Co m 34 E/61379/2019 Commissioner Of Central Excise And Service Tax,Shimla Ms Acc Ltd None/Ip 35 ST/60012/2020 Ms Vijay Builders Commissioner Central Excise Goods And Service Tax,Ro"
+              "snippet": "…Chd/Dr Cestat.Fillingchd@Lakshmisri.Co m 34 E/61379/2019 Commissioner Of Central Excise And Service Tax,Shimla Ms Acc Ltd None/Ip 35 ST/60012/2020 Ms Vijay Builders Commissioner Central Excise Goods And Service Tax,Rohtak Akhil Gupta…",
+              "confidence": "high",
+              "matched_texts": [
+                "Acc Ltd"
+              ]
             }
           ]
         }
@@ -1695,7 +1716,11 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "HANDRA GHOSH COMMISSIONER OF CENTRAL EXCISE- THANE-I A.V.Naik/DR av.naik@hotmail.com 4 E/85665/2016 SHREE SAI PRINTERS COMMISSIONER OF CENTRAL EXCISE-THANE-II IP/DR 5 E/85475/2017 SUPER LABEL MFG CO COMMIS"
+              "snippet": "…E/86622/2013 GANESH CHANDRA GHOSH COMMISSIONER OF CENTRAL EXCISE THANE-I A.V.Naik/DR av.naik@hotmail.com 4 E/85665/2016 SHREE SAI PRINTERS COMMISSIONER OF CENTRAL EXCISE-THANE-II IP/DR 5 E/85475/2017 SUPER LABEL MFG CO COMMISSIONER CGST…",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
             }
           ]
         },
@@ -1876,9 +1901,40 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "Request failed after 4 attempts: HTTPSConnectionPool(host='cestat.gov.in', port=443): Max retries exceeded with url: /viewcauselist (Caused by ConnectTimeoutError(<HTTPSConnection(host='cestat.gov.in', port=443) at 0x7fe1d9bd3f80>, 'Connection to cestat.gov.in timed out. (connect timeout=20)'))"
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "19-11-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "112557",
+          "url": "https://cestat.gov.in/openfilec/104044/112557",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:47:54",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "112565",
+          "url": "https://cestat.gov.in/openfilec/104044/112565",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:52:03",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "19-11-2026",
@@ -1927,9 +1983,95 @@
         "value": "107079",
         "name": "DELHI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "Request failed after 4 attempts: HTTPSConnectionPool(host='cestat.gov.in', port=443): Max retries exceeded with url: /viewcauselist (Caused by ConnectTimeoutError(<HTTPSConnection(host='cestat.gov.in', port=443) at 0x7fe1da0bf560>, 'Connection to cestat.gov.in timed out. (connect timeout=20)'))"
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "19-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112512",
+          "url": "https://cestat.gov.in/openfilec/107079/112512",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 13:35:45",
+          "bench_type": "SINGLE MEMBER (SM)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112534",
+          "url": "https://cestat.gov.in/openfilec/107079/112534",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:18:13",
+          "bench_type": "SERVICE TAX (DB)",
+          "status": "matched",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 2,
+              "snippet": "…COMMISSIONER, CEN TRAL EXCISE & CGST JAIPUR I JATIN MAHAJAN ADVOC ATE/DR jatinmahajan.14@gmail.com 23 ST/52173/2022 SHREE TELECOM COMMISSIONER, CEN TRAL EXCISE & CGST JAIPUR I DHADDA & CO. CA/DR email@dhaddaonline.com",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112540",
+          "url": "https://cestat.gov.in/openfilec/107079/112540",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:21:11",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112552",
+          "url": "https://cestat.gov.in/openfilec/107079/112552",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:41:21",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112568",
+          "url": "https://cestat.gov.in/openfilec/107079/112568",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:52:39",
+          "bench_type": "EXCISE (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "19-11-2026",
@@ -1989,9 +2131,155 @@
         "value": "127482",
         "name": "MUMBAI"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "Request failed after 4 attempts: HTTPSConnectionPool(host='cestat.gov.in', port=443): Max retries exceeded with url: /viewcauselist (Caused by ConnectTimeoutError(<HTTPSConnection(host='cestat.gov.in', port=443) at 0x7fe1da0bd070>, 'Connection to cestat.gov.in timed out. (connect timeout=20)'))"
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112574",
+          "url": "https://cestat.gov.in/openfilec/127482/112574",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 16:07:23",
+          "bench_type": "SERVICE TAX (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112582",
+          "url": "https://cestat.gov.in/openfilec/127482/112582",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 16:31:49",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112585",
+          "url": "https://cestat.gov.in/openfilec/127482/112585",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 16:34:40",
+          "bench_type": "CUSTOM (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112600",
+          "url": "https://cestat.gov.in/openfilec/127482/112600",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 16:58:28",
+          "bench_type": "SINGLE MEMBER (SM)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112601",
+          "url": "https://cestat.gov.in/openfilec/127482/112601",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 16:58:52",
+          "bench_type": "SINGLE MEMBER (SM)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112616",
+          "url": "https://cestat.gov.in/openfilec/127482/112616",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 17:18:03",
+          "bench_type": "EXCISE (DB)",
+          "status": "matched",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": [
+            {
+              "keyword": "Shree",
+              "page": 1,
+              "snippet": "…Yogesh S. Patki/DR yspatki@gmail.com 4 E/87165/2016 COMMISSIONER OF CUSTOMS CENTRAL EXCISE & SERVICE TAX -GOA SHREE BALAJI ROLLINGS P LTD DR/C.S.BIRADAR csbiradar@gmail.com 5 E/MISC/85956/2025 COMMISIONER CENTRAL EXCISE AND SERVICE…",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
+            }
+          ]
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112617",
+          "url": "https://cestat.gov.in/openfilec/127482/112617",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 17:18:19",
+          "bench_type": "EXCISE (DB)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112646",
+          "url": "https://cestat.gov.in/openfilec/127482/112646",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:39:15",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "MUMBAI",
+          "bench_id": "127482",
+          "pdf_id": "112647",
+          "url": "https://cestat.gov.in/openfilec/127482/112647",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-13 11:39:43",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "20-11-2026",
@@ -2033,7 +2321,11 @@
             {
               "keyword": "Shree",
               "page": 2,
-              "snippet": " North LAKSHMIKUMARAN & SR IDHARAN ADVOCATES/D R cetstat.filingahd@lakshmisri.c om 20 ST/12213/2019 Shree Vardhman Associates Commissioner of Central Excise and Service Tax,Vadodara-i JIGAR PARIKH/DR jigar"
+              "snippet": "…Excise Ahmedabad North LAKSHMIKUMARAN & SR IDHARAN ADVOCATES/D R cetstat.filingahd@lakshmisri.c om 20 ST/12213/2019 Shree Vardhman Associates Commissioner of Central Excise and Service Tax,Vadodara-i JIGAR PARIKH/DR jigar@hjpca.in 21…",
+              "confidence": "standard",
+              "matched_texts": [
+                "Shree"
+              ]
             }
           ]
         },
@@ -2188,7 +2480,11 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "7 Nitish Tools Pvt Ltd Commissioner of CUSTOMS,TUTICORIN Prabhat Kumar, Advocate/DR 10 C/41816/2017 Shree Sai Enterprises Commissioner of CUSTOMS,TUTICORIN Prabhat Kumar, Advocate/DR 11 C/41817/2017 Manoha"
+              "snippet": "…C/41615/2017 Nitish Tools Pvt Ltd Commissioner of CUSTOMS,TUTICORIN Prabhat Kumar, Advocate/DR 10 C/41816/2017 Shree Sai Enterprises Commissioner of CUSTOMS,TUTICORIN Prabhat Kumar, Advocate/DR 11 C/41817/2017 Manoharan C Commissioner…",
+              "confidence": "standard",
+              "matched_texts": [
+                "Shree"
+              ]
             }
           ]
         },
@@ -2295,12 +2591,20 @@
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "COMMISSIONER OF CUSTOMS -PATPARGANJ PIYUSH KUMAR ADVOCATE/DR PIYUSH.KUMAR @PKLAW.IN 10 C/50015/2024 SHREE RISHABHDEV MARBLE AND MINERAL P LTD COMMISSIONER OF CUSTOMS PREVENTIVE-JAIPUR JITIN SINGHAL ADV./DR"
+              "snippet": "…METAL COMPANY COMMISSIONER OF CUSTOMS -PATPARGANJ PIYUSH KUMAR ADVOCATE/DR PIYUSH.KUMAR @PKLAW.IN 10 C/50015/2024 SHREE RISHABHDEV MARBLE AND MINERAL P LTD COMMISSIONER OF CUSTOMS PREVENTIVE-JAIPUR JITIN SINGHAL ADV./DR JITIN.SINGHAL…",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
             },
             {
               "keyword": "Shree",
               "page": 1,
-              "snippet": "R OF CUSTOMS PREVENTIVE-JAIPUR JITIN SINGHAL ADV./DR JITIN.SINGHAL @SAGELAWFIRM .IN 11 C/50016/2024 SHREE RISHABHDEV MARBLE COMMISSIONER OF CUSTOMS JITIN SINGHAL"
+              "snippet": "…COMMISSIONER OF CUSTOMS PREVENTIVE-JAIPUR JITIN SINGHAL ADV./DR JITIN.SINGHAL @SAGELAWFIRM .IN 11 C/50016/2024 SHREE RISHABHDEV MARBLE COMMISSIONER OF CUSTOMS JITIN SINGHAL",
+              "confidence": "standard",
+              "matched_texts": [
+                "SHREE"
+              ]
             }
           ]
         },
