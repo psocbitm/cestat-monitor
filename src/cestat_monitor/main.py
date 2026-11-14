@@ -10,7 +10,11 @@ from .core import MonitorError, load_config, parse_start_date, run
 def main() -> int:
     parser = argparse.ArgumentParser(description="Search CESTAT causelist PDFs")
     parser.add_argument("--start-date", help="Start date in DD-MM-YYYY; defaults to today in Asia/Kolkata")
-    parser.add_argument("--keywords", default="", help="Optional multiline keyword override")
+    parser.add_argument("--keywords", default="", help="Optional comma or multiline keyword override")
+    parser.add_argument("--keyword-mode", default="replace", help="How to apply --keywords: add or replace")
+    parser.add_argument("--exclude", default="", help="Optional comma or multiline extra exclusions")
+    parser.add_argument("--match-style", default="smart", help="Matching style: smart or exact")
+    parser.add_argument("--bench", default="", help="Optional comma-separated bench filter")
     parser.add_argument("--config", type=Path, default=Path("config/keywords.json"))
     parser.add_argument("--output", type=Path, default=Path("output"))
     parser.add_argument("--bench-limit", type=int, help="Limit benches for the controlled smoke run")
@@ -19,10 +23,24 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     try:
         start = parse_start_date(args.start_date)
-        keywords, exclusions = load_config(args.config, args.keywords)
+        keywords, exclusions = load_config(
+            args.config,
+            args.keywords,
+            keyword_mode=args.keyword_mode,
+            extra_exclusions=args.exclude,
+            match_style=args.match_style,
+        )
         if args.days < 1 or args.days > 7:
             raise MonitorError("Days must be between 1 and 7.")
-        payload = run(start, keywords, exclusions, args.bench_limit, args.days, args.output)
+        payload = run(
+            start,
+            keywords,
+            exclusions,
+            args.bench_limit,
+            args.days,
+            args.output,
+            bench_filter=args.bench,
+        )
         search_failures = sum(result["status"] == "failed" for result in payload["results"])
         pdf_failures = sum(pdf["status"] == "failed" for result in payload["results"] for pdf in result["pdfs"])
         matches = sum(bool(pdf["matches"]) for result in payload["results"] for pdf in result["pdfs"])

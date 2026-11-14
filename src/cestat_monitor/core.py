@@ -9,13 +9,25 @@ import time
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Sequence
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+
+from .keywords import (
+    CompiledMatcher,
+    KeywordConfigError,
+    KeywordRule,
+    clean_text,
+    compile_matcher,
+    normalize,
+    parse_exclusion_input,
+    parse_keyword_input,
+    rules_from_config_dict,
+)
 
 BASE_URL = "https://cestat.gov.in/viewcauselist"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/139 Safari/537.36 cestat-monitor/0.1"
@@ -136,53 +148,14 @@ def date_range(start: date, days: int = 7) -> list[date]:
     return [start + timedelta(days=offset) for offset in range(days)]
 
 
-def clean_text(value: str) -> str:
-    value = value.replace("\ufffd", "-").replace("\u00ad", "")
-    value = re.sub(r"[\u2010-\u2015\u2212]", "-", value)
-    return " ".join(value.split())
-
-
-def normalize(value: str) -> str:
-    return clean_text(value).casefold()
-
-
-def match_text(text: str, keywords: list[str], exclusions: list[str], page_number: int) -> list[dict[str, Any]]:
-    display_text = clean_text(text)
-    if not display_text:
-        return []
-    exclusion_spans: list[tuple[int, int]] = []
-    for exclusion in exclusions:
-        ex_words = [w for w in re.split(r"[\s\-\(\)\[\]/,:;.]+", clean_text(exclusion)) if w]
-        if not ex_words:
-            continue
-        ex_pattern = re.compile(
-            r"(?<!\w)" + r"[\s\-\(\)\[\]/,:;.]+".join(re.escape(w) for w in ex_words) + r"(?!\w)",
-            re.IGNORECASE,
-        )
-        for ex_match in ex_pattern.finditer(display_text):
-            exclusion_spans.append((ex_match.start(), ex_match.end()))
-    candidates: list[tuple[int, int, str]] = []
-    for keyword in keywords:
-        cleaned_kw = clean_text(keyword)
-        if not cleaned_kw:
-            continue
-        pattern = re.compile(r"(?<!\w)" + re.escape(cleaned_kw) + r"(?!\w)", re.IGNORECASE)
-        for occurrence in pattern.finditer(display_text):
-            start, end = occurrence.start(), occurrence.end()
-            if any(start < ex_end and ex_start < end for ex_start, ex_end in exclusion_spans):
-                continue
-            candidates.append((start, end, keyword))
-    candidates.sort(key=lambda item: (item[0], -(item[1] - item[0]), item[2].casefold()))
-    kept: list[tuple[int, int, str]] = []
-    for start, end, keyword in candidates:
-        if any(k_start <= start and end <= k_end for k_start, k_end, _ in kept):
-            continue
-        kept.append((start, end, keyword))
-    matches: list[dict[str, Any]] = []
-    for start, end, keyword in kept:
-        snippet = display_text[max(0, start - 100):end + 100]
-        matches.append({"keyword": keyword, "page": page_number, "snippet": snippet})
-    return matches
+def match_text(
+    text: str,
+    keywords: Sequence[str | KeywordRule],
+    exclusions: list[str],
+    page_number: int,
+) -> list[dict[str, Any]]:
+    matcher = compile_matcher(keywords, exclusions)
+    return matcher.match_page(text, page_number)
 
 
 def _consolidate_pdf_matches(raw_matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -192,10 +165,25 @@ def _consolidate_pdf_matches(raw_matches: list[dict[str, Any]]) -> list[dict[str
         key = (item["keyword"].casefold(), normalize(item.get("snippet", "")))
         page = int(item["page"])
         if key not in grouped:
-            grouped[key] = {"keyword": item["keyword"], "page": page, "snippet": item.get("snippet", "")}
+            entry: dict[str, Any] = {
+                "keyword": item["keyword"],
+                "page": page,
+                "snippet": item.get("snippet", ""),
+            }
+            if item.get("confidence"):
+                entry["confidence"] = item["confidence"]
+            if item.get("matched_texts"):
+                entry["matched_texts"] = list(item["matched_texts"])
+            grouped[key] = entry
             pages_by_key[key] = [page]
-        elif page not in pages_by_key[key]:
-            pages_by_key[key].append(page)
+        else:
+            if page not in pages_by_key[key]:
+                pages_by_key[key].append(page)
+            if item.get("matched_texts"):
+                existing_texts = grouped[key].setdefault("matched_texts", [])
+                for txt in item["matched_texts"]:
+                    if txt not in existing_texts:
+                        existing_texts.append(txt)
     consolidated: list[dict[str, Any]] = []
     for key, entry in grouped.items():
         pages = pages_by_key[key]
@@ -205,16 +193,89 @@ def _consolidate_pdf_matches(raw_matches: list[dict[str, Any]]) -> list[dict[str
     return consolidated
 
 
-def load_config(path: Path, override: str = "") -> tuple[list[str], list[str]]:
+def _merge_rules(base: list[KeywordRule], extra: list[KeywordRule]) -> list[KeywordRule]:
+    merged = list(base)
+    by_label = {r.label.casefold(): idx for idx, r in enumerate(merged)}
+    for nr in extra:
+        key = nr.label.casefold()
+        if key in by_label:
+            idx = by_label[key]
+            existing = merged[idx]
+            merged_ex = tuple(dict.fromkeys((*existing.exclude_nearby, *nr.exclude_nearby)))
+            merged[idx] = KeywordRule(
+                label=existing.label,
+                aliases=existing.aliases,
+                proximity_terms=existing.proximity_terms,
+                mode=nr.mode if nr.mode == "exact" else existing.mode,
+                case_sensitive=existing.case_sensitive or nr.case_sensitive,
+                confidence=existing.confidence,
+                exclude_nearby=merged_ex,
+            )
+        else:
+            by_label[key] = len(merged)
+            merged.append(nr)
+    return merged
+
+
+def load_config(
+    path: Path,
+    override: str = "",
+    keyword_mode: str = "replace",
+    extra_exclusions: str = "",
+    match_style: str = "smart",
+) -> tuple[list[KeywordRule], list[str]]:
     try:
         config = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise MonitorError(f"Could not read keyword configuration: {exc}") from exc
-    keywords = [line.strip() for line in (override.splitlines() if override.strip() else config.get("keywords", [])) if line.strip()]
-    exclusions = [str(item).strip() for item in config.get("excluded_phrases", []) if str(item).strip()]
-    if not keywords:
+
+    style_norm = match_style.strip().lower()
+    use_exact = style_norm.startswith("exact")
+    default_mode = "exact" if use_exact else "smart"
+    case_sensitive = use_exact
+
+    try:
+        base_rules = rules_from_config_dict(
+            config,
+            default_mode=default_mode,
+            case_sensitive=case_sensitive,
+        )
+        if use_exact:
+            base_rules = [
+                KeywordRule(
+                    label=r.label,
+                    aliases=r.aliases,
+                    proximity_terms=r.proximity_terms,
+                    mode="exact",
+                    case_sensitive=True,
+                    confidence=r.confidence,
+                    exclude_nearby=r.exclude_nearby,
+                )
+                for r in base_rules
+            ]
+        base_exclusions = [str(item).strip() for item in config.get("excluded_phrases", []) if str(item).strip()]
+        added_exclusions = parse_exclusion_input(extra_exclusions)
+        exclusions = list(dict.fromkeys([*base_exclusions, *added_exclusions]))
+
+        if override.strip():
+            override_rules = parse_keyword_input(
+                override,
+                default_mode=default_mode,
+                case_sensitive=case_sensitive,
+            )
+            mode_norm = keyword_mode.strip().lower()
+            if mode_norm.startswith("add"):
+                rules = _merge_rules(base_rules, override_rules)
+            else:
+                rules = override_rules
+        else:
+            rules = base_rules
+    except KeywordConfigError as exc:
+        raise MonitorError(str(exc)) from exc
+
+    if not rules:
         raise MonitorError("No keywords configured. Add keywords to config/keywords.json or the workflow input.")
-    return keywords, exclusions
+    return rules, exclusions
 
 
 class CestatClient:
@@ -334,7 +395,14 @@ class CestatClient:
             return SearchResult(requested.strftime(DATE_FORMAT), bench, "failed", error=message)
 
 
-def extract_and_match(record: PdfRecord, keywords: list[str], exclusions: list[str], client: CestatClient) -> PdfRecord:
+def extract_and_match(
+    record: PdfRecord,
+    keywords: Sequence[str | KeywordRule],
+    exclusions: list[str],
+    client: CestatClient,
+    matcher: CompiledMatcher | None = None,
+    suppressions: dict[str, int] | None = None,
+) -> PdfRecord:
     try:
         session = requests.Session()
         session.headers.update({"User-Agent": USER_AGENT, "Referer": BASE_URL, "Accept": "application/pdf,text/html;q=0.9,*/*;q=0.8"})
@@ -344,12 +412,13 @@ def extract_and_match(record: PdfRecord, keywords: list[str], exclusions: list[s
             raise MonitorError("CESTAT returned non-PDF content")
         reader = PdfReader(__import__("io").BytesIO(content))
         record.pages = len(reader.pages)
+        active_matcher = matcher or compile_matcher(keywords, exclusions)
         raw_matches: list[dict[str, Any]] = []
         for page_number, page in enumerate(reader.pages, 1):
             text = page.extract_text() or ""
             if text.strip():
                 record.text_status = "text_extracted"
-            raw_matches.extend(match_text(text, keywords, exclusions, page_number))
+            raw_matches.extend(active_matcher.match_page(text, page_number, suppressions=suppressions))
         record.matches = _consolidate_pdf_matches(raw_matches)
         if record.text_status == "not_processed":
             record.text_status = "empty_text_possible_scan"
@@ -393,13 +462,18 @@ def _format_weekday_short(date_str: str) -> str:
         return ""
 
 
-def _highlight_snippet(snippet: str, keyword: str) -> str:
+def _highlight_snippet(snippet: str, keyword: str, matched_texts: list[str] | None = None) -> str:
     if not snippet:
         return ""
-    cleaned_kw = clean_text(keyword)
-    if not cleaned_kw:
-        return html.escape(snippet)
-    pattern = re.compile(r"(?<!\w)" + re.escape(cleaned_kw) + r"(?!\w)", re.IGNORECASE)
+    targets = [t for t in (matched_texts or []) if t]
+    if targets:
+        sorted_targets = sorted(set(targets), key=len, reverse=True)
+        pattern = re.compile(r"(?<!\w)(?:" + "|".join(re.escape(t) for t in sorted_targets) + r")(?!\w)", re.IGNORECASE)
+    else:
+        cleaned_kw = clean_text(keyword)
+        if not cleaned_kw:
+            return html.escape(snippet)
+        pattern = re.compile(r"(?<!\w)" + re.escape(cleaned_kw) + r"(?!\w)", re.IGNORECASE)
     parts: list[str] = []
     last = 0
     for match in pattern.finditer(snippet):
@@ -577,9 +651,10 @@ def _render_matches_feed(payload: dict[str, Any]) -> str:
                 f'<li class="feed-match-item" data-keyword="{html.escape(m["keyword"].casefold())}">'
                 f'<div class="feed-match-top">'
                 f'<span class="match-kw">{html.escape(m["keyword"])}</span>'
+                f'{_badge("Broad", "muted") if m.get("confidence") == "standard" else ""}'
                 f'{_render_page_links(pdf_url, m)}'
                 f'</div>'
-                f'<p class="snippet">{_highlight_snippet(m.get("snippet", ""), m["keyword"])}</p>'
+                f'<p class="snippet">{_highlight_snippet(m.get("snippet", ""), m["keyword"], m.get("matched_texts"))}</p>'
                 f'</li>'
                 for m in matches
             )
@@ -649,8 +724,8 @@ def _render_pdf_detail_rows(result: dict[str, Any]) -> str:
         )
         if has_matches:
             match_items = "".join(
-                f'<li><div class="feed-match-top"><span class="match-kw">{html.escape(m["keyword"])}</span>{_render_page_links(pdf["url"], m)}</div>'
-                f'<p class="snippet">{_highlight_snippet(m.get("snippet", ""), m["keyword"])}</p></li>'
+                f'<li><div class="feed-match-top"><span class="match-kw">{html.escape(m["keyword"])}</span>{_badge("Broad", "muted") if m.get("confidence") == "standard" else ""}{_render_page_links(pdf["url"], m)}</div>'
+                f'<p class="snippet">{_highlight_snippet(m.get("snippet", ""), m["keyword"], m.get("matched_texts"))}</p></li>'
                 for m in pdf.get("matches", [])
             )
             rows.append(
@@ -798,14 +873,52 @@ def generate_summary_markdown(payload: dict[str, Any], pages_url: str = "") -> s
         lines.extend(["## Matches", "", "No keyword matches in this run.", ""])
     if failure_rows:
         lines.extend(["## Failures", "", *failure_rows, ""])
-    lines.append(f"Keywords: {', '.join(payload['keywords'])}")
+    lines.append(f"**Keywords:** {', '.join(payload['keywords'])}")
+    if payload.get("excluded_phrases"):
+        lines.append(f"**Exclusions:** {', '.join(payload['excluded_phrases'])}")
+    suppressions = payload.get("suppressions") or {}
+    if suppressions:
+        total_suppressed = sum(suppressions.values())
+        top_reasons = ", ".join(
+            f"{reason}: {count}"
+            for reason, count in sorted(suppressions.items(), key=lambda item: (-item[1], item[0]))[:6]
+        )
+        lines.append(f"**Suppressed noisy hits:** {total_suppressed} ({top_reasons})")
     return "\n".join(lines)
 
-def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: int | None = None, days: int = 7, output_dir: Path = Path("output")) -> dict[str, Any]:
+
+def _filter_benches(benches: list[Bench], bench_filter: str) -> list[Bench]:
+    if not bench_filter or not bench_filter.strip():
+        return benches
+    tokens = [tok.strip().casefold() for tok in bench_filter.split(",") if tok.strip()]
+    if not tokens or "all" in tokens:
+        return benches
+    matched = [
+        bench
+        for bench in benches
+        if any(tok in bench.name.casefold() or tok == bench.value.casefold() for tok in tokens)
+    ]
+    if not matched:
+        available = ", ".join(b.name for b in benches)
+        raise MonitorError(f"No benches matched '{bench_filter}'. Available benches: {available}")
+    return matched
+
+
+def run(
+    start: date,
+    keywords: Sequence[str | KeywordRule],
+    exclusions: list[str],
+    bench_limit: int | None = None,
+    days: int = 7,
+    output_dir: Path = Path("output"),
+    bench_filter: str = "",
+) -> dict[str, Any]:
     client = CestatClient()
-    benches = client.discover_benches()
+    benches = _filter_benches(client.discover_benches(), bench_filter)
     if bench_limit is not None:
         benches = benches[:bench_limit]
+    matcher = compile_matcher(keywords, exclusions)
+    suppressions: dict[str, int] = {}
     tasks = [(day, bench) for day in date_range(start, days) for bench in benches]
     results: list[SearchResult] = []
     for day, bench in tasks:
@@ -821,7 +934,7 @@ def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: in
         time.sleep(REQUEST_PAUSE_SECONDS)
     all_pdfs = [pdf for result in results for pdf in result.pdfs]
     for pdf in all_pdfs:
-        extract_and_match(pdf, keywords, exclusions, client)
+        extract_and_match(pdf, keywords, exclusions, client, matcher=matcher, suppressions=suppressions)
         time.sleep(REQUEST_PAUSE_SECONDS)
     retryable_pdfs = [pdf for pdf in all_pdfs if should_retry_pdf(pdf)]
     if retryable_pdfs:
@@ -829,9 +942,20 @@ def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: in
     for pdf in retryable_pdfs:
         time.sleep(REQUEST_PAUSE_SECONDS * 2)
         reset_pdf_for_retry(pdf)
-        extract_and_match(pdf, keywords, exclusions, client)
+        extract_and_match(pdf, keywords, exclusions, client, matcher=matcher, suppressions=suppressions)
         time.sleep(REQUEST_PAUSE_SECONDS)
     results.sort(key=lambda item: (parse_report_date(item.requested_date), item.bench.name.casefold()))
-    payload = {"generated_at": now_ist().isoformat(timespec="seconds"), "start_date": start.strftime(DATE_FORMAT), "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT), "days": days, "keywords": keywords, "excluded_phrases": exclusions, "benches": [asdict(bench) for bench in benches], "results": [asdict(result) for result in results]}
+    keyword_labels = [k.label if isinstance(k, KeywordRule) else str(k) for k in keywords]
+    payload = {
+        "generated_at": now_ist().isoformat(timespec="seconds"),
+        "start_date": start.strftime(DATE_FORMAT),
+        "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT),
+        "days": days,
+        "keywords": keyword_labels,
+        "excluded_phrases": exclusions,
+        "suppressions": suppressions,
+        "benches": [asdict(bench) for bench in benches],
+        "results": [asdict(result) for result in results],
+    }
     generate_report(payload, output_dir)
     return payload

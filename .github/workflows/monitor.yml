@@ -8,14 +8,56 @@ on:
     - cron: "30 15 * * *"
   workflow_dispatch:
     inputs:
-      start_date:
-        description: "Start date DD-MM-YYYY; blank means today in Asia/Kolkata"
-        required: false
-        type: string
       keywords:
-        description: "Optional multiline keywords; blank uses config/keywords.json"
+        description: "Comma-separated terms, e.g. Ultratech, Shree + Cement, ACC -cargo (blank = saved defaults)"
         required: false
         type: string
+      keyword_mode:
+        description: "How to apply the keywords above"
+        required: false
+        type: choice
+        default: "Add to saved defaults"
+        options:
+          - "Add to saved defaults"
+          - "Search ONLY these keywords"
+      exclude:
+        description: "Comma-separated words to ignore nearby, e.g. Air Cargo, Sahar"
+        required: false
+        type: string
+      match_style:
+        description: "Matching style"
+        required: false
+        type: choice
+        default: "Smart (Recommended)"
+        options:
+          - "Smart (Recommended)"
+          - "Exact / Case-sensitive"
+      start_date:
+        description: "Start date DD-MM-YYYY (blank = today in IST)"
+        required: false
+        type: string
+      days:
+        description: "Number of days to check"
+        required: false
+        type: choice
+        default: "7"
+        options:
+          - "7"
+          - "6"
+          - "5"
+          - "4"
+          - "3"
+          - "2"
+          - "1"
+      benches:
+        description: "Optional comma-separated benches, e.g. Delhi, Mumbai (blank = all)"
+        required: false
+        type: string
+      update_live_report:
+        description: "Update the public GitHub Pages dashboard? (Leave unchecked for one-off test searches)"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -47,11 +89,21 @@ jobs:
         env:
           START_DATE: ${{ inputs.start_date }}
           KEYWORDS: ${{ inputs.keywords }}
+          KEYWORD_MODE: ${{ inputs.keyword_mode || 'Add to saved defaults' }}
+          EXCLUDE: ${{ inputs.exclude }}
+          MATCH_STYLE: ${{ inputs.match_style || 'Smart (Recommended)' }}
+          DAYS: ${{ inputs.days || '7' }}
+          BENCHES: ${{ inputs.benches }}
         run: |
           set -o pipefail
           python -m cestat_monitor.main \
             --start-date "$START_DATE" \
             --keywords "$KEYWORDS" \
+            --keyword-mode "$KEYWORD_MODE" \
+            --exclude "$EXCLUDE" \
+            --match-style "$MATCH_STYLE" \
+            --days "$DAYS" \
+            --bench "$BENCHES" \
             2>&1 | tee monitor.log
 
       - name: Publish job summary
@@ -59,7 +111,11 @@ jobs:
         run: |
           {
             echo ""
-            echo "**Full report:** https://psocbitm.github.io/cestat-monitor/"
+            if [ "${{ github.event_name != 'workflow_dispatch' || inputs.update_live_report }}" = "true" ]; then
+              echo "**Full report:** https://psocbitm.github.io/cestat-monitor/"
+            else
+              echo "**Live dashboard:** Not updated (one-off search). Download \`cestat-report-${{ github.run_id }}\` below for the full HTML report."
+            fi
             echo "**Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } >> output/summary.md
           cat output/summary.md >> "$GITHUB_STEP_SUMMARY"
@@ -76,7 +132,7 @@ jobs:
           if-no-files-found: warn
 
       - name: Deploy report to GitHub Pages
-        if: always() && hashFiles('output/index.html') != ''
+        if: always() && hashFiles('output/index.html') != '' && (github.event_name != 'workflow_dispatch' || inputs.update_live_report)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

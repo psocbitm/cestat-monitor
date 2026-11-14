@@ -1,25 +1,99 @@
 {
-  "keywords": [
-    "Acc",
-    "Associated cement",
-    "A C C",
-    "Acc Ltd.",
-    "Acc Limited",
-    "Ambuja",
-    "Orient",
-    "Penna",
-    "Shree",
-    "DGTR",
-    "Anti-dumping",
-    "CVD",
-    "GMR"
+  "entities": [
+    {
+      "label": "ACC Limited",
+      "aliases": [
+        "Associated cement",
+        "Acc Ltd",
+        "Acc Limited",
+        "A C C",
+        "Acc"
+      ],
+      "mode": "smart",
+      "confidence": "high",
+      "exclude_nearby": [
+        "Air Cargo",
+        "Cargo Complex",
+        "ACC Import",
+        "ACC Export",
+        "CC ACC",
+        "Customs ACC",
+        "Sahar",
+        "accounts"
+      ]
+    },
+    {
+      "label": "Ambuja",
+      "aliases": [
+        "Ambuja",
+        "Ambuja Cement"
+      ],
+      "mode": "smart",
+      "confidence": "high"
+    },
+    {
+      "label": "Orient",
+      "aliases": [
+        "Orient"
+      ],
+      "mode": "smart",
+      "confidence": "standard"
+    },
+    {
+      "label": "Penna",
+      "aliases": [
+        "Penna",
+        "Penna Cement"
+      ],
+      "mode": "smart",
+      "confidence": "high"
+    },
+    {
+      "label": "Shree",
+      "aliases": [
+        "Shree"
+      ],
+      "mode": "smart",
+      "confidence": "standard"
+    },
+    {
+      "label": "DGTR",
+      "aliases": [
+        "DGTR"
+      ],
+      "mode": "smart",
+      "confidence": "high"
+    },
+    {
+      "label": "Anti-dumping",
+      "aliases": [
+        "Anti-dumping"
+      ],
+      "mode": "smart",
+      "confidence": "high"
+    },
+    {
+      "label": "CVD",
+      "aliases": [
+        "CVD"
+      ],
+      "mode": "smart",
+      "confidence": "standard"
+    },
+    {
+      "label": "GMR",
+      "aliases": [
+        "GMR"
+      ],
+      "mode": "smart",
+      "confidence": "high"
+    }
   ],
   "excluded_phrases": [
     "ACC IMPORT",
     "ACC EXPORT",
     "CC ACC",
     "CUSTOMS ACC",
-    "AIR CARGO COMPLEX",
-    "accounts"
+    "AIR CARGO COMPLEX"
   ]
 }
