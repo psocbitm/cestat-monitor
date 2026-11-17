@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 17-11-2026 to 23-11-2026
-**Generated:** 17-11-2026 05:34:07 IST
+**Generated:** 17-11-2026 18:01:44 IST
 
 ## Summary
 
 - Matching PDFs: **8**
-- PDFs checked: **113**
+- PDFs checked: **120**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -31,6 +31,6 @@
 
 **Keywords:** ACC Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
-**Suppressed noisy hits:** 216 (ACC Limited (near ACC IMPORT): 178, ACC Limited (near CC ACC): 18, ACC Limited (near CUSTOMS ACC): 12, ACC Limited (near ACC EXPORT): 8)
+**Suppressed noisy hits:** 224 (ACC Limited (near ACC IMPORT): 186, ACC Limited (near CC ACC): 18, ACC Limited (near CUSTOMS ACC): 12, ACC Limited (near ACC EXPORT): 8)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43982280415
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/44081302656
