@@ -1,21 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 16-11-2026 to 22-11-2026
-**Generated:** 16-11-2026 17:41:33 IST
+**Range:** 17-11-2026 to 23-11-2026
+**Generated:** 17-11-2026 05:34:07 IST
 
 ## Summary
 
-- Matching PDFs: **10**
-- PDFs checked: **135**
+- Matching PDFs: **8**
+- PDFs checked: **113**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **16-11-2026 MUMBAI** (CUSTOM (DB)) · PDF [112578](https://cestat.gov.in/openfilec/127482/112578#page=1) · Shree
-  page 1: …C/87805/2016 HARMESH TEXTILES CC (NHAVA SHEVA-IV ) MUMBAI K.I.Vyas/DR kiryas@yahoo.com 13 C/86157/2017 C/CROSS/91101/2017 SHREE SIMMANDHAR SHIPPING SERVICES CC
-- **16-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112613](https://cestat.gov.in/openfilec/127482/112613#page=1) · Ambuja
-  page 1: …CAPRICORN FOOD PRODUCTS INDIA LTD COMMISSIONER OF CENTRAL EXCISE AND SERVICE TAX NASHIK IP/DR 10 E/86060/2019 AMBUJA CEMENTS LIMITED COMMISSIONER CENTRAL GOODS
 - **18-11-2026 AHMEDABAD** (SINGLE MEMBER (SM)) · PDF [112631](https://cestat.gov.in/openfilec/124438/112631#page=1) · Shree
   page 1: …Plastics P Ltd COMMISSIONER OF CE NTRAL EXCISE,Ahmedab ad-ii NIRAV P SHAH/DR niravpshah@outlook.com 2 ST/11285/2018 Shree Balkrishna Exports CGST & Central Exc
 - **18-11-2026 CHANDIGARH** (DIVISION BENCH) · PDF [112563](https://cestat.gov.in/openfilec/104044/112563#page=3) · ACC Limited
@@ -35,6 +31,6 @@
 
 **Keywords:** ACC Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
-**Suppressed noisy hits:** 228 (ACC Limited (near ACC IMPORT): 190, ACC Limited (near CC ACC): 18, ACC Limited (near CUSTOMS ACC): 12, ACC Limited (near ACC EXPORT): 8)
+**Suppressed noisy hits:** 216 (ACC Limited (near ACC IMPORT): 178, ACC Limited (near CC ACC): 18, ACC Limited (near CUSTOMS ACC): 12, ACC Limited (near ACC EXPORT): 8)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43861493235
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/43982280415
