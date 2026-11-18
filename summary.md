@@ -1,25 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 18-11-2026 to 24-11-2026
-**Generated:** 18-11-2026 17:47:06 IST
+**Range:** 19-11-2026 to 25-11-2026
+**Generated:** 19-11-2026 04:21:04 IST
 
 ## Summary
 
-- Matching PDFs: **12**
-- PDFs checked: **106**
+- Matching PDFs: **8**
+- PDFs checked: **73**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **18-11-2026 AHMEDABAD** (SINGLE MEMBER (SM)) · PDF [112631](https://cestat.gov.in/openfilec/124438/112631#page=1) · Shree
-  page 1: …Plastics P Ltd COMMISSIONER OF CE NTRAL EXCISE,Ahmedab ad-ii NIRAV P SHAH/DR niravpshah@outlook.com 2 ST/11285/2018 Shree Balkrishna Exports CGST & Central Exc
-- **18-11-2026 CHANDIGARH** (DIVISION BENCH) · PDF [112563](https://cestat.gov.in/openfilec/104044/112563#page=3) · ACC Limited
-  page 3: …Chd/Dr Cestat.Fillingchd@Lakshmisri.Co m 34 E/61379/2019 Commissioner Of Central Excise And Service Tax,Shimla Ms Acc Ltd None/Ip 35 ST/60012/2020 Ms Vijay Bui
-- **18-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112615](https://cestat.gov.in/openfilec/127482/112615#page=1) · Shree
-  page 1: …E/86622/2013 GANESH CHANDRA GHOSH COMMISSIONER OF CENTRAL EXCISE THANE-I A.V.Naik/DR av.naik@hotmail.com 4 E/85665/2016 SHREE SAI PRINTERS COMMISSIONER OF CENT
-- **18-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112751](https://cestat.gov.in/openfilec/127482/112751#page=1) · Shree
-  page 1: …E/86622/2013 GANESH CHANDRA GHOSH COMMISSIONER OF CENTRAL EXCISE THANE-I A.V.Naik/DR av.naik@hotmail.com 4 E/85665/2016 SHREE SAI PRINTERS COMMISSIONER OF CENT
 - **19-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [112534](https://cestat.gov.in/openfilec/107079/112534#page=2) · Shree
   page 2: …COMMISSIONER, CEN TRAL EXCISE & CGST JAIPUR I JATIN MAHAJAN ADVOC ATE/DR jatinmahajan.14@gmail.com 23 ST/52173/2022 SHREE TELECOM COMMISSIONER, CEN TRAL EXCISE
 - **19-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112616](https://cestat.gov.in/openfilec/127482/112616#page=1) · Shree
@@ -39,6 +31,6 @@
 
 **Keywords:** ACC Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
-**Suppressed noisy hits:** 214 (ACC Limited (near ACC IMPORT): 174, ACC Limited (near CC ACC): 32, ACC Limited (near ACC EXPORT): 8)
+**Suppressed noisy hits:** 166 (ACC Limited (near ACC IMPORT): 158, ACC Limited (near ACC EXPORT): 8)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/44299979201
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/44413666997
