@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 20-11-2026 to 26-11-2026
-**Generated:** 20-11-2026 04:28:45 IST
+**Generated:** 20-11-2026 17:46:11 IST
 
 ## Summary
 
-- Matching PDFs: **12**
-- PDFs checked: **100**
+- Matching PDFs: **13**
+- PDFs checked: **116**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -32,6 +32,8 @@
   page 1: …Comm issionerate) RIA IMPEX PVT LIMITED DR/CENEX Services 11 C/40177/2019 Commissioner of CUSTOMS, TUTICORIN Jai Shree Impex DR/IP 12 C/40603/2019 Jai Shree Im
 - **25-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112904](https://cestat.gov.in/openfilec/127482/112904#page=2) · Shree
   page 2: …COMMISIONER ,CENTRAL EXCISE AND SERVICE TAX PUNE-II Anand S Kulkarni /DR askulkarni9@yahoo.com 21 E/88450/2018 SHREE SATYA MINERALS P LTD COMMISIONER CENTRAL E
+- **25-11-2026 MUMBAI** (CENTRAL REGISTRY) · PDF [112910](https://cestat.gov.in/openfilec/127482/112910#page=2) · Shree
+  page 2: …Tax-RAIGAD cexraiga@excise.nic.in IP/DR COD 12 Application Diary No: 862492026 In Appeal Diary No: 862472026 C M/s Shree Sai Shipping Agency pratik.karande31@g
 - **26-11-2026 BANGALORE** (SINGLE MEMBER (SM)) · PDF [112850](https://cestat.gov.in/openfilec/129525/112850#page=1) · Shree
   page 1: …DEVI,MEMBER ( TECHNICAL ) Sl No. APPEAL NO. APPELLANT RESPONDENT REPRESENTATIVE REMARKS REGULAR MATTERS 1 E/20184/2021 Shree Halasidhanath Sahakari Sakhare Kar
 - **26-11-2026 HYDERABAD** (DIVISION BENCH) · PDF [112889](https://cestat.gov.in/openfilec/136507/112889#page=1) · GMR
@@ -41,4 +43,4 @@
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
 **Suppressed noisy hits:** 247 (ACC Limited (near ACC IMPORT): 191, ACC Limited (near CC ACC): 38, ACC Limited (near ACC EXPORT): 10, ACC Limited (near CUSTOMS ACC): 8)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/44631276613
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/44731958853
