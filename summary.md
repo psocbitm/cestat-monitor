@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
 **Range:** 27-11-2026 to 03-12-2026
-**Generated:** 27-11-2026 05:42:17 IST
+**Generated:** 27-11-2026 18:44:53 IST
 
 ## Summary
 
-- Matching PDFs: **10**
-- PDFs checked: **110**
+- Matching PDFs: **12**
+- PDFs checked: **138**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
@@ -22,6 +22,8 @@
   page 2: …PRIVATE LIMITED COMMISSIONER, CGST-DELHI EAST Vijai Kumar (Advocate)/DR vkumar_a@rediffmail.com 15 ST/51709/2022 SHREE VASU LOGISTICS LIMITED COMMISSIONER, CE 
 - **30-11-2026 MUMBAI** (EXCISE (DB)) · PDF [113135](https://cestat.gov.in/openfilec/127482/113135#page=1) · ACC Limited
   page 1: …SERVICE TAX -GOA Colgate Palmolive (I) Ltd. DR/TRILEGAL mumbaicourtemail@trile gal.com E/1114/2012 4 E/1871/2012 ACC LTD. COMMISSIONER OF CENTRAL GOODS SERVICE
+- **01-12-2026 CHANDIGARH** (DIVISION BENCH) · PDF [113143](https://cestat.gov.in/openfilec/104044/113143#page=3) · Shree
+  page 3: …KUMARAN & SRIDHARAN CHD/DR CESTAT.FILLINGCHD@LAKSHMISRI .COM Connected with Sr. No. 28 & 29 24 ST/60998/2018 MS SHREE BALAJI WAREHOUSE COMMISSIONER OF CENTRAL 
 - **01-12-2026 DELHI** (SERVICE TAX (DB)) · PDF [113055](https://cestat.gov.in/openfilec/107079/113055#page=1) · Shree
   page 1: …thakkar@btassociate.com 7 ST/51679/2021 COMMISSIONER, CGST-DELHI EAST ADS ADVERTISING PVT LTD DR/IP 8 ST/51911/2021 SHREE KRISHNA ENTERPRISES COMMISSIONER, CEN
 - **01-12-2026 DELHI** (EXCISE (DB)) · PDF [113075](https://cestat.gov.in/openfilec/107079/113075#page=1) · Shree
@@ -30,6 +32,8 @@
   page 1: …E/87205/2015 GEOMETRIC LTD COMMISSIONER OF CENTRAL EXCISE - MUMBAI-II Meraki Law/DR legal@meraki.law 5 E/85642/2016 SHREE VAISHNAV CASTING PVT LTD COMMISSIONER
 - **02-12-2026 BANGALORE** (CUSTOM (DB)) · PDF [113111](https://cestat.gov.in/openfilec/129525/113111#page=3) · ACC Limited
   page 3: …harish.solicitor@gmail.com 22 C/20266/2022 Semnox Solutions Private Limited Commissioner Of Customs Airport & Acc, Bangalore A.K.B. ASSOCIATES/DR consult@akbas
+- **03-12-2026 AHMEDABAD** (DIVISION BENCH) · PDF [113180](https://cestat.gov.in/openfilec/124438/113180#page=1) · Shree
+  page 1: …DR/LAKSHMIKUMARAN & SRIDHARAN ADVOCATES cestat.filingahd@lakshmisri.co m REMAN DED FR OM Hon. SC 3 C/10780/2018 Shree Laxmi Fashion Commissioner of CUSTOMS,Ahm
 - **03-12-2026 CHENNAI** (CUSTOM (DB)) · PDF [113072](https://cestat.gov.in/openfilec/133568/113072#page=1) · Shree
   page 1: …(VIII),CC SEA Ch - VIII AGOL Associates/DR contact@agol.in 18 C/40177/2019 Commissioner of CUSTOMS, TUTICORIN Jai Shree Impex DR/IP 19 C/40603/2019 Jai Shree I
 
@@ -37,4 +41,4 @@
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
 **Suppressed noisy hits:** 141 (ACC Limited (near ACC IMPORT): 118, ACC Limited (near CUSTOMS ACC): 15, ACC Limited (near CC ACC): 8)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/45913830245
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/46002598693
