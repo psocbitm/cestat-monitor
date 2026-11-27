@@ -1,21 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 27-11-2026 to 03-12-2026
-**Generated:** 27-11-2026 18:44:53 IST
+**Range:** 28-11-2026 to 04-12-2026
+**Generated:** 28-11-2026 05:25:53 IST
 
 ## Summary
 
-- Matching PDFs: **12**
-- PDFs checked: **138**
+- Matching PDFs: **10**
+- PDFs checked: **117**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **27-11-2026 DELHI** (CENTRAL REGISTRY) · PDF [112816](https://cestat.gov.in/openfilec/107079/112816#page=1) · Shree
-  page 1: …CGST ALWAR ANAND KUMAR GUPTA anandkumargupta999@gmail.com (PRAYER & VERIFICATION IS REQUIRED) 6. 51015/2025 C SHREE GANESH ENTERPRISES COMMISSIONER OF CUSTOMS 
-- **27-11-2026 MUMBAI** (EXCISE (DB)) · PDF [112906](https://cestat.gov.in/openfilec/127482/112906#page=1) · Shree
-  page 1: …Lumiere Law Partners/DR courtaffairs@lumierelp.com 11 E/MISC/86099/2025 COMMISSIONER OF CENTRAL EXCISE THANE-I SHREE AMBE MET STEEL PVT LTD DR/IP E/MISC/85238/
 - **30-11-2026 DELHI** (SINGLE MEMBER (SM)) · PDF [113042](https://cestat.gov.in/openfilec/107079/113042#page=1) · Shree
   page 1: …Excise, Jaipur VIPIN KHANDELWAL AND RAJESH BAIRAGI, ADV./DR vipinkhandelwal_24@yahoo.co.in 10 ST/50774/2026 M/s Jai Shree Balaji Mines & Minerals COMMISSIONER 
 - **30-11-2026 DELHI** (SERVICE TAX (DB)) · PDF [113053](https://cestat.gov.in/openfilec/107079/113053#page=2) · Shree
@@ -39,6 +35,6 @@
 
 **Keywords:** ACC Limited, Ambuja, Orient, Penna, Shree, DGTR, Anti-dumping, CVD, GMR
 **Exclusions:** ACC IMPORT, ACC EXPORT, CC ACC, CUSTOMS ACC, AIR CARGO COMPLEX
-**Suppressed noisy hits:** 141 (ACC Limited (near ACC IMPORT): 118, ACC Limited (near CUSTOMS ACC): 15, ACC Limited (near CC ACC): 8)
+**Suppressed noisy hits:** 149 (ACC Limited (near ACC IMPORT): 118, ACC Limited (near CUSTOMS ACC): 21, ACC Limited (near CC ACC): 10)
 **Full report:** https://psocbitm.github.io/cestat-monitor/
-**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/46002598693
+**Workflow run:** https://github.com/psocbitm/cestat-monitor/actions/runs/46083634105
